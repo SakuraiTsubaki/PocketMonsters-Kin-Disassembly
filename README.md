@@ -1,38 +1,62 @@
 # PocketMonsters-Kin-Disassembly
 
-Byte-perfect disassembly project for the Japanese **Pocket Monsters Kin (ポケットモンスター 金 / Pokémon Gold)** ROM.
+Byte-perfect, multi-region disassembly and source reconstruction project for **Pocket Monsters Kin / Pokémon Gold**.
 
 ## Goal
 
-Reconstruct the original game into editable RGBDS source, data, graphics, text, audio, maps, scripts, and build/verification tooling so that the completed repository can rebuild the supported ROM revisions **without requiring a base ROM**.
+Reconstruct the supported retail releases into editable RGBDS source, data, graphics, text, audio, maps, scripts, and build/verification tooling so that a completed clean clone can rebuild each ROM **without requiring a base ROM**.
 
 ## Source baselines
 
-Two read-only reference ROM revisions are tracked by metadata only. ROM binaries are not included in this repository.
+Eight read-only reference ROMs are tracked by metadata only. ROM binaries are not included in this repository.
 
-| Revision | Size | Header version | SHA-1 |
-| --- | ---: | ---: | --- |
-| Rev 0 | 1 MiB | `0x00` | `8814f1039450a5d3684b1389f588ccd7ee7c3436` |
-| Rev A | 1 MiB | `0x01` | `a222402235d484ee8e39f3f31bae57cf13daf585` |
+| ID | Release | Size | Banks | Header version | SHA-1 |
+| --- | --- | ---: | ---: | ---: | --- |
+| `jp-rev0` | Japan Rev 0 | 1 MiB | 64 | `0x00` | `8814f1039450a5d3684b1389f588ccd7ee7c3436` |
+| `jp-revA` | Japan Rev A | 1 MiB | 64 | `0x01` | `a222402235d484ee8e39f3f31bae57cf13daf585` |
+| `kr` | Korea Rev 0 | 2 MiB | 128 | `0x00` | `c0ff3999e1093e1af59ef3eea3f1bfd7c1f18a65` |
+| `en` | USA/Europe Rev 0 | 2 MiB | 128 | `0x00` | `d8b8a3600a465308c9953dfa04f0081c05bdcb94` |
+| `de` | Germany Rev 0 | 2 MiB | 128 | `0x00` | `9254195d461ea942eaaa08cc4b83de3cf82aea0d` |
+| `fr` | France Rev 0 | 2 MiB | 128 | `0x00` | `c147c0d8c2b71b7628a7233436f5c052b5b17081` |
+| `it` | Italy Rev 0 | 2 MiB | 128 | `0x00` | `032608fe8947b627584a4a0eccc7bf9ad3588426` |
+| `es` | Spain Rev 0 | 2 MiB | 128 | `0x00` | `162ea54c6a3cff374642e6dd842f9bffac847e7b` |
 
-Both images contain 64 ROM banks of 16 KiB each (`00`–`3F`). Initial comparison shows 10 differing banks between Rev 0 and Rev A: `00`, `04`, `05`, `09`, `0A`, `0F`, `14`, `21`, `23`, and `24`.
+Full MD5/SHA-1/SHA-256 and cartridge-header metadata are stored in `manifests/rom_baselines.json`.
+
+The Japanese Rev 0 and Rev A images differ in 10 banks: `00`, `04`, `05`, `09`, `0A`, `0F`, `14`, `21`, `23`, and `24`. The localized 2 MiB releases extend through Bank `7F`, so the bank-by-bank reconstruction ledger covers `00`–`7F` and records `n/a` for Japanese-only absent banks `40`–`7F`.
 
 ## Repository policy
 
 - Original and modified ROM binaries are never committed.
-- Meaningful reproducible work is committed: RGBDS source, extracted/reconstructed assets, scripts, manifests, checksums, symbol/address maps, comparison data, tests, logs, and documentation.
-- Reference ROMs may be used locally during reverse engineering and verification, but the finished build must not depend on them.
-- Temporary caches and disposable build scratch files are excluded.
+- Meaningful reproducible work is committed: RGBDS source, extracted/reconstructed graphics, text, audio, maps, scripts, data, tools, manifests, checksums, symbols, address maps, comparison tables, tests, logs, and documentation.
+- Reference ROMs may be used locally for extraction, reverse engineering, comparison, and verification, but the finished build must not depend on them.
+- Temporary caches and disposable scratch files are excluded.
+
+## Reconstruction model
+
+```text
+read-only reference ROMs (local analysis only)
+        ↓
+code + data + text + graphics + maps + audio reconstruction
+        ↓
+repository source/assets
+        ↓
+RGBDS + project build tools
+        ↓
+regional Gold ROM target
+        ↓
+byte-for-byte checksum verification
+```
 
 ## Completion criteria
 
-A supported revision is considered complete when:
+A supported release is complete when:
 
-1. No source file reads bytes from a local base ROM.
-2. All ROM bytes are represented by repository source/assets and deterministic build steps.
-3. A clean clone plus documented toolchain can build the ROM.
-4. The resulting image matches the recorded reference checksum byte-for-byte.
+1. No build source reads bytes from a local base ROM.
+2. Every ROM byte is represented by repository source/assets and deterministic build steps.
+3. A clean clone plus the documented toolchain can build the target.
+4. The generated image matches that release's recorded reference checksum byte-for-byte.
 
 ## Current status
 
-Repository bootstrap and ROM baseline verification are in progress. Bank-by-bank disassembly will proceed from Bank `00` through Bank `3F`, while revision differences are tracked explicitly.
+Phase 0 bootstrap is complete for all eight project source releases. Bank-by-bank disassembly will proceed across Bank `00`–`7F`, with common code/data separated from language-, region-, and revision-specific differences as they are identified.

@@ -1,7 +1,7 @@
 ; Shared Bank 00 text-engine routines used by the Japanese, Korean, and
 ; western Gold families. Family-specific box drawing, dictionary dispatch,
-; localized substitution data, scrolling, and command-table differences live
-; in jp_variants.asm, kr_variants.asm, western_variants.asm, and locale files.
+; localized substitution data, scrolling, battle-name grammar, and command
+; table differences live in the family/locale files beside this one.
 
 RadioTerminator::
 	ld hl, .stop
@@ -58,23 +58,6 @@ PrintPlayerName: text_print_name wPlayerName
 PrintRivalName:  text_print_name wRivalName
 PrintRedsName:   text_print_name wRedsName
 PrintGreensName: text_print_name wGreensName
-
-PlaceMoveTargetsName::
-	ldh a, [hBattleTurn]
-	xor 1
-	jr PlaceBattlersName
-
-PlaceMoveUsersName::
-	ldh a, [hBattleTurn]
-	; fallthrough into the family-specific PlaceBattlersName implementation
-
-PlaceCommandCharacter::
-; Family-specific code selects DE before entering here.
-	call PlaceString
-	ld h, b
-	ld l, c
-	pop de
-	jp NextChar
 
 NextLineChar::
 	pop hl

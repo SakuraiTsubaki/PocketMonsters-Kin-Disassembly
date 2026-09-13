@@ -1,0 +1,21 @@
+label,start,end_exclusive,size,decoded,hex
+TMCharText,0x113B,0x1144,9,기술머신@,01 B2 06 2A 04 73 06 65 50
+TrainerCharText,0x1144,0x114D,9,트레이너@,09 DE 03 E9 07 9C 02 6A 50
+PCCharText,0x114D,0x1154,7,컴퓨터@,09 24 0A 4B 09 9D 50
+RocketCharText,0x1154,0x115B,7,로켓단@,03 FE 09 2F 02 DC 50
+PlacePOKeText,0x115B,0x1162,7,포켓몬@,0A 27 09 2F 04 93 50
+KougekiText,0x1162,0x1167,5,こうげき@,BA B3 27 B7 50
+SixDotsCharText,0x1167,0x116A,3,……@,75 75 50
+EnemyText,0x116A,0x1170,6,적의 @,07 CB 07 97 7F 50
+PlacePKMNText,0x1170,0x1173,3,<PK><MN>@,E1 E2 50
+PlacePOKEText,0x1173,0x1176,3,<PO><KE>@,70 71 50
+String_Space,0x1176,0x1178,2, @,7F 50
+DummiedText,0x1178,0x1179,1,@,50
+WeekdaySunday,0x1456,0x1459,3,일@,07 9F 50
+WeekdayMonday,0x1459,0x145C,3,월@,07 69 50
+WeekdayTuesday,0x145C,0x145F,3,화@,0A AD 50
+WeekdayWednesday,0x145F,0x1462,3,수@,06 26 50
+WeekdayThursday,0x1462,0x1465,3,목@,04 91 50
+WeekdayFriday,0x1465,0x1468,3,금@,01 AD 50
+WeekdaySaturday,0x1468,0x146B,3,토@,09 B4 50
+WeekdaySuffix,0x146B,0x1470,5,요일@,07 44 07 9F 50

@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: help verify-reference analyze-bank00 map-bank00-modules test-bank00-vectors test-bank00-vblank test-bank00-delay test-bank00-time-palettes-fade test-bank00-lcd test-bank00-time test-bank00-init test-bank00-serial test-bank00-joypad status
+.PHONY: help verify-reference analyze-bank00 map-bank00-modules test-bank00-vectors test-bank00-vblank test-bank00-delay test-bank00-time-palettes-fade test-bank00-lcd test-bank00-time test-bank00-init test-bank00-serial test-bank00-joypad test-bank00-decompress test-bank00-palettes test-bank00-gfx test-bank00-text-ranges status
 
 help:
 	@echo "PocketMonsters-Kin-Disassembly targets"
@@ -16,6 +16,10 @@ help:
 	@echo "  make test-bank00-init ROMDIR=/path/to/reference-rom-directory"
 	@echo "  make test-bank00-serial ROMDIR=/path/to/reference-rom-directory"
 	@echo "  make test-bank00-joypad ROMDIR=/path/to/reference-rom-directory"
+	@echo "  make test-bank00-decompress ROMDIR=/path/to/reference-rom-directory"
+	@echo "  make test-bank00-palettes ROMDIR=/path/to/reference-rom-directory"
+	@echo "  make test-bank00-gfx ROMDIR=/path/to/reference-rom-directory"
+	@echo "  make test-bank00-text-ranges ROMDIR=/path/to/reference-rom-directory"
 	@echo "  make status"
 
 verify-reference:
@@ -66,12 +70,28 @@ test-bank00-joypad:
 	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
 	$(PYTHON) tests/test_bank00_joypad.py --rom-dir "$(ROMDIR)"
 
+test-bank00-decompress:
+	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
+	$(PYTHON) tests/test_bank00_decompress.py --rom-dir "$(ROMDIR)"
+
+test-bank00-palettes:
+	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
+	$(PYTHON) tests/test_bank00_palettes.py --rom-dir "$(ROMDIR)"
+
+test-bank00-gfx:
+	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
+	$(PYTHON) tests/test_bank00_gfx.py --rom-dir "$(ROMDIR)"
+
+test-bank00-text-ranges:
+	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
+	$(PYTHON) tests/test_bank00_text_ranges.py --rom-dir "$(ROMDIR)"
+
 status:
 	@echo "Disassembly status: 8 Gold reference releases registered."
 	@echo "Japanese Rev 0/Rev A: Banks 00-3F."
 	@echo "Korean/English/German/French/Italian/Spanish: Banks 00-7F."
 	@echo "Bank 00: 52 ROM0 module boundaries mapped."
-	@echo "Bank 00 source reconstructed through joypad; decompress is next."
+	@echo "Bank 00 source reconstructed through gfx; text family reconstruction is in progress."
 	@echo "Bank-by-bank reconstruction ledger: manifests/bank_status.csv"
 	@echo "Bank 00 module ledger: analysis/bank00/module_status.csv"
 	@echo "Full byte-perfect build status remains open until complete RGBDS constants/macros/layout are reconstructed."

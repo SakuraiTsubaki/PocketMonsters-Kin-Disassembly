@@ -8,7 +8,7 @@ time,0x045B,0x05B0,mapped,complete,no,shared source with BUILD_JP FixDays carry 
 init,0x05B0,0x06AA,mapped,complete,no,shared source with BUILD_KR AGB detection and alternate HRAM/BG-map initialization; 8-release module SHA-1 regression present; full RGBDS assembly verification pending
 serial,0x06AA,0x08DF,mapped,complete,no,shared source with BUILD_KR link timing changes; 8-release module SHA-1 regression present; full RGBDS assembly verification pending
 joypad,0x08DF,0x0AF0,mapped,complete,no,shared source with BUILD_JP omissions for $ff auto-input duration and PromptButton auto dispatch; 8-release module SHA-1 regression passes; full RGBDS assembly verification pending
-decompress,0x0AF0,0x0BDF,mapped,pending,no,
+decompress,0x0AF0,0x0BDF,mapped,complete,no,shared LZ3 source across all releases; all modules 239 bytes; EN/DE/FR/IT/ES are byte-identical; 8-release SHA-1 regression passes; full RGBDS assembly verification pending
 palettes,0x0BDF,0x0D70,mapped,pending,no,
 gfx,0x0D70,0x0EBD,mapped,pending,no,
 text,0x0EBD,0x1458,mapped,pending,no,

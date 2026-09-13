@@ -11,7 +11,7 @@ joypad,0x08DF,0x0AF0,mapped,complete,no,shared source with BUILD_JP omissions fo
 decompress,0x0AF0,0x0BDF,mapped,complete,no,shared LZ3 source across all releases; all modules 239 bytes; EN/DE/FR/IT/ES are byte-identical; 8-release SHA-1 regression passes; full RGBDS assembly verification pending
 palettes,0x0BDF,0x0D70,mapped,complete,no,shared palette source with BUILD_KR BG-bank-aware ReloadPalettes path; KR is 11 bytes longer; 8-release SHA-1 regression passes; full RGBDS assembly verification pending
 gfx,0x0D70,0x0EBD,mapped,complete,no,shared graphics transfer source; BUILD_JP omits DuplicateGet2bpp (-23 bytes) and BUILD_KR adds two transfer-drain wait helpers (+20 bytes); corrected KR text boundary is 0x0ECF; 8-release SHA-1 regression passes
-text,0x0EBD,0x1458,mapped,in_progress,no,exact 8-release ranges/hashes locked; JP/KR/Western implementation families identified; KR text begins at verified 0x0ECF with farcall_reg and double-byte path; Western EN/DE/FR/IT/ES embedded strings reconstructed as locale ASM and ROM-regression tested; engine-family source split still in progress
+text,0x0EBD,0x1458,mapped,in_progress,no,exact 8-release ranges/hashes locked; JP/KR/Western families identified; Western EN/DE/FR/IT/ES string and weekday data are exact; CT/MT boundaries corrected; DE/IT/ES dummied hyphen data separated from shared alias terminator; all western code-size deltas accounted for by ROM-verified CheckDict/hyphen/diacritic/Paragraph/name-grammar variants; western variant fragments and regressions present; JP/KR reconstruction remains
 video,0x1458,0x169C,mapped,pending,no,
 map_objects,0x169C,0x19AC,mapped,pending,no,
 sine,0x19AC,0x19BB,mapped,pending,no,

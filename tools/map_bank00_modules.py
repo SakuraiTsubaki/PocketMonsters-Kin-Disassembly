@@ -9,12 +9,15 @@ from pathlib import Path
 
 BANK_SIZE = 0x4000
 
+# English ROM0 module boundaries audited against pret/pokegold home/*.asm
+# first global symbols and the public symbols build. These are semantic file
+# boundaries, not arbitrary internal labels.
 MODULE_STARTS = [
     ("vblank", 0x0150), ("delay", 0x032E), ("time_palettes", 0x0343),
-    ("fade", 0x0377), ("lcd", 0x041B), ("time", 0x045B),
+    ("fade", 0x0360), ("lcd", 0x041B), ("time", 0x045B),
     ("init", 0x05B0), ("serial", 0x06AA), ("joypad", 0x08DF),
     ("decompress", 0x0AF0), ("palettes", 0x0BDF), ("gfx", 0x0D70),
-    ("text", 0x0EEF), ("video", 0x1458), ("map_objects", 0x169C),
+    ("text", 0x0EBD), ("video", 0x1458), ("map_objects", 0x169C),
     ("sine", 0x19AC), ("movement", 0x19BB), ("menu", 0x1A4E),
     ("printer", 0x1EB3), ("game_time", 0x1EE6), ("map", 0x1F5D),
     ("farcall", 0x2E27), ("predef", 0x2E49), ("window", 0x2E80),
@@ -68,7 +71,7 @@ def map_addr(addr: int, blocks):
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Map English Bank 00 semantic module boundaries into all tracked Gold releases."
+        description="Map audited English Bank 00 semantic module boundaries into all tracked Gold releases."
     )
     parser.add_argument("--rom-dir", type=Path, required=True)
     parser.add_argument("--manifest", type=Path, default=Path("manifests/rom_baselines.json"))

@@ -1,0 +1,84 @@
+symbol,en_address,semantic_owner,layout_status
+ClearBox,0x0EBD,western_core.asm (JP/KR use family variants),semantic_mapped
+ClearTilemap,0x0ECF,western_core.asm (JP/KR use family variants),semantic_mapped
+ClearScreen,0x0EE2,western_core.asm (JP/KR use family variants),semantic_mapped
+Textbox,0x0EEF,western_core.asm (JP/KR use family variants),semantic_mapped
+TextboxBorder,0x0EF8,western_core.asm (JP/KR use family variants),semantic_mapped
+TextboxPalette,0x0F2B,western_core.asm (JP/KR use family variants),semantic_mapped
+SpeechTextbox,0x0F45,western_core.asm (JP/KR use family variants),semantic_mapped
+GameFreakText,0x0F4F,misc.asm,semantic_mapped
+RadioTerminator,0x0F59,common.asm,semantic_mapped
+PrintText,0x0F5E,common.asm,semantic_mapped
+PrintTextboxText,0x0F61,common.asm,semantic_mapped
+SetUpTextbox,0x0F68,common.asm,semantic_mapped
+PlaceString,0x0F74,common.asm,semantic_mapped
+PlaceNextChar,0x0F75,common.asm,semantic_mapped
+DummyChar,0x0F7E,common.asm,semantic_mapped
+NextChar,0x0F7F,common.asm,semantic_mapped
+CheckDict,0x0F83,western_dict.asm (JP/KR use family dict/variant),semantic_mapped
+PrintMomsName,0x1066,common.asm,semantic_mapped
+PrintPlayerName,0x106D,common.asm,semantic_mapped
+PrintRivalName,0x1074,common.asm,semantic_mapped
+PrintRedsName,0x107B,common.asm,semantic_mapped
+PrintGreensName,0x1082,common.asm,semantic_mapped
+TrainerChar,0x1089,substitutions.asm,semantic_mapped
+TMChar,0x1090,substitutions.asm,semantic_mapped
+PCChar,0x1097,substitutions.asm,semantic_mapped
+RocketChar,0x109E,substitutions.asm,semantic_mapped
+PlacePOKe,0x10A5,substitutions.asm,semantic_mapped
+PlaceKougeki,0x10AC,substitutions.asm,semantic_mapped
+SixDotsChar,0x10B3,substitutions.asm,semantic_mapped
+PlacePKMN,0x10BA,substitutions.asm,semantic_mapped
+PlacePOKE,0x10C1,substitutions.asm,semantic_mapped
+PlaceJPRoute,0x10C8,substitutions.asm,semantic_mapped
+PlaceWatashi,0x10CF,substitutions.asm,semantic_mapped
+PlaceKokoWa,0x10D6,substitutions.asm,semantic_mapped
+PlaceMoveTargetsName,0x10DD,battle_names.asm,semantic_mapped
+PlaceMoveUsersName,0x10E3,battle_names.asm,semantic_mapped
+PlaceBattlersName,0x10E5,battle_names.asm,semantic_mapped
+PlaceEnemysName,0x10FB,battle_names.asm,semantic_mapped
+PlaceCommandCharacter,0x1132,battle_names.asm,semantic_mapped
+TMCharText,0x113B,locales/*.asm,semantic_mapped
+NextLineChar,0x116D,common.asm,semantic_mapped
+LineFeedChar,0x1176,flow.asm (not active in JP),semantic_mapped
+LineChar,0x117F,common.asm,semantic_mapped
+Paragraph,0x1187,flow.asm,semantic_mapped
+_ContText,0x11B0,flow.asm,semantic_mapped
+_ContTextNoPause,0x11C8,flow.asm,semantic_mapped
+ContText,0x11D6,common.asm,semantic_mapped
+PlaceDexEnd,0x11E7,flow.asm,semantic_mapped
+PromptText,0x11EB,flow.asm,semantic_mapped
+DoneText,0x1205,flow.asm,semantic_mapped
+NullChar,0x120C,flow.asm,semantic_mapped
+TextScroll,0x121D,western_core.asm (JP/KR use family variants),semantic_mapped
+Text_WaitBGMap,0x123A,flow.asm (JP family variant),semantic_mapped
+Diacritic,0x124A,western_core.asm (JP/KR use family variants),semantic_mapped
+LoadBlinkingCursor,0x1255,common.asm,semantic_mapped
+UnloadBlinkingCursor,0x125B,common.asm,semantic_mapped
+PlaceFarString,0x1261,misc.asm (absent JP),semantic_mapped
+PokeFluteTerminator,0x126D,common.asm,semantic_mapped
+PrintTextboxTextAt,0x1272,common.asm,semantic_mapped
+DoTextUntilTerminator,0x1283,common.asm,semantic_mapped
+TextCommands,0x129D,western_commands.asm (JP/KR have family command files),semantic_mapped
+TextCommand_START,0x12CB,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_RAM,0x12D6,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_FAR,0x12E2,western_commands.asm (KR also; absent JP),semantic_mapped
+TextCommand_BCD,0x12FD,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_MOVE,0x130D,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_BOX,0x1318,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_LOW,0x1328,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_PROMPT_BUTTON,0x132C,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_SCROLL,0x1342,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_START_ASM,0x1351,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_DECIMAL,0x1352,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_PAUSE,0x136D,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_SOUND,0x1380,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_CRY,0x13A2,western_commands.asm (JP/KR family files),semantic_mapped
+TextSFX,0x13AD,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_DOTS,0x13C3,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_WAIT_BUTTON,0x13E2,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_STRINGBUFFER,0x13EA,western_commands.asm (JP/KR family files),semantic_mapped
+TextCommand_DAY,0x1402,western_commands.asm (JP/KR family files),semantic_mapped
+WeekdayPointers,0x1422,command family + locales/*.asm,semantic_mapped
+WeekdaySunday,0x1430,locales/*.asm,semantic_mapped
+TextEnd,0x1458,module boundary,verified_boundary

@@ -1,6 +1,6 @@
 ; French Bank 00 embedded text-engine strings.
 
-TMCharText::      db "T@"
+TMCharText::      db "CT@"
 TrainerCharText:: db "DRESSEUR@"
 PCCharText::      db "PC@"
 RocketCharText::  db "ROCKET@"

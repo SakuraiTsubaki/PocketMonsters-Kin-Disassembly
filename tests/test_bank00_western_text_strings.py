@@ -7,10 +7,10 @@ from pathlib import Path
 
 EMBEDDED = {
     "en": (0x113B, ["93 8C 50","93 91 80 88 8D 84 91 50","8F 82 50","91 8E 82 8A 84 93 50","8F 8E 8A EA 50","BA B3 29 B7 50","75 75 50","84 AD A4 AC B8 7F 50","E1 E2 50","70 71 50","7F 50","50"]),
-    "de": (0x114C, ["93 8C 50","93 91 80 88 8D 84 91 50","8F 82 50","91 8E 82 8A 84 93 50","8F 8E 8A EA 50","BA B3 29 B7 50","75 75 50","86 A4 A6 AD E8 7F 50","E1 E2 50","70 71 50","7F 50","E3 22 50"]),
+    "de": (0x114C, ["93 8C 50","93 91 80 88 8D 84 91 50","8F 82 50","91 8E 82 8A 84 93 50","8F 8E 8A EA 50","BA B3 29 B7 50","75 75 50","86 A4 A6 AD E8 7F 50","E1 E2 50","70 71 50","7F 50","E3 22 50","50"]),
     "fr": (0x113A, ["82 93 50","83 91 84 92 92 84 94 91 50","8F 82 50","91 8E 82 8A 84 93 50","8F 8E 8A EA 50","BA B3 29 B7 50","75 75 50","7F A4 AD AD A4 AC A8 50","E1 E2 50","70 71 50","7F 50","50"]),
-    "it": (0x1149, ["8C 93 50","80 8B 8B 84 8D E8 50","8F 82 50","91 8E 82 8A 84 93 50","8F 8E 8A EA 50","BA B3 29 B7 50","75 75 50","7F AD A4 AC A8 A2 AE 50","E1 E2 50","70 71 50","7F 50","E3 22 50"]),
-    "es": (0x114C, ["8C 93 50","84 8D 93 91 84 8D E8 50","8F 82 50","91 8E 82 8A 84 93 50","8F 8E 8A EA 50","BA B3 29 B7 50","75 75 50","84 AD A4 AC E8 7F 50","E1 E2 50","70 71 50","7F 50","E3 22 50"]),
+    "it": (0x1149, ["8C 93 50","80 8B 8B 84 8D E8 50","8F 82 50","91 8E 82 8A 84 93 50","8F 8E 8A EA 50","BA B3 29 B7 50","75 75 50","7F AD A4 AC A8 A2 AE 50","E1 E2 50","70 71 50","7F 50","E3 22 50","50"]),
+    "es": (0x114C, ["8C 93 50","84 8D 93 91 84 8D E8 50","8F 82 50","91 8E 82 8A 84 93 50","8F 8E 8A EA 50","BA B3 29 B7 50","75 75 50","84 AD A4 AC E8 7F 50","E1 E2 50","70 71 50","7F 50","E3 22 50","50"]),
 }
 
 WEEKDAYS = {
@@ -22,15 +22,13 @@ WEEKDAYS = {
 }
 
 
-def read_terminated_strings(rom: bytes, start: int, count: int) -> list[str]:
+def read_strings(rom: bytes, start: int, count: int) -> list[str]:
     pos = start
     result = []
     for _ in range(count):
         raw = bytearray()
         while True:
-            b = rom[pos]
-            pos += 1
-            raw.append(b)
+            b = rom[pos]; pos += 1; raw.append(b)
             if b == 0x50:
                 break
         result.append(" ".join(f"{b:02X}" for b in raw))
@@ -42,23 +40,17 @@ def main() -> int:
     ap.add_argument("--rom-dir", type=Path, required=True)
     ap.add_argument("--manifest", type=Path, default=Path("manifests/rom_baselines.json"))
     args = ap.parse_args()
-
     releases = json.loads(args.manifest.read_text(encoding="utf-8"))["releases"]
     by_id = {r["id"]: r for r in releases}
 
     for locale in EMBEDDED:
-        rom_path = args.rom_dir / by_id[locale]["reference_filename"]
-        if not rom_path.is_file():
-            raise SystemExit(f"missing reference ROM: {rom_path}")
-        rom = rom_path.read_bytes()
-
+        path = args.rom_dir / by_id[locale]["reference_filename"]
+        if not path.is_file(): raise SystemExit(f"missing reference ROM: {path}")
+        rom = path.read_bytes()
         start, expected = EMBEDDED[locale]
-        actual = read_terminated_strings(rom, start, len(expected))
-        assert actual == expected, (locale, "embedded", actual, expected)
-
+        assert read_strings(rom, start, len(expected)) == expected, (locale, "embedded")
         start, expected = WEEKDAYS[locale]
-        actual = read_terminated_strings(rom, start, len(expected))
-        assert actual == expected, (locale, "weekdays", actual, expected)
+        assert read_strings(rom, start, len(expected)) == expected, (locale, "weekdays")
         print(f"PASS {locale}: embedded + weekday strings")
 
     print("PASS western Bank 00 localized string checks")

@@ -20,7 +20,7 @@ def digest(path: Path, name: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Verify a local Pocket Monsters Kin reference ROM against recorded baselines."
+        description="Verify a local Pocket Monsters Kin / Pokemon Gold reference ROM against recorded regional baselines."
     )
     parser.add_argument("rom", type=Path)
     args = parser.parse_args()
@@ -31,21 +31,24 @@ def main() -> int:
         raise SystemExit(f"not a file: {path}")
 
     size = path.stat().st_size
+    md5 = digest(path, "md5")
     sha1 = digest(path, "sha1")
     sha256 = digest(path, "sha256")
 
     print(f"file:   {path}")
     print(f"size:   {size}")
+    print(f"md5:    {md5}")
     print(f"sha1:   {sha1}")
     print(f"sha256: {sha256}")
 
-    for revision in data["revisions"]:
+    for release in data["releases"]:
         if (
-            size == revision["size"]
-            and sha1 == revision["sha1"]
-            and sha256 == revision["sha256"]
+            size == release["size"]
+            and md5 == release["md5"]
+            and sha1 == release["sha1"]
+            and sha256 == release["sha256"]
         ):
-            print(f"match:  {revision['id']}")
+            print(f"match:  {release['id']} ({release['region']} / {release['locale']})")
             return 0
 
     print("match:  none")

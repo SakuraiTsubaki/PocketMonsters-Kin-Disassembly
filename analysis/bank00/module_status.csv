@@ -1,6 +1,6 @@
 module,en_start,en_end_exclusive,boundary_map,source_reconstruction,byte_perfect_all_releases,notes
 vblank,0x0150,0x032E,mapped,draft,no,shared source with BUILD_JP cutscene branch; ROM structural regression passes; full RGBDS assembly verification pending
-delay,0x032E,0x0343,mapped,pending,no,
+delay,0x032E,0x0343,mapped,complete,no,all 21 bytes accounted for across 8 releases by deterministic regression; full RGBDS assembly verification pending
 time_palettes,0x0343,0x0377,mapped,pending,no,
 fade,0x0377,0x041B,mapped,pending,no,
 lcd,0x041B,0x045B,mapped,pending,no,

@@ -6,9 +6,6 @@ import csv
 import json
 from pathlib import Path
 
-# Verified first embedded-string address in each western Bank 00 text module.
-# FR/IT/ES begin one byte earlier than the first-pass mapper suggested:
-# French stores "CT@" and Italian/Spanish store "MT@".
 STARTS = {
     "en": 0x113B,
     "de": 0x114C,
@@ -17,23 +14,19 @@ STARTS = {
     "es": 0x114C,
 }
 
-LABELS = [
-    "TMCharText",
-    "TrainerCharText",
-    "PCCharText",
-    "RocketCharText",
-    "PlacePOKeText",
-    "KougekiText",
-    "SixDotsCharText",
-    "EnemyText",
-    "PlacePKMNText",
-    "PlacePOKEText",
-    "String_Space",
-    "DummiedText",
+COMMON_LABELS = [
+    "TMCharText", "TrainerCharText", "PCCharText", "RocketCharText",
+    "PlacePOKeText", "KougekiText", "SixDotsCharText", "EnemyText",
+    "PlacePKMNText", "PlacePOKEText", "String_Space",
 ]
+TAIL_LABELS = {
+    "en": ["SharedDummiedText"],
+    "fr": ["SharedDummiedText"],
+    "de": ["DummiedHyphenText", "SharedDummiedText"],
+    "it": ["DummiedHyphenText", "SharedDummiedText"],
+    "es": ["DummiedHyphenText", "SharedDummiedText"],
+}
 
-# Start with ordinary western letters, then overlay special control/Japanese
-# glyphs whose byte values overlap the lower-case range in this mixed charmap.
 CHARMAP: dict[int, str] = {0x50: "@", 0x7F: " ", 0xEA: "é", 0xE8: ".", 0xE3: "-", 0x22: "<LF>", 0x75: "…", 0xE1: "<PK>", 0xE2: "<MN>", 0x70: "<PO>", 0x71: "<KE>"}
 CHARMAP.update({0x80 + i: ch for i, ch in enumerate("ABCDEFGHIJKLMNOPQRSTUVWXYZ")})
 CHARMAP.update({0xA0 + i: ch for i, ch in enumerate("abcdefghijklmnopqrstuvwxyz")})
@@ -62,7 +55,8 @@ def main() -> int:
             raise SystemExit(f"missing reference ROM: {rom_path}")
         rom = rom_path.read_bytes()
         pos = first
-        for label in LABELS:
+        labels = COMMON_LABELS + TAIL_LABELS[locale]
+        for label in labels:
             start = pos
             raw = bytearray()
             while True:
@@ -72,13 +66,8 @@ def main() -> int:
                 if b == 0x50:
                     break
             rows.append([
-                locale,
-                label,
-                f"0x{start:04X}",
-                f"0x{pos:04X}",
-                len(raw),
-                decode(bytes(raw)),
-                " ".join(f"{b:02X}" for b in raw),
+                locale, label, f"0x{start:04X}", f"0x{pos:04X}", len(raw),
+                decode(bytes(raw)), " ".join(f"{b:02X}" for b in raw),
             ])
 
     args.output.parent.mkdir(parents=True, exist_ok=True)

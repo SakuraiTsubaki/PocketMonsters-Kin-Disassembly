@@ -85,12 +85,24 @@ TextScroll::
 	farcall_reg _TextScroll
 	ret
 
+; $1270
+Diacritic::
+	push af
+	push hl
+	ld a, b
+	ld bc, -SCREEN_WIDTH
+	add hl, bc
+	ld [hl], a
+	pop hl
+	pop af
+	ret
+
 ; $1470
 SetStandardHangulFont::
 	di
 	ld a, BANK("WRAM 2")
 	ldh [rWBK], a
-	xor a
+	ld a, 0
 	ld [wInvertedHangulToggle], a
 	ld a, $01
 	ldh [rWBK], a

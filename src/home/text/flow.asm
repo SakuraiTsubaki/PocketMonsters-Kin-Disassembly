@@ -112,7 +112,15 @@ PromptText::
 	cp LINK_COLOSSEUM
 	jr z, DoneText
 	call UnloadBlinkingCursor
-	jp DoneText
+	; fallthrough exactly as in the retail code
+
+DoneText::
+	pop hl
+	ld de, .stop
+	dec de
+	ret
+.stop:
+	text_end
 
 NullChar:: ; unused debug leftover
 	ld b, h

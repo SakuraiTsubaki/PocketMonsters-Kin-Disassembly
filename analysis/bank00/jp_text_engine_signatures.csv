@@ -1,0 +1,11 @@
+symbol,start,end_exclusive,size,role,hex_signature
+ClearBox,0x0E8F,0x0EA1,18,direct fullwidth-space box fill,3E 7F 11 14 00 E5 C5 22 0D 20 FC C1 E1 19 05 20 F4 C9
+Textbox,0x0EC1,0x0ECA,9,save BC/HL draw border then tail into palette,C5 E5 CD CA 0E E1 C1 18 33
+TextboxBorder,0x0ECA,0x0EFD,51,Japanese local border renderer,E5 3E 79 22 3C CD F7 0E 3C 77 E1 11 14 00 19 E5 3E 7C 22 3E 7F CD F7 0E 36 7C E1 11 14 00 19 05 20 ED 3E 7D 22 3E 7A CD F7 0E 36 7E C9 51 22 15 20 FC C9
+TextboxPalette,0x0EFD,0x0F17,26,Japanese local attrmap palette fill,11 2D 09 19 04 04 0C 0C 3E 07 C5 E5 22 0D 20 FC E1 11 14 00 19 C1 05 20 F1 C9
+SpeechTextbox,0x0F17,0x0F21,10,standard textbox geometry,21 90 C4 06 04 0E 12 C3 C1 0E
+CheckDictHead,0x0F55,0x0F5F,10,Japanese command-token dispatch begins with LINE/NEXT,FE 4F CA 91 11 FE 4E CA 88 11
+TextScroll,0x122C,0x1249,29,Japanese local tilemap scroll and clear,21 B8 C4 11 A4 C4 01 3C 00 CD D6 30 21 E1 C4 3E 7F 01 12 00 CD 08 31 0E 05 CD 3C 03 C9
+Text_WaitBGMap,0x1249,0x1259,16,temporarily suppress OAM updates while waiting for BG map,C5 F0 DA F5 3E 01 E0 DA CD AE 33 F1 E0 DA C1 C9
+Diacritic,0x1259,0x1264,11,place dakuten or handakuten one row above,F5 E5 78 01 EC FF 09 77 E1 F1 C9
+WeekdayBlock,0x1416,0x142D,23,Japanese weekday stems plus ようび,C6 C1 50 29 C2 50 B6 50 BD B2 50 D3 B8 50 B7 DE 50 34 50 D6 B3 3B 50

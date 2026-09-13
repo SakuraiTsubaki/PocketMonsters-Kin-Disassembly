@@ -32,7 +32,6 @@ TextCommands::
 	assert_table_length NUM_TEXT_CMDS
 
 TextCommand_START::
-; Write text until "@".
 	ld d, h
 	ld e, l
 	ld h, b
@@ -44,7 +43,6 @@ TextCommand_START::
 	ret
 
 TextCommand_RAM::
-; Write text from a RAM address (little endian).
 	ld a, [hli]
 	ld e, a
 	ld a, [hli]
@@ -57,7 +55,6 @@ TextCommand_RAM::
 	ret
 
 TextCommand_FAR::
-; Write text from a different ROM bank (little endian pointer + bank).
 	ldh a, [hROMBank]
 	push af
 	ld a, [hli]
@@ -303,24 +300,16 @@ TextCommand_DAY::
 	call PlaceString
 	ld h, b
 	ld l, c
-	ld de, .Day
+	ld de, WeekdaySuffix
 	call PlaceString
 	pop hl
 	ret
 
 .Days:
-	dw .Sun
-	dw .Mon
-	dw .Tues
-	dw .Wednes
-	dw .Thurs
-	dw .Fri
-	dw .Satur
-.Sun:    db "SUN@"
-.Mon:    db "MON@"
-.Tues:   db "TUES@"
-.Wednes: db "WEDNES@"
-.Thurs:  db "THURS@"
-.Fri:    db "FRI@"
-.Satur:  db "SATUR@"
-.Day:    db "DAY@"
+	dw WeekdaySunday
+	dw WeekdayMonday
+	dw WeekdayTuesday
+	dw WeekdayWednesday
+	dw WeekdayThursday
+	dw WeekdayFriday
+	dw WeekdaySaturday

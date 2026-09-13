@@ -1,0 +1,62 @@
+{
+  "format_version": 1,
+  "rom_size_bytes": 1048576,
+  "bank_size_bytes": 16384,
+  "bank_count": 64,
+  "revisions": [
+    {
+      "id": "rev0",
+      "reference_filename": "Pocket Monsters Kin (Japan).gbc",
+      "size": 1048576,
+      "sha1": "8814f1039450a5d3684b1389f588ccd7ee7c3436",
+      "sha256": "7cfeceae00737a1f0713c9ab0b3a9e6eb8d05ff6002eb81308072a6f85e385e7",
+      "md5": "85be569fe89f58c40f60480313314c67",
+      "header": {
+        "cgb_flag": "0x80",
+        "cartridge_type": "0x10",
+        "rom_size_code": "0x05",
+        "ram_size_code": "0x03",
+        "destination_code": "0x00",
+        "old_licensee_code": "0x33",
+        "version": "0x00",
+        "header_checksum": "0x48",
+        "global_checksum": "0x8A70"
+      }
+    },
+    {
+      "id": "revA",
+      "reference_filename": "Pocket Monsters Kin (Japan) (Rev A).gbc",
+      "size": 1048576,
+      "sha1": "a222402235d484ee8e39f3f31bae57cf13daf585",
+      "sha256": "27a07a1d3faf9c6a0b1b60d5e88ee3a4159a751a47b4c46ab09f1202d52bac3e",
+      "md5": "79aece8a042e4fa57aba9455c4d21a97",
+      "header": {
+        "cgb_flag": "0x80",
+        "cartridge_type": "0x10",
+        "rom_size_code": "0x05",
+        "ram_size_code": "0x03",
+        "destination_code": "0x00",
+        "old_licensee_code": "0x33",
+        "version": "0x01",
+        "header_checksum": "0x47",
+        "global_checksum": "0x8460"
+      }
+    }
+  ],
+  "comparison": {
+    "rev0_vs_revA_total_different_bytes": 10841,
+    "changed_bank_count": 10,
+    "changed_banks": [
+      {"bank":"00","different_bytes":5,"first_rom_offset":"0x00014C","last_rom_offset":"0x003C6B"},
+      {"bank":"04","different_bytes":5,"first_rom_offset":"0x011ACB","last_rom_offset":"0x0135BC"},
+      {"bank":"05","different_bytes":1,"first_rom_offset":"0x0142CF","last_rom_offset":"0x0142CF"},
+      {"bank":"09","different_bytes":1,"first_rom_offset":"0x024C9F","last_rom_offset":"0x024C9F"},
+      {"bank":"0A","different_bytes":1,"first_rom_offset":"0x029720","last_rom_offset":"0x029720"},
+      {"bank":"0F","different_bytes":2,"first_rom_offset":"0x03E10A","last_rom_offset":"0x03F03A"},
+      {"bank":"14","different_bytes":2,"first_rom_offset":"0x050059","last_rom_offset":"0x050356"},
+      {"bank":"21","different_bytes":2,"first_rom_offset":"0x086629","last_rom_offset":"0x08665D"},
+      {"bank":"23","different_bytes":10821,"first_rom_offset":"0x08CC5D","last_rom_offset":"0x08FC87"},
+      {"bank":"24","different_bytes":1,"first_rom_offset":"0x092023","last_rom_offset":"0x092023"}
+    ]
+  }
+}

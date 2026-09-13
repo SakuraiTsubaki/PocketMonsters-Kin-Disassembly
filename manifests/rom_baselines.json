@@ -1,62 +1,129 @@
 {
-  "format_version": 1,
-  "rom_size_bytes": 1048576,
+  "format_version": 2,
   "bank_size_bytes": 16384,
-  "bank_count": 64,
-  "revisions": [
+  "scope": "Pocket Monsters Kin / Pokemon Gold regional releases currently available to the project",
+  "releases": [
     {
-      "id": "rev0",
+      "id": "jp-rev0",
+      "region": "Japan",
+      "locale": "ja-JP",
       "reference_filename": "Pocket Monsters Kin (Japan).gbc",
       "size": 1048576,
+      "bank_size": 16384,
+      "bank_count": 64,
+      "md5": "85be569fe89f58c40f60480313314c67",
       "sha1": "8814f1039450a5d3684b1389f588ccd7ee7c3436",
       "sha256": "7cfeceae00737a1f0713c9ab0b3a9e6eb8d05ff6002eb81308072a6f85e385e7",
-      "md5": "85be569fe89f58c40f60480313314c67",
-      "header": {
-        "cgb_flag": "0x80",
-        "cartridge_type": "0x10",
-        "rom_size_code": "0x05",
-        "ram_size_code": "0x03",
-        "destination_code": "0x00",
-        "old_licensee_code": "0x33",
-        "version": "0x00",
-        "header_checksum": "0x48",
-        "global_checksum": "0x8A70"
-      }
+      "header": {"title":"POKEMON_GLD","game_code":"AAUJ","maker_code":"01","cgb_flag":"0x80","sgb_flag":"0x03","cartridge_type":"0x10","rom_size_code":"0x05","ram_size_code":"0x03","destination_code":"0x00","old_licensee_code":"0x33","version":"0x00","header_checksum":"0x48","global_checksum":"0x8A70"}
     },
     {
-      "id": "revA",
+      "id": "jp-revA",
+      "region": "Japan",
+      "locale": "ja-JP",
       "reference_filename": "Pocket Monsters Kin (Japan) (Rev A).gbc",
       "size": 1048576,
+      "bank_size": 16384,
+      "bank_count": 64,
+      "md5": "79aece8a042e4fa57aba9455c4d21a97",
       "sha1": "a222402235d484ee8e39f3f31bae57cf13daf585",
       "sha256": "27a07a1d3faf9c6a0b1b60d5e88ee3a4159a751a47b4c46ab09f1202d52bac3e",
-      "md5": "79aece8a042e4fa57aba9455c4d21a97",
-      "header": {
-        "cgb_flag": "0x80",
-        "cartridge_type": "0x10",
-        "rom_size_code": "0x05",
-        "ram_size_code": "0x03",
-        "destination_code": "0x00",
-        "old_licensee_code": "0x33",
-        "version": "0x01",
-        "header_checksum": "0x47",
-        "global_checksum": "0x8460"
-      }
+      "header": {"title":"POKEMON_GLD","game_code":"AAUJ","maker_code":"01","cgb_flag":"0x80","sgb_flag":"0x03","cartridge_type":"0x10","rom_size_code":"0x05","ram_size_code":"0x03","destination_code":"0x00","old_licensee_code":"0x33","version":"0x01","header_checksum":"0x47","global_checksum":"0x8460"}
+    },
+    {
+      "id": "kr",
+      "region": "Korea",
+      "locale": "ko-KR",
+      "reference_filename": "Pocket Monsters Geum (Korea).gbc",
+      "size": 2097152,
+      "bank_size": 16384,
+      "bank_count": 128,
+      "md5": "82bd1d9171e60f147d9eeea13ef07a12",
+      "sha1": "c0ff3999e1093e1af59ef3eea3f1bfd7c1f18a65",
+      "sha256": "9c273e86e6120c6a038160ccb0153b8b20425b84fc08a496281c1d1bcac492f6",
+      "header": {"title":"POKEMON_GLD","game_code":"AAUK","maker_code":"01","cgb_flag":"0xC0","sgb_flag":"0x00","cartridge_type":"0x10","rom_size_code":"0x06","ram_size_code":"0x03","destination_code":"0x01","old_licensee_code":"0x33","version":"0x00","header_checksum":"0x08","global_checksum":"0x778A"}
+    },
+    {
+      "id": "en",
+      "region": "USA, Europe",
+      "locale": "en",
+      "reference_filename": "Pokemon - Gold Version (USA, Europe).gbc",
+      "size": 2097152,
+      "bank_size": 16384,
+      "bank_count": 128,
+      "md5": "a6924ce1f9ad2228e1c6580779b23878",
+      "sha1": "d8b8a3600a465308c9953dfa04f0081c05bdcb94",
+      "sha256": "fb0016d27b1e5374e1ec9fcad60e6628d8646103b5313ca683417f52b97e7e4e",
+      "header": {"title":"POKEMON_GLD","game_code":"AAUE","maker_code":"01","cgb_flag":"0x80","sgb_flag":"0x03","cartridge_type":"0x10","rom_size_code":"0x06","ram_size_code":"0x03","destination_code":"0x01","old_licensee_code":"0x33","version":"0x00","header_checksum":"0x4B","global_checksum":"0x682D"}
+    },
+    {
+      "id": "de",
+      "region": "Germany",
+      "locale": "de-DE",
+      "reference_filename": "Pokemon - Goldene Edition (Germany).gbc",
+      "size": 2097152,
+      "bank_size": 16384,
+      "bank_count": 128,
+      "md5": "7542ec9b695d4fe38adfdaaa57364d83",
+      "sha1": "9254195d461ea942eaaa08cc4b83de3cf82aea0d",
+      "sha256": "542f275f8632ef5265e5cde80a8ba1f0ec11ce714ef9d773088a92680bd17d73",
+      "header": {"title":"POKEMON_GLD","game_code":"AAUD","maker_code":"01","cgb_flag":"0x80","sgb_flag":"0x03","cartridge_type":"0x10","rom_size_code":"0x06","ram_size_code":"0x03","destination_code":"0x01","old_licensee_code":"0x33","version":"0x00","header_checksum":"0x4C","global_checksum":"0xDC97"}
+    },
+    {
+      "id": "fr",
+      "region": "France",
+      "locale": "fr-FR",
+      "reference_filename": "Pokemon - Version Or (France).gbc",
+      "size": 2097152,
+      "bank_size": 16384,
+      "bank_count": 128,
+      "md5": "9af19423c5fa3dbe4fdcc78d2bc7d1c0",
+      "sha1": "c147c0d8c2b71b7628a7233436f5c052b5b17081",
+      "sha256": "6103cadf2ae505f4b489a8a414c8db27a2307d797ddf8a3a848659b591dd4023",
+      "header": {"title":"POKEMON_GLD","game_code":"AAUF","maker_code":"01","cgb_flag":"0x80","sgb_flag":"0x03","cartridge_type":"0x10","rom_size_code":"0x06","ram_size_code":"0x03","destination_code":"0x01","old_licensee_code":"0x33","version":"0x00","header_checksum":"0x4A","global_checksum":"0x6FC6"}
+    },
+    {
+      "id": "it",
+      "region": "Italy",
+      "locale": "it-IT",
+      "reference_filename": "Pokemon - Versione Oro (Italy).gbc",
+      "size": 2097152,
+      "bank_size": 16384,
+      "bank_count": 128,
+      "md5": "89bb59dc49b59b0cd30b7384d9860bb8",
+      "sha1": "032608fe8947b627584a4a0eccc7bf9ad3588426",
+      "sha256": "367e606f82b9e2e16d0cc8011c5ba2df1862da574e57ffd66e786a82af5b6e22",
+      "header": {"title":"POKEMON_GLD","game_code":"AAUI","maker_code":"01","cgb_flag":"0x80","sgb_flag":"0x03","cartridge_type":"0x10","rom_size_code":"0x06","ram_size_code":"0x03","destination_code":"0x01","old_licensee_code":"0x33","version":"0x00","header_checksum":"0x47","global_checksum":"0xCE0C"}
+    },
+    {
+      "id": "es",
+      "region": "Spain",
+      "locale": "es-ES",
+      "reference_filename": "Pokemon - Edicion Oro (Spain).gbc",
+      "size": 2097152,
+      "bank_size": 16384,
+      "bank_count": 128,
+      "md5": "9462bc81907e38c59acccd739690e6f9",
+      "sha1": "162ea54c6a3cff374642e6dd842f9bffac847e7b",
+      "sha256": "7b78e33a348a0729e38ee0fd778cf49b3e07c35d2175ebc74d8f9be41f41455b",
+      "header": {"title":"POKEMON_GLD","game_code":"AAUS","maker_code":"01","cgb_flag":"0x80","sgb_flag":"0x03","cartridge_type":"0x10","rom_size_code":"0x06","ram_size_code":"0x03","destination_code":"0x01","old_licensee_code":"0x33","version":"0x00","header_checksum":"0x3D","global_checksum":"0x9353"}
     }
   ],
-  "comparison": {
-    "rev0_vs_revA_total_different_bytes": 10841,
-    "changed_bank_count": 10,
-    "changed_banks": [
-      {"bank":"00","different_bytes":5,"first_rom_offset":"0x00014C","last_rom_offset":"0x003C6B"},
-      {"bank":"04","different_bytes":5,"first_rom_offset":"0x011ACB","last_rom_offset":"0x0135BC"},
-      {"bank":"05","different_bytes":1,"first_rom_offset":"0x0142CF","last_rom_offset":"0x0142CF"},
-      {"bank":"09","different_bytes":1,"first_rom_offset":"0x024C9F","last_rom_offset":"0x024C9F"},
-      {"bank":"0A","different_bytes":1,"first_rom_offset":"0x029720","last_rom_offset":"0x029720"},
-      {"bank":"0F","different_bytes":2,"first_rom_offset":"0x03E10A","last_rom_offset":"0x03F03A"},
-      {"bank":"14","different_bytes":2,"first_rom_offset":"0x050059","last_rom_offset":"0x050356"},
-      {"bank":"21","different_bytes":2,"first_rom_offset":"0x086629","last_rom_offset":"0x08665D"},
-      {"bank":"23","different_bytes":10821,"first_rom_offset":"0x08CC5D","last_rom_offset":"0x08FC87"},
-      {"bank":"24","different_bytes":1,"first_rom_offset":"0x092023","last_rom_offset":"0x092023"}
-    ]
+  "comparisons": {
+    "jp-rev0_vs_jp-revA": {
+      "total_different_bytes": 10841,
+      "changed_bank_count": 10,
+      "changed_banks": [
+        {"bank":"00","different_bytes":5,"first_rom_offset":"0x00014C","last_rom_offset":"0x003C6B"},
+        {"bank":"04","different_bytes":5,"first_rom_offset":"0x011ACB","last_rom_offset":"0x0135BC"},
+        {"bank":"05","different_bytes":1,"first_rom_offset":"0x0142CF","last_rom_offset":"0x0142CF"},
+        {"bank":"09","different_bytes":1,"first_rom_offset":"0x024C9F","last_rom_offset":"0x024C9F"},
+        {"bank":"0A","different_bytes":1,"first_rom_offset":"0x029720","last_rom_offset":"0x029720"},
+        {"bank":"0F","different_bytes":2,"first_rom_offset":"0x03E10A","last_rom_offset":"0x03F03A"},
+        {"bank":"14","different_bytes":2,"first_rom_offset":"0x050059","last_rom_offset":"0x050356"},
+        {"bank":"21","different_bytes":2,"first_rom_offset":"0x086629","last_rom_offset":"0x08665D"},
+        {"bank":"23","different_bytes":10821,"first_rom_offset":"0x08CC5D","last_rom_offset":"0x08FC87"},
+        {"bank":"24","different_bytes":1,"first_rom_offset":"0x092023","last_rom_offset":"0x092023"}
+      ]
+    }
   }
 }

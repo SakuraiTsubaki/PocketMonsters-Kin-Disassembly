@@ -1,6 +1,7 @@
 ; Korean Gold-specific Bank 00 menu implementation fragments.
-; These replace the ordinary JP/Western window-backup access paths because
-; Korean Gold stores/restores parts of the menu stack through WRAM bank 3.
+; These replace ordinary JP/Western window-stack and clear helpers because
+; Korean Gold moves several operations out of ROM0 and uses WRAM bank 3 for
+; stacked menu metadata.
 
 RestoreTileBackup::
 	farcall_reg Function1fc5a0
@@ -38,4 +39,23 @@ GetWindowStackTop::
 	ld a, $01
 	ldh [rWBK], a
 	ei
+	ret
+
+; Korean-only helper at retail ROM address $1C17.
+; It temporarily raises the menu top border while pushing the window, then
+; restores the caller-visible coordinate.
+Function1c17::
+	call CopyMenuHeader
+	ld a, [wMenuBorderTopCoord]
+	dec a
+	ld [wMenuBorderTopCoord], a
+	call PushWindow
+	ld a, [wMenuBorderTopCoord]
+	inc a
+	ld [wMenuBorderTopCoord], a
+	ret
+
+ClearWindowData::
+; Korean Gold relocates the larger local clear routine out of ROM0.
+	farcall_reg _ClearWindowData
 	ret

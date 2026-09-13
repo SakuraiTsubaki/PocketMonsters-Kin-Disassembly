@@ -23,7 +23,7 @@ de,PlacePKMNText,0x1175,0x1178,3,<PK><MN>@,E1 E2 50
 de,PlacePOKEText,0x1178,0x117B,3,<PO><KE>@,70 71 50
 de,String_Space,0x117B,0x117D,2, @,7F 50
 de,DummiedText,0x117D,0x1180,3,-<LF>@,E3 22 50
-fr,TMCharText,0x113B,0x113D,2,T@,93 50
+fr,TMCharText,0x113A,0x113D,3,CT@,82 93 50
 fr,TrainerCharText,0x113D,0x1146,9,DRESSEUR@,83 91 84 92 92 84 94 91 50
 fr,PCCharText,0x1146,0x1149,3,PC@,8F 82 50
 fr,RocketCharText,0x1149,0x1150,7,ROCKET@,91 8E 82 8A 84 93 50
@@ -35,7 +35,7 @@ fr,PlacePKMNText,0x1165,0x1168,3,<PK><MN>@,E1 E2 50
 fr,PlacePOKEText,0x1168,0x116B,3,<PO><KE>@,70 71 50
 fr,String_Space,0x116B,0x116D,2, @,7F 50
 fr,DummiedText,0x116D,0x116E,1,@,50
-it,TMCharText,0x114A,0x114C,2,T@,93 50
+it,TMCharText,0x1149,0x114C,3,MT@,8C 93 50
 it,TrainerCharText,0x114C,0x1153,7,ALLEN.@,80 8B 8B 84 8D E8 50
 it,PCCharText,0x1153,0x1156,3,PC@,8F 82 50
 it,RocketCharText,0x1156,0x115D,7,ROCKET@,91 8E 82 8A 84 93 50
@@ -47,7 +47,7 @@ it,PlacePKMNText,0x1172,0x1175,3,<PK><MN>@,E1 E2 50
 it,PlacePOKEText,0x1175,0x1178,3,<PO><KE>@,70 71 50
 it,String_Space,0x1178,0x117A,2, @,7F 50
 it,DummiedText,0x117A,0x117D,3,-<LF>@,E3 22 50
-es,TMCharText,0x114D,0x114F,2,T@,93 50
+es,TMCharText,0x114C,0x114F,3,MT@,8C 93 50
 es,TrainerCharText,0x114F,0x1157,8,ENTREN.@,84 8D 93 91 84 8D E8 50
 es,PCCharText,0x1157,0x115A,3,PC@,8F 82 50
 es,RocketCharText,0x115A,0x1161,7,ROCKET@,91 8E 82 8A 84 93 50

@@ -11,9 +11,10 @@ EnemyText::       db "Enem. @"
 PlacePKMNText::   db "<PK><MN>@"
 PlacePOKEText::   db "<PO><KE>@"
 String_Space::    db " @"
+DummiedHyphenText:: db "-<LF>@"
 PlaceJPRouteText::
 PlaceWatashiText::
-PlaceKokoWaText:: db "-<LF>@"
+PlaceKokoWaText:: db "@"
 
 WeekdaySunday::    db "DOMINGO@"
 WeekdayMonday::    db "LUNES@"

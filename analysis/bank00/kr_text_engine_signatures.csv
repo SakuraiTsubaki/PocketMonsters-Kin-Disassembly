@@ -5,6 +5,8 @@ TextboxPalette,0x0F29,0x0F40,23,farcall_reg wrapper for _TextboxPalette,3B E5 F5
 CheckDictDoubleByteDispatch,0x0F7E,0x0F83,5,dispatch bytes below 0x0C to DoubleByteChar,FE 0C DA 29 12
 DoubleByteChar,0x1229,0x1249,32,consume second Hangul byte and farcall PlaceDoubleByteChar,47 13 1A 4F 3B E5 F5 E5 F8 06 36 7F 2B 36 41 2B 36 19 E1 F1 CD 73 2E 33 33 33 CD 80 32 C3 7A 0F
 TextScroll,0x1249,0x1260,23,farcall_reg wrapper for _TextScroll,3B E5 F5 E5 F8 06 36 7F 2B 36 41 2B 36 4E E1 F1 CD 73 2E 33 33 33 C9
+Text_WaitBGMap,0x1260,0x1270,16,temporarily suppress OAM updates while waiting for BG map,C5 F0 DA F5 3E 01 E0 DA CD B9 34 F1 E0 DA C1 C9
+Diacritic,0x1270,0x127B,11,place dakuten or handakuten one row above,F5 E5 78 01 EC FF 09 77 E1 F1 C9
 SetStandardHangulFont,0x1470,0x1480,16,select standard Hangul font rendering,F3 3E 02 E0 70 3E 00 EA 20 D1 3E 01 E0 70 FB C9
 SetInvertedHangulFont,0x1480,0x1490,16,select inverted Hangul font rendering,F3 3E 02 E0 70 3E FF EA 20 D1 3E 01 E0 70 FB C9
 ToggleHangulFont,0x1490,0x14A2,18,toggle Hangul inversion state,F3 3E 02 E0 70 FA 20 D1 2F EA 20 D1 3E 01 E0 70 FB C9

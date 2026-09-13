@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: help verify-reference analyze-bank00 map-bank00-modules test-bank00-vectors status
+.PHONY: help verify-reference analyze-bank00 map-bank00-modules test-bank00-vectors test-bank00-vblank test-bank00-delay status
 
 help:
 	@echo "PocketMonsters-Kin-Disassembly targets"
@@ -8,6 +8,8 @@ help:
 	@echo "  make analyze-bank00 ROMDIR=/path/to/reference-rom-directory"
 	@echo "  make map-bank00-modules ROMDIR=/path/to/reference-rom-directory"
 	@echo "  make test-bank00-vectors ROMDIR=/path/to/reference-rom-directory"
+	@echo "  make test-bank00-vblank ROMDIR=/path/to/reference-rom-directory"
+	@echo "  make test-bank00-delay ROMDIR=/path/to/reference-rom-directory"
 	@echo "  make status"
 
 verify-reference:
@@ -26,11 +28,20 @@ test-bank00-vectors:
 	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
 	$(PYTHON) tests/test_bank00_vectors.py --rom-dir "$(ROMDIR)"
 
+test-bank00-vblank:
+	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
+	$(PYTHON) tests/test_bank00_vblank.py --rom-dir "$(ROMDIR)"
+
+test-bank00-delay:
+	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
+	$(PYTHON) tests/test_bank00_delay.py --rom-dir "$(ROMDIR)"
+
 status:
 	@echo "Disassembly status: 8 Gold reference releases registered."
 	@echo "Japanese Rev 0/Rev A: Banks 00-3F."
 	@echo "Korean/English/German/French/Italian/Spanish: Banks 00-7F."
-	@echo "Bank 00: vectors/header reconstructed; 52 ROM0 module boundaries mapped; source reconstruction in progress."
+	@echo "Bank 00: 52 ROM0 module boundaries mapped."
+	@echo "Bank 00 source: vectors/header + VBlank draft + Delay complete; reconstruction continuing in address order."
 	@echo "Bank-by-bank reconstruction ledger: manifests/bank_status.csv"
 	@echo "Bank 00 module ledger: analysis/bank00/module_status.csv"
 	@echo "Build targets will be enabled as reconstructed source becomes available."

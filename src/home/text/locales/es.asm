@@ -1,6 +1,6 @@
 ; Spanish Bank 00 embedded text-engine strings.
 
-TMCharText::      db "T@"
+TMCharText::      db "MT@"
 TrainerCharText:: db "ENTREN.@"
 PCCharText::      db "PC@"
 RocketCharText::  db "ROCKET@"

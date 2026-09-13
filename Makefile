@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: help verify-reference analyze-bank00 map-bank00-modules map-bank00-text-symbols extract-bank00-western-text test-bank00-vectors test-bank00-vblank test-bank00-delay test-bank00-time-palettes-fade test-bank00-lcd test-bank00-time test-bank00-init test-bank00-serial test-bank00-joypad test-bank00-decompress test-bank00-palettes test-bank00-gfx test-bank00-text-ranges test-bank00-western-text-strings test-bank00-western-text-variants test-bank00-jp-text test-bank00-kr-text test-bank00-kr-text-engine test-bank00-text-all status
+.PHONY: help verify-reference analyze-bank00 map-bank00-modules map-bank00-text-symbols extract-bank00-western-text test-bank00-vectors test-bank00-vblank test-bank00-delay test-bank00-time-palettes-fade test-bank00-lcd test-bank00-time test-bank00-init test-bank00-serial test-bank00-joypad test-bank00-decompress test-bank00-palettes test-bank00-gfx test-bank00-text-ranges test-bank00-western-text-strings test-bank00-western-text-variants test-bank00-jp-text test-bank00-kr-text test-bank00-kr-text-engine test-bank00-text-all test-bank00-video test-bank00-map-objects status
 
 help:
 	@echo "PocketMonsters-Kin-Disassembly targets"
@@ -28,6 +28,8 @@ help:
 	@echo "  make test-bank00-kr-text ROMDIR=/path/to/reference-rom-directory"
 	@echo "  make test-bank00-kr-text-engine ROMDIR=/path/to/reference-rom-directory"
 	@echo "  make test-bank00-text-all ROMDIR=/path/to/reference-rom-directory"
+	@echo "  make test-bank00-video ROMDIR=/path/to/reference-rom-directory"
+	@echo "  make test-bank00-map-objects ROMDIR=/path/to/reference-rom-directory"
 	@echo "  make status"
 
 verify-reference:
@@ -126,15 +128,23 @@ test-bank00-text-all:
 	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
 	$(PYTHON) tests/test_bank00_text_all.py --rom-dir "$(ROMDIR)"
 
+test-bank00-video:
+	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
+	$(PYTHON) tests/test_bank00_video.py --rom-dir "$(ROMDIR)"
+
+test-bank00-map-objects:
+	@test -n "$(ROMDIR)" || (echo "ROMDIR=/path/to/reference-rom-directory is required" && exit 2)
+	$(PYTHON) tests/test_bank00_map_objects.py --rom-dir "$(ROMDIR)"
+
 status:
 	@echo "Disassembly status: 8 Gold reference releases registered."
 	@echo "Japanese Rev 0/Rev A: Banks 00-3F."
 	@echo "Korean/English/German/French/Italian/Spanish: Banks 00-7F."
 	@echo "Bank 00: 52 ROM0 module boundaries mapped."
-	@echo "Bank 00 source reconstructed through gfx; text family reconstruction is in progress."
-	@echo "Western text: exact localized strings/weekdays and all module size deltas accounted for; conditional variant fragments reconstructed."
-	@echo "JP text: Rev 0/Rev A module identity and anchored execution signatures verified."
-	@echo "KR text: strings/weekdays, double-byte dispatch, banked wrappers and Hangul rendering tail verified."
+	@echo "Bank 00 semantic source reconstructed through map_objects; sine is next."
+	@echo "Text JP/KR/Western families: semantic reconstruction complete; physical byte-perfect RGBDS layout still pending."
+	@echo "Video: JP/KR/Western family differences reconstructed and 8-release ROM regression verified."
+	@echo "Map objects: common 0x310-byte semantic source reconstructed and 8-release ROM regression verified."
 	@echo "Bank-by-bank reconstruction ledger: manifests/bank_status.csv"
 	@echo "Bank 00 module ledger: analysis/bank00/module_status.csv"
 	@echo "Full byte-perfect build status remains open until complete RGBDS constants/macros/layout are reconstructed."

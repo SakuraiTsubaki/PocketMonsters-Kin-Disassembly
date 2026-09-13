@@ -1,0 +1,10 @@
+# ROM outputs (never commit ROM binaries)
+*.gb
+*.gbc
+
+# Disposable build scratch
+*.o
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store

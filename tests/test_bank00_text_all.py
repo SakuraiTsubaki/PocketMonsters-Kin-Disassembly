@@ -13,6 +13,7 @@ TESTS = [
     "tests/test_bank00_jp_text.py",
     "tests/test_bank00_kr_text.py",
     "tests/test_bank00_kr_text_engine.py",
+    "tests/test_bank00_text_misc.py",
 ]
 
 

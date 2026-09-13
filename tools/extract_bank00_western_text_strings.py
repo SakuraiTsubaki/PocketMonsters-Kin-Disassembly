@@ -7,12 +7,14 @@ import json
 from pathlib import Path
 
 # Verified first embedded-string address in each western Bank 00 text module.
+# FR/IT/ES begin one byte earlier than the first-pass mapper suggested:
+# French stores "CT@" and Italian/Spanish store "MT@".
 STARTS = {
     "en": 0x113B,
     "de": 0x114C,
-    "fr": 0x113B,
-    "it": 0x114A,
-    "es": 0x114D,
+    "fr": 0x113A,
+    "it": 0x1149,
+    "es": 0x114C,
 }
 
 LABELS = [
@@ -30,9 +32,12 @@ LABELS = [
     "DummiedText",
 ]
 
-CHARMAP: dict[int, str] = {0x50: "@", 0x7F: " ", 0xEA: "é", 0xE8: ".", 0xE3: "-", 0x22: "<LF>", 0x75: "…", 0xE1: "<PK>", 0xE2: "<MN>", 0x70: "<PO>", 0x71: "<KE>", 0xBA: "こ", 0xB3: "う", 0x29: "げ", 0xB7: "き"}
+# Start with ordinary western letters, then overlay special control/Japanese
+# glyphs whose byte values overlap the lower-case range in this mixed charmap.
+CHARMAP: dict[int, str] = {0x50: "@", 0x7F: " ", 0xEA: "é", 0xE8: ".", 0xE3: "-", 0x22: "<LF>", 0x75: "…", 0xE1: "<PK>", 0xE2: "<MN>", 0x70: "<PO>", 0x71: "<KE>"}
 CHARMAP.update({0x80 + i: ch for i, ch in enumerate("ABCDEFGHIJKLMNOPQRSTUVWXYZ")})
 CHARMAP.update({0xA0 + i: ch for i, ch in enumerate("abcdefghijklmnopqrstuvwxyz")})
+CHARMAP.update({0xBA: "こ", 0xB3: "う", 0x29: "げ", 0xB7: "き"})
 
 
 def decode(raw: bytes) -> str:

@@ -85,14 +85,6 @@ ContText::
 .cont:
 	db "<_CONT>@"
 
-DoneText::
-	pop hl
-	ld de, .stop
-	dec de
-	ret
-.stop:
-	text_end
-
 LoadBlinkingCursor::
 	ld a, '▼'
 	ldcoord_a 18, 17

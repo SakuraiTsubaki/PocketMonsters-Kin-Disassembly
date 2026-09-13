@@ -14,3 +14,12 @@ String_Space::    db " @"
 PlaceJPRouteText::
 PlaceWatashiText::
 PlaceKokoWaText:: db "@"
+
+WeekdaySunday::    db "DIMANCHE@"
+WeekdayMonday::    db "LUNDI@"
+WeekdayTuesday::   db "MARDI@"
+WeekdayWednesday:: db "MERCREDI@"
+WeekdayThursday::  db "JEUDI@"
+WeekdayFriday::    db "VENDREDI@"
+WeekdaySaturday::  db "SAMEDI@"
+WeekdaySuffix::    db "@"

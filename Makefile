@@ -12,5 +12,8 @@ verify-reference:
 	$(PYTHON) tools/verify_reference_rom.py "$(ROM)"
 
 status:
-	@echo "Disassembly status: bootstrap complete; Bank 00-3F pending."
-	@echo "Build target will be enabled as reconstructed source becomes available."
+	@echo "Disassembly status: 8 Gold reference releases registered."
+	@echo "Japanese Rev 0/Rev A: Banks 00-3F."
+	@echo "Korean/English/German/French/Italian/Spanish: Banks 00-7F."
+	@echo "Bank-by-bank reconstruction ledger: manifests/bank_status.csv"
+	@echo "Build targets will be enabled as reconstructed source becomes available."

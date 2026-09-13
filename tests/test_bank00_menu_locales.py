@@ -27,9 +27,8 @@ YES_NO = {
     "es":      (0x1CB6, "92 C9 50 8D 8E 50"),      # SÍ / NO
 }
 
-# Localized western Gold inserts an 8-byte position guard at menu+0x205.
-# Immediate value differs by locale and exactly matches the retail ROM.
 WESTERN_GUARD_IMMEDIATE = {"de": 0x0D, "fr": 0x0E, "it": 0x0F, "es": 0x0F}
+KR_YES_NO_BOX = (0x1CBA, bytes.fromhex("01 06 0E")) # lb bc, 14, 6
 
 
 def main() -> int:
@@ -56,6 +55,10 @@ def main() -> int:
 
     assert roms["jp-rev0"][0x1C3E:0x1C45] == roms["jp-revA"][0x1C3E:0x1C45]
 
+    address, expected = KR_YES_NO_BOX
+    assert roms["kr"][address:address + len(expected)] == expected
+    print(f"PASS kr: YesNoBox default geometry at {address:#06x} is b=14,c=6")
+
     for rid, immediate in WESTERN_GUARD_IMMEDIATE.items():
         start, _ = RANGES[rid]
         address = start + 0x205
@@ -64,7 +67,6 @@ def main() -> int:
         assert actual == expected, (rid, hex(address), actual.hex(" "), expected.hex(" "))
         print(f"PASS {rid}: localized Yes/No position guard at {address:#06x}")
 
-    # EN/JP/KR do not contain the localized-western guard at that relative point.
     for rid in ("en", "jp-rev0", "jp-revA", "kr"):
         start, _ = RANGES[rid]
         address = start + 0x205

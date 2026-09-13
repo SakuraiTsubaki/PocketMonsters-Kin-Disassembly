@@ -1,5 +1,5 @@
 bank,start_offset,end_offset,jp_rev_diff_bytes,jp-rev0,jp-revA,kr,en,de,fr,it,es,status,notes
-00,0x000000,0x003FFF,5,pending,pending,pending,pending,pending,pending,pending,pending,pending,
+00,0x000000,0x003FFF,5,in_progress,in_progress,in_progress,in_progress,in_progress,in_progress,in_progress,in_progress,in_progress,Bank 00 cross-release vector/header survey complete; function-boundary mapping in progress
 01,0x004000,0x007FFF,0,pending,pending,pending,pending,pending,pending,pending,pending,pending,
 02,0x008000,0x00BFFF,0,pending,pending,pending,pending,pending,pending,pending,pending,pending,
 03,0x00C000,0x00FFFF,0,pending,pending,pending,pending,pending,pending,pending,pending,pending,

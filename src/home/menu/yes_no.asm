@@ -1,7 +1,11 @@
 ; Localized Bank 00 yes/no box behavior for all tracked Gold releases.
 
 YesNoBox::
+IF DEF(BUILD_KR)
+	lb bc, SCREEN_WIDTH - 6, 6
+ELSE
 	lb bc, SCREEN_WIDTH - 6, 7
+ENDC
 
 PlaceYesNoBox::
 	jr _YesNoBox

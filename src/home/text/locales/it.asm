@@ -1,6 +1,6 @@
 ; Italian Bank 00 embedded text-engine strings.
 
-TMCharText::      db "T@"
+TMCharText::      db "MT@"
 TrainerCharText:: db "ALLEN.@"
 PCCharText::      db "PC@"
 RocketCharText::  db "ROCKET@"

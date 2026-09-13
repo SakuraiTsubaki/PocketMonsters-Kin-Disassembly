@@ -4,10 +4,10 @@ delay,0x032E,0x0343,mapped,complete,no,all 21 bytes accounted for across 8 relea
 time_palettes,0x0343,0x0360,mapped,complete,no,shared semantic source; per-release relocation bytes verified by module SHA-1 regression; full RGBDS assembly verification pending
 fade,0x0360,0x041B,mapped,complete,no,shared semantic source and palette tables; 8-release module SHA-1 regression passes; full RGBDS assembly verification pending
 lcd,0x041B,0x045B,mapped,complete,no,shared source with BUILD_KR LY/VBlank guard; 8-release module SHA-1 regression passes; full RGBDS assembly verification pending
-time,0x045B,0x05B0,mapped,pending,no,
-init,0x05B0,0x06AA,mapped,pending,no,
-serial,0x06AA,0x08DF,mapped,pending,no,
-joypad,0x08DF,0x0AF0,mapped,pending,no,
+time,0x045B,0x05B0,mapped,complete,no,shared source with BUILD_JP FixDays carry difference; 8-release module SHA-1 regression present; full RGBDS assembly verification pending
+init,0x05B0,0x06AA,mapped,complete,no,shared source with BUILD_KR AGB detection and alternate HRAM/BG-map initialization; 8-release module SHA-1 regression present; full RGBDS assembly verification pending
+serial,0x06AA,0x08DF,mapped,complete,no,shared source with BUILD_KR link timing changes; 8-release module SHA-1 regression present; full RGBDS assembly verification pending
+joypad,0x08DF,0x0AF0,mapped,complete,no,shared source with BUILD_JP omissions for $ff auto-input duration and PromptButton auto dispatch; 8-release module SHA-1 regression passes; full RGBDS assembly verification pending
 decompress,0x0AF0,0x0BDF,mapped,pending,no,
 palettes,0x0BDF,0x0D70,mapped,pending,no,
 gfx,0x0D70,0x0EBD,mapped,pending,no,

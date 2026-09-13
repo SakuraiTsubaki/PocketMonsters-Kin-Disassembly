@@ -34,6 +34,14 @@ MODULE_STARTS = [
     ("end", 0x4000),
 ]
 
+# Sequence matching is useful for the first pass, but a localization-specific
+# rewrite can hide a true file boundary inside a low-similarity region. Once a
+# boundary is proven directly from ROM bytes / macro expansion, record it here
+# so rerunning this tool cannot regress to an inferred address.
+BOUNDARY_OVERRIDES = {
+    ("kr", "text"): (0x0ECF, "verified_signature"),
+}
+
 
 def load_manifest(path: Path) -> list[dict]:
     return json.loads(path.read_text(encoding="utf-8"))["releases"]
@@ -117,7 +125,10 @@ def main() -> int:
             row = [module, f"0x{addr:04X}"]
             for rel in releases:
                 rid = rel["id"]
-                if rid == "en":
+                override = BOUNDARY_OVERRIDES.get((rid, module))
+                if override is not None:
+                    mapped, confidence = override
+                elif rid == "en":
                     mapped, confidence = addr, "reference"
                 else:
                     mapped, confidence = map_addr(addr, blocks_by_release[rid])

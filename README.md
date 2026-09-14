@@ -60,3 +60,16 @@ A supported release is complete when:
 ## Current status
 
 Phase 0 bootstrap is complete for all eight project source releases. Bank-by-bank disassembly will proceed across Bank `00`–`7F`, with common code/data separated from language-, region-, and revision-specific differences as they are identified.
+
+## 📚 Documentation
+
+| Document | Purpose |
+| --- | --- |
+| [Documentation Hub](docs/README.md) | Central entry point for project documentation |
+| [Project Status](docs/PROJECT_STATUS.md) | Reconstruction and matching status |
+| [Version Coverage](docs/VERSIONS.md) | Supported releases, revisions, sizes, and hashes |
+| [Disassembly Standards](docs/DISASSEMBLY_STANDARDS.md) | Source reconstruction and provenance standards |
+| [Build and Matching](docs/BUILD_AND_MATCHING.md) | Reproducible build and exact-match workflow |
+| [Verification](docs/VERIFICATION.md) | Evidence levels and matching criteria |
+| [Asset Workflow](docs/ASSET_WORKFLOW.md) | Graphics, sprites, deduplication, manifests, and review batches |
+| [Contributing](CONTRIBUTING.md) | Contribution and pull-request guidance |

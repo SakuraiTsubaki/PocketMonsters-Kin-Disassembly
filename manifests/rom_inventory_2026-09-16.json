@@ -1,0 +1,21 @@
+{
+  "generated_on": "2026-09-16",
+  "rom_binaries_committed": false,
+  "bank_size": 16384,
+  "roms": [
+    {"id":"jp_rev0","size":1048576,"banks":64,"version":0,"sha1":"8814f1039450a5d3684b1389f588ccd7ee7c3436","sha256":"7cfeceae00737a1f0713c9ab0b3a9e6eb8d05ff6002eb81308072a6f85e385e7","header_checksum_valid":true,"global_checksum_valid":true},
+    {"id":"jp_rev_a","size":1048576,"banks":64,"version":1,"sha1":"a222402235d484ee8e39f3f31bae57cf13daf585","sha256":"27a07a1d3faf9c6a0b1b60d5e88ee3a4159a751a47b4c46ab09f1202d52bac3e","header_checksum_valid":true,"global_checksum_valid":true},
+    {"id":"en_us_eu","size":2097152,"banks":128,"version":0,"sha1":"d8b8a3600a465308c9953dfa04f0081c05bdcb94","sha256":"fb0016d27b1e5374e1ec9fcad60e6628d8646103b5313ca683417f52b97e7e4e","header_checksum_valid":true,"global_checksum_valid":true},
+    {"id":"de","size":2097152,"banks":128,"version":0,"sha1":"9254195d461ea942eaaa08cc4b83de3cf82aea0d","sha256":"542f275f8632ef5265e5cde80a8ba1f0ec11ce714ef9d773088a92680bd17d73","header_checksum_valid":true,"global_checksum_valid":true},
+    {"id":"fr","size":2097152,"banks":128,"version":0,"sha1":"c147c0d8c2b71b7628a7233436f5c052b5b17081","sha256":"6103cadf2ae505f4b489a8a414c8db27a2307d797ddf8a3a848659b591dd4023","header_checksum_valid":true,"global_checksum_valid":true},
+    {"id":"it","size":2097152,"banks":128,"version":0,"sha1":"032608fe8947b627584a4a0eccc7bf9ad3588426","sha256":"367e606f82b9e2e16d0cc8011c5ba2df1862da574e57ffd66e786a82af5b6e22","header_checksum_valid":true,"global_checksum_valid":true},
+    {"id":"es","size":2097152,"banks":128,"version":0,"sha1":"162ea54c6a3cff374642e6dd842f9bffac847e7b","sha256":"7b78e33a348a0729e38ee0fd778cf49b3e07c35d2175ebc74d8f9be41f41455b","header_checksum_valid":true,"global_checksum_valid":true},
+    {"id":"ko","size":2097152,"banks":128,"version":0,"sha1":"c0ff3999e1093e1af59ef3eea3f1bfd7c1f18a65","sha256":"9c273e86e6120c6a038160ccb0153b8b20425b84fc08a496281c1d1bcac492f6","header_checksum_valid":true,"global_checksum_valid":true}
+  ],
+  "japanese_revision_diff": {
+    "different_bytes": 10841,
+    "contiguous_ranges": 426,
+    "changed_banks": ["00","04","05","09","0A","0F","14","21","23","24"],
+    "bank_00": {"different_bytes":5,"ranges":["014C-014F","3C6B"]}
+  }
+}

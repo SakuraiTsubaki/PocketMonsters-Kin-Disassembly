@@ -1,0 +1,174 @@
+; Pocket Monsters Kin (Japan) — Bank 00 startup/init path.
+; Japanese path reconstructed from this repository's preserved ROM-derived
+; commit 72a3e231be46ffe15e71b59351e8953df0622ee2.
+;
+; Scope: Japanese Rev.0 / Rev.A. Korean-specific branches intentionally omitted
+; from this clean-start file and will be reconstructed separately when that
+; regional target is reached.
+
+Reset::
+    call InitSound
+    xor a
+    ldh [hMapAnims], a
+    call ClearPalettes
+    ei
+
+    ld hl, wJoypadDisable
+    set JOYPAD_DISABLE_SGB_TRANSFER_F, [hl]
+
+    ld c, 32
+    call DelayFrames
+    jr Init
+
+_Start::
+    cp BOOTUP_A_CGB
+    jr z, .cgb
+    xor a
+    jr .load
+
+.cgb
+    ld a, TRUE
+
+.load
+    ldh [hCGB], a
+
+Init::
+    di
+
+    xor a
+    ldh [rIF], a
+    ldh [rIE], a
+    ldh [rRP], a
+    ldh [rSCX], a
+    ldh [rSCY], a
+    ldh [rSB], a
+    ldh [rSC], a
+    ldh [rWX], a
+    ldh [rWY], a
+    ldh [rBGP], a
+    ldh [rOBP0], a
+    ldh [rOBP1], a
+    ldh [rTMA], a
+    ldh [rTAC], a
+    ld [wBetaTitleSequenceOpeningType], a
+
+    ld a, %100
+    ldh [rTAC], a
+
+.wait
+    ldh a, [rLY]
+    cp LY_VBLANK + 1
+    jr nz, .wait
+
+    xor a
+    ldh [rLCDC], a
+
+    ld hl, STARTOF(WRAM0)
+    ld bc, SIZEOF(WRAM0) + SIZEOF(WRAMX)
+.byte_fill
+    ld [hl], 0
+    inc hl
+    dec bc
+    ld a, b
+    or c
+    jr nz, .byte_fill
+
+    ld sp, wStackTop
+
+    call ClearVRAM
+
+    ; Preserve the boot-time CGB flag while clearing HRAM.
+    ldh a, [hCGB]
+    push af
+    xor a
+    ld hl, STARTOF(HRAM)
+    ld bc, SIZEOF(HRAM)
+    call ByteFill
+    pop af
+    ldh [hCGB], a
+
+    call ClearSprites
+
+    ld a, BANK(WriteOAMDMACodeToHRAM)
+    rst Bankswitch
+    call WriteOAMDMACodeToHRAM
+
+    xor a
+    ldh [hMapAnims], a
+    ldh [hSCX], a
+    ldh [hSCY], a
+    ldh [rJOYP], a
+
+    ld a, STAT_MODE_0
+    ldh [rSTAT], a
+
+    ld a, SCREEN_HEIGHT_PX
+    ldh [hWY], a
+    ldh [rWY], a
+
+    ld a, WX_OFS
+    ldh [hWX], a
+    ldh [rWX], a
+
+    ld a, CONNECTION_NOT_ESTABLISHED
+    ldh [hSerialConnectionStatus], a
+
+    ld h, HIGH(vBGMap0)
+    call BlankBGMap
+    ld h, HIGH(vBGMap1)
+    call BlankBGMap
+
+    callfar InitCGBPals
+
+    ld a, HIGH(vBGMap1)
+    ldh [hBGMapAddress + 1], a
+    xor a
+    ldh [hBGMapAddress], a
+
+    farcall StartClock
+
+    ld a, RAMG_SRAM_ENABLE
+    ld [rRAMG], a
+    ld a, RAMG_SRAM_DISABLE
+    ld [rRTCLATCH], a
+    ld [rRAMG], a
+
+    ld a, LCDC_DEFAULT
+    ldh [rLCDC], a
+
+    ld a, IE_DEFAULT
+    ldh [rIE], a
+    ei
+
+    call DelayFrame
+    predef InitSGBBorder
+
+    call InitSound
+    xor a
+    ld [wMapMusic], a
+    jp GameInit
+
+ClearVRAM::
+    ld hl, STARTOF(VRAM)
+    ld bc, SIZEOF(VRAM)
+    xor a
+    call ByteFill
+    ret
+
+BlankBGMap::
+    ld a, '　'
+    jr FillBGMap
+
+FillBGMap_l::
+    ld a, l
+
+FillBGMap::
+    ld de, vBGMap1 - vBGMap0
+    ld l, e
+.loop
+    ld [hli], a
+    dec e
+    jr nz, .loop
+    dec d
+    jr nz, .loop
+    ret

@@ -29,7 +29,7 @@ SECTION "ROM0 RST $28", ROM0[$0028]
     ld e, a
     ld d, $00
     add hl, de
-    add hl, hl
+    add hl, de
     ld a, [hli]
     ld h, [hl]
     ld l, a

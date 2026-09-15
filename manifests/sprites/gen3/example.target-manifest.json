@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "species": {
+    "id": 1,
+    "name": "example"
+  },
+  "source": {
+    "generation": 2,
+    "game": "Pocket Monsters Kin",
+    "manifest_batch": null,
+    "front": {
+      "path": "gfx/pokemon/example/front.png",
+      "png_sha256": null,
+      "raw_2bpp_sha256": null,
+      "compressed_2bpp_sha256": null,
+      "native_tiles": null
+    },
+    "back": {
+      "path": "gfx/pokemon/example/back.png",
+      "png_sha256": null,
+      "raw_2bpp_sha256": null,
+      "compressed_2bpp_sha256": null,
+      "native_tiles": [6, 6]
+    }
+  },
+  "target": {
+    "standard": "Generation III battle sprite",
+    "status": "planned",
+    "verification": "Unverified",
+    "front": {
+      "canvas": [64, 64],
+      "bbox": null,
+      "presentation_size": null,
+      "y_offset": null,
+      "reference": null,
+      "adaptation_method": null,
+      "manual_pixel_edits": null,
+      "files": {
+        "png": "gfx/targets/gen3/pokemon/example/front.png",
+        "4bpp": "gfx/targets/gen3/pokemon/example/front.4bpp",
+        "4bpp_lz": "gfx/targets/gen3/pokemon/example/front.4bpp.lz"
+      }
+    },
+    "back": {
+      "canvas": [64, 64],
+      "bbox": null,
+      "presentation_size": null,
+      "y_offset": null,
+      "reference": null,
+      "adaptation_method": null,
+      "manual_pixel_edits": null,
+      "files": {
+        "png": "gfx/targets/gen3/pokemon/example/back.png",
+        "4bpp": "gfx/targets/gen3/pokemon/example/back.4bpp",
+        "4bpp_lz": "gfx/targets/gen3/pokemon/example/back.4bpp.lz"
+      }
+    },
+    "palette": {
+      "transparent_index": 0,
+      "max_entries": 16,
+      "normal": {
+        "source": "gfx/targets/gen3/pokemon/example/normal.pal",
+        "binary": "gfx/targets/gen3/pokemon/example/normal.gbapal",
+        "compressed": "gfx/targets/gen3/pokemon/example/normal.gbapal.lz"
+      },
+      "shiny": {
+        "source": "gfx/targets/gen3/pokemon/example/shiny.pal",
+        "binary": "gfx/targets/gen3/pokemon/example/shiny.gbapal",
+        "compressed": "gfx/targets/gen3/pokemon/example/shiny.gbapal.lz"
+      }
+    }
+  },
+  "hashes": {},
+  "validation": {
+    "png_64x64": false,
+    "indexed_color": false,
+    "index0_transparent": false,
+    "palette_le_16": false,
+    "front_4bpp_2048_bytes": false,
+    "back_4bpp_2048_bytes": false,
+    "graphics_lz_roundtrip": false,
+    "palette_binary_verified": false,
+    "sha256_verified": false,
+    "visual_review": false
+  },
+  "notes": []
+}

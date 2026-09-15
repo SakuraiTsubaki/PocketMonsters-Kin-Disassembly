@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Kin",
+  "platform": "Game Boy Color",
+  "targets": [
+    {
+      "id": "jpn-gold-rev0",
+      "region": "Japan",
+      "language": "Japanese",
+      "revision": "Rev.0",
+      "sha1": "8814f1039450a5d3684b1389f588ccd7ee7c3436",
+      "md5": "85be569fe89f58c40f60480313314c67",
+      "verification": "external-reference",
+      "local_rom_verified": false
+    },
+    {
+      "id": "jpn-gold-rev1",
+      "region": "Japan",
+      "language": "Japanese",
+      "revision": "Rev.1 / Rev A",
+      "sha1": "a222402235d484ee8e39f3f31bae57cf13daf585",
+      "md5": "79aece8a042e4fa57aba9455c4d21a97",
+      "verification": "external-reference",
+      "local_rom_verified": false
+    }
+  ],
+  "reference_sources": [
+    "https://github.com/Narishma-gb/pokesilver",
+    "https://tasvideos.org/Games/294/Versions/List"
+  ],
+  "notes": [
+    "Hashes are reference identifiers only until matched against a locally supplied ROM dump.",
+    "ROM binaries are never committed to this repository.",
+    "Rev.0 and Rev.1 are tracked as distinct targets; equivalence must not be assumed."
+  ]
+}

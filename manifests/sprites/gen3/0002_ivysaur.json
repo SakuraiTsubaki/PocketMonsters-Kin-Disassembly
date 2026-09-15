@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "species": {"id": 2, "name": "ivysaur"},
+  "source": {
+    "generation": 2,
+    "game": "Pocket Monsters Kin",
+    "manifest_batch": "0001",
+    "shared_by": ["jp-rev0", "jp-revA", "kr", "en", "de", "fr", "it", "es"],
+    "front": {
+      "path": "gfx/pokemon/ivysaur/front.png",
+      "png_sha256": "cc50d1be893f5f0ff6870c1235216eb9fa9167885cb1c7d37546bd89d67a2946",
+      "raw_2bpp_sha256": "70cc6dbf4f11ef7911640c73679e87b80622473278f349bfcf2286942da30b26",
+      "compressed_2bpp_sha256": "18ce2e98ba96003fc2392571c1a46727f68ddd5c196b3d3e1dc4557bb0c7b900",
+      "native_tiles": [6, 6]
+    },
+    "back": {
+      "path": "gfx/pokemon/ivysaur/back.png",
+      "png_sha256": "102cce891339928cfe178a73a63c3cdfc672a18ea5311cf79b787d659b94dbfa",
+      "raw_2bpp_sha256": "bcd8d8a5c806ffd990f68ae84ed689fc6a6bcb3b1771ccddc3d6323161f2c24d",
+      "compressed_2bpp_sha256": "c422079d7364abe5af596fb6223936f5c717593f1a892d2f9902749722ffb5a2",
+      "native_tiles": [6, 6]
+    }
+  },
+  "target": {
+    "standard": "Generation III battle sprite",
+    "status": "source-audited",
+    "verification": "Observed",
+    "front": {
+      "canvas": [64, 64],
+      "bbox": null,
+      "presentation_size": [48, 48],
+      "y_offset": 10,
+      "reference": "pret/pokefirered gMonFrontPicCoords SPECIES_IVYSAUR",
+      "adaptation_method": "planned Gen II up-adaptation using FireRed/LeafGreen presentation coordinates as a reference envelope",
+      "manual_pixel_edits": null,
+      "files": {
+        "png": "gfx/targets/gen3/pokemon/ivysaur/front.png",
+        "4bpp": "gfx/targets/gen3/pokemon/ivysaur/front.4bpp",
+        "4bpp_lz": "gfx/targets/gen3/pokemon/ivysaur/front.4bpp.lz"
+      }
+    },
+    "back": {
+      "canvas": [64, 64],
+      "bbox": null,
+      "presentation_size": [56, 48],
+      "y_offset": 10,
+      "reference": "pret/pokefirered gMonBackPicCoords SPECIES_IVYSAUR",
+      "adaptation_method": "planned Gen II up-adaptation using FireRed/LeafGreen presentation coordinates as a reference envelope",
+      "manual_pixel_edits": null,
+      "files": {
+        "png": "gfx/targets/gen3/pokemon/ivysaur/back.png",
+        "4bpp": "gfx/targets/gen3/pokemon/ivysaur/back.4bpp",
+        "4bpp_lz": "gfx/targets/gen3/pokemon/ivysaur/back.4bpp.lz"
+      }
+    },
+    "palette": {
+      "transparent_index": 0,
+      "max_entries": 16,
+      "normal": {
+        "source": "gfx/targets/gen3/pokemon/ivysaur/normal.pal",
+        "binary": "gfx/targets/gen3/pokemon/ivysaur/normal.gbapal",
+        "compressed": "gfx/targets/gen3/pokemon/ivysaur/normal.gbapal.lz"
+      },
+      "shiny": {
+        "source": "gfx/targets/gen3/pokemon/ivysaur/shiny.pal",
+        "binary": "gfx/targets/gen3/pokemon/ivysaur/shiny.gbapal",
+        "compressed": "gfx/targets/gen3/pokemon/ivysaur/shiny.gbapal.lz"
+      }
+    }
+  },
+  "hashes": {},
+  "validation": {
+    "png_64x64": false,
+    "indexed_color": false,
+    "index0_transparent": false,
+    "palette_le_16": false,
+    "front_4bpp_2048_bytes": false,
+    "back_4bpp_2048_bytes": false,
+    "graphics_lz_roundtrip": false,
+    "palette_binary_verified": false,
+    "sha256_verified": false,
+    "visual_review": false
+  },
+  "notes": [
+    "Native Gold front sprite is 6x6 tiles; native back sprite is 6x6 tiles.",
+    "Target canvas is fixed at 64x64; presentation_size is separate logical display metadata.",
+    "No target pixel art has been generated yet."
+  ]
+}

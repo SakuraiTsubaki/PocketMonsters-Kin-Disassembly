@@ -1,6 +1,0 @@
-symbol,start,end_exclusive,size,role,hex_signature
-RestoreTileBackup,0x1B13,0x1B2A,23,banked tile-backup restore wrapper,3B E5 F5 E5 F8 06 36 7F 2B 36 45 2B 36 A0 E1 F1 CD 73 2E 33 33 33 C9
-PopWindow,0x1B2A,0x1B40,22,copy stacked menu header through WRAM bank 3,F3 3E 03 E0 70 06 10 11 8D CE 3A 12 13 05 20 FA 3E 01 E0 70 FB C9
-GetWindowStackTop,0x1B6B,0x1B80,21,read stacked pointer through WRAM bank 3,21 7D CE 2A 66 6F 23 F3 3E 03 E0 70 2A 66 6F 3E 01 E0 70 FB C9
-Function1c17,0x1C17,0x1C2C,21,Korean-only temporary menu-top adjustment,CD 2C 1C FA 8E CE 3D EA 8E CE CD F0 1A FA 8E CE 3C EA 8E CE C9
-ClearWindowData,0x1EA5,0x1EBC,23,banked clear-window-data wrapper,3B E5 F5 E5 F8 06 36 7F 2B 36 46 2B 36 1E E1 F1 CD 73 2E 33 33 33 C9

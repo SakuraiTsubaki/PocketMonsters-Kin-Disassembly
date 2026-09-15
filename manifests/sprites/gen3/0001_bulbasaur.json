@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "species": {"id": 1, "name": "bulbasaur"},
+  "source": {
+    "generation": 2,
+    "game": "Pocket Monsters Kin",
+    "manifest_batch": "0001",
+    "shared_by": ["jp-rev0", "jp-revA", "kr", "en", "de", "fr", "it", "es"],
+    "front": {
+      "path": "gfx/pokemon/bulbasaur/front.png",
+      "png_sha256": "2496a206c5e32c927bd2877ec2436d47be8b0761793926759faf23df3e9f3fd7",
+      "raw_2bpp_sha256": "da3750cd88eadd455c3cc34d40dfeac288746cb4e8e95b2e03dcc820c4b500fe",
+      "compressed_2bpp_sha256": "94b9b685bb9a98cc60a4bea8adbea976a237624c9a4e49f3a443834ba341791e",
+      "native_tiles": [5, 5]
+    },
+    "back": {
+      "path": "gfx/pokemon/bulbasaur/back.png",
+      "png_sha256": "c5227785e6653c3edc3280d5ef536289f2b6df31d8abeabad47c758bcbe9d18d",
+      "raw_2bpp_sha256": "7c36ff4dc980d7319c28c176f05660f2423fad7accc8192045399bc920033d4c",
+      "compressed_2bpp_sha256": "ded55acc60bfa671cd8223d3c5b80d44abf306268ca879b0293efdd7f8e727c7",
+      "native_tiles": [6, 6]
+    }
+  },
+  "target": {
+    "standard": "Generation III battle sprite",
+    "status": "source-audited",
+    "verification": "Observed",
+    "front": {
+      "canvas": [64, 64],
+      "bbox": null,
+      "presentation_size": [40, 40],
+      "y_offset": 16,
+      "reference": "pret/pokefirered gMonFrontPicCoords SPECIES_BULBASAUR",
+      "adaptation_method": "planned Gen II up-adaptation using FireRed/LeafGreen presentation coordinates as a reference envelope",
+      "manual_pixel_edits": null,
+      "files": {
+        "png": "gfx/targets/gen3/pokemon/bulbasaur/front.png",
+        "4bpp": "gfx/targets/gen3/pokemon/bulbasaur/front.4bpp",
+        "4bpp_lz": "gfx/targets/gen3/pokemon/bulbasaur/front.4bpp.lz"
+      }
+    },
+    "back": {
+      "canvas": [64, 64],
+      "bbox": null,
+      "presentation_size": [48, 32],
+      "y_offset": 16,
+      "reference": "pret/pokefirered gMonBackPicCoords SPECIES_BULBASAUR",
+      "adaptation_method": "planned Gen II up-adaptation using FireRed/LeafGreen presentation coordinates as a reference envelope",
+      "manual_pixel_edits": null,
+      "files": {
+        "png": "gfx/targets/gen3/pokemon/bulbasaur/back.png",
+        "4bpp": "gfx/targets/gen3/pokemon/bulbasaur/back.4bpp",
+        "4bpp_lz": "gfx/targets/gen3/pokemon/bulbasaur/back.4bpp.lz"
+      }
+    },
+    "palette": {
+      "transparent_index": 0,
+      "max_entries": 16,
+      "normal": {
+        "source": "gfx/targets/gen3/pokemon/bulbasaur/normal.pal",
+        "binary": "gfx/targets/gen3/pokemon/bulbasaur/normal.gbapal",
+        "compressed": "gfx/targets/gen3/pokemon/bulbasaur/normal.gbapal.lz"
+      },
+      "shiny": {
+        "source": "gfx/targets/gen3/pokemon/bulbasaur/shiny.pal",
+        "binary": "gfx/targets/gen3/pokemon/bulbasaur/shiny.gbapal",
+        "compressed": "gfx/targets/gen3/pokemon/bulbasaur/shiny.gbapal.lz"
+      }
+    }
+  },
+  "hashes": {},
+  "validation": {
+    "png_64x64": false,
+    "indexed_color": false,
+    "index0_transparent": false,
+    "palette_le_16": false,
+    "front_4bpp_2048_bytes": false,
+    "back_4bpp_2048_bytes": false,
+    "graphics_lz_roundtrip": false,
+    "palette_binary_verified": false,
+    "sha256_verified": false,
+    "visual_review": false
+  },
+  "notes": [
+    "Native Gold front sprite is 5x5 tiles; native back sprite is 6x6 tiles.",
+    "Target canvas is fixed at 64x64, while presentation_size records the Generation III logical display envelope and is not the PNG file dimension.",
+    "No target pixel art has been generated yet."
+  ]
+}

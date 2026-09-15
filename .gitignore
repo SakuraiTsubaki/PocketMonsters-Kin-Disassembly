@@ -30,6 +30,9 @@ dumps/
 .local/
 .cache/
 
+# Generated INCBIN bootstrap
+src/banks.asm
+
 # Build output
 build/
 out/

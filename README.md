@@ -1,6 +1,6 @@
 # Pocket Monsters Kin — Disassembly
 
-![Status](https://img.shields.io/badge/status-initial_setup-lightgrey)
+![Status](https://img.shields.io/badge/status-bank_00_analysis-blue)
 ![Project](https://img.shields.io/badge/project-disassembly-blue)
 ![ROMs](https://img.shields.io/badge/ROM_binaries-not_included-success)
 
@@ -15,9 +15,13 @@ Disassembly and source-reconstruction project for **Pocket Monsters Kin / Pokém
 
 ## 🚧 Status
 
-This repository is in its **initial setup** stage. Source reconstruction and documentation will be added progressively.
+The exact-match RGBDS baseline workflow is active and **Bank 00 is open for ROM-grounded reconstruction**. Eight supplied Gold ROM images have been locally fingerprinted; Japanese Rev.0 and Rev.1 are the current direct reconstruction targets.
 
-## 🗂️ Planned scope
+The first Bank 00 reset/RST/interrupt/entry bytes have been decoded and recorded as **Observed** evidence. They are not considered **Matched** source until they assemble, link, and reproduce each selected retail revision byte-for-byte.
+
+See [Project status](docs/PROJECT_STATUS.md) and [Bank 00 reconstruction log](analysis/banks/bank00.md) for the current verification state.
+
+## 🗂️ Scope
 
 - ROM, bank, section, and code analysis
 - Game data structures
@@ -29,21 +33,27 @@ This repository is in its **initial setup** stage. Source reconstruction and doc
 
 ## 📌 Repository policy
 
-ROM images and redistributed ROM binaries are **not included**. The repository is intended for reconstructed source, extracted/recreated project data, tooling, analysis, and documentation.
+ROM images and rebuilt playable ROM binaries are **not included**. The repository contains reconstructed source, extracted/recreated project data, tooling, analysis, documentation, and reproducible verification metadata.
+
+Unknown bytes remain local `INCBIN` ranges until understood. Revision or regional differences are preserved rather than normalized away.
 
 ## 🧭 Roadmap
 
-- [ ] Establish baseline version/revision inventory
-- [ ] Map ROM, bank, section, and data structures
-- [ ] Begin source reconstruction
-- [ ] Document assets, scripts, and formats
-- [ ] Add build, matching, verification, and reproducibility workflow
+- [x] Establish the supplied baseline version/revision inventory
+- [x] Open Bank 00 and record revision-scoped evidence
+- [ ] Produce the first RGBDS source replacement that exactly matches both selected Japanese revisions
+- [ ] Continue bank/section/data-structure mapping
+- [ ] Expand source reconstruction bank by bank
+- [ ] Document assets, scripts, formats, and regional/revision differences
+- [ ] Expand regression and reproducibility checks
 
 ## 📚 Documentation
 
 | Document | Purpose |
 | --- | --- |
 | [Project status](docs/PROJECT_STATUS.md) | Current stage, coverage, validation level, and next milestones |
+| [Bank 00 log](analysis/banks/bank00.md) | Current Bank 00 fingerprints, observations, revision differences, and next source step |
+| [Disassembly baseline](docs/DISASSEMBLY_BASELINE.md) | Exact-match local-ROM reconstruction workflow |
 | [Roadmap](docs/ROADMAP.md) | Recommended disassembly phases and long-term progression |
 | [Version coverage](docs/VERSIONS.md) | Regions, languages, revisions, releases, builds, and hashes |
 | [Research guide](docs/RESEARCH_GUIDE.md) | Evidence, confidence, and research-recording workflow |
@@ -53,13 +63,13 @@ ROM images and redistributed ROM binaries are **not included**. The repository i
 
 ## 🧱 Repository structure
 
-As real project material is reconstructed, the repository may grow into areas such as `asm/`, `data/`, `assets/`, `tools/`, `tests/`, and `manifests/`. Empty directory trees are not created only for appearance, and platform-specific structure should follow verified target architecture rather than another generation's layout.
+The repository grows only when verified project material exists. Long-term areas may include `asm/`, `data/`, `assets/`, `tools/`, `tests/`, and `manifests/`; target architecture and verified evidence determine the detailed layout.
 
-See [Repository Structure](docs/REPOSITORY_STRUCTURE.md) for the full organization policy.
+See [Repository Structure](docs/REPOSITORY_STRUCTURE.md) for the organization policy.
 
 ## 🔬 Research and verification
 
-Research findings should identify the relevant target version or revision and clearly separate hypotheses from observed, reproduced, or matched results. Use the repository's Research and Verification issue templates when tracking substantial findings.
+Research findings identify the relevant target version/revision and separate hypotheses from **Observed**, **Reproduced**, and **Matched** results. Exact source reconstruction requires assembly/link success plus byte-identical comparison against the selected local retail image.
 
 ## 🤝 Contributing
 

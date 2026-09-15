@@ -1,8 +1,7 @@
 ; Pocket Monsters Kin disassembly entry point.
-; Japanese Rev 0 is the default build; define REV_A for Japanese Rev A.
+;
+; Stage 0 is an exact INCBIN baseline generated from a local, untracked ROM.
+; As reconstruction advances, ranges in src/banks.asm are replaced by named
+; source/data includes while byte-identical verification remains mandatory.
 
-IF DEF(REV_A)
-    INCLUDE "src/jp/rev_a/banks.asm"
-ELSE
-    INCLUDE "src/jp/rev0/banks.asm"
-ENDC
+INCLUDE "src/banks.asm"

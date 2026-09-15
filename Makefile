@@ -1,38 +1,35 @@
 PYTHON ?= python3
 RGBASM ?= rgbasm
 RGBLINK ?= rgblink
+
+ROM ?= baserom.gbc
 BUILD_DIR ?= build
+TARGET ?= pocketmonsters-kin
+BANKS_ASM := src/banks.asm
+OBJECT := $(BUILD_DIR)/main.o
+OUTPUT := $(BUILD_DIR)/$(TARGET).gbc
 
-ROM_REV0 ?= baserom.gbc
-ROM_REVA ?= baserom_rev_a.gbc
+.PHONY: all bootstrap inspect verify clean
 
-.PHONY: all rev0 reva verify-rev0 verify-reva clean
+all: $(OUTPUT) verify
 
-all: rev0 reva
+bootstrap: $(BANKS_ASM)
 
-$(BUILD_DIR):
-	@mkdir -p $@
+inspect:
+	$(PYTHON) tools/inspect_rom.py $(ROM) --json out/rom-report.json
 
-$(BUILD_DIR)/kin-rev0.o: main.asm src/common/bank00_vectors.asm src/jp/rev0/banks.asm | $(BUILD_DIR)
+$(BANKS_ASM): $(ROM) tools/bootstrap_incbin.py
+	$(PYTHON) tools/bootstrap_incbin.py $(ROM) --output $(BANKS_ASM) --manifest out/incbin-banks.json
+
+$(OBJECT): main.asm $(BANKS_ASM)
+	@mkdir -p $(BUILD_DIR)
 	$(RGBASM) -o $@ main.asm
 
-$(BUILD_DIR)/kin-rev0.gbc: $(BUILD_DIR)/kin-rev0.o
+$(OUTPUT): $(OBJECT)
 	$(RGBLINK) -o $@ $<
 
-$(BUILD_DIR)/kin-reva.o: main.asm src/common/bank00_vectors.asm src/jp/rev_a/banks.asm | $(BUILD_DIR)
-	$(RGBASM) -DREV_A=1 -o $@ main.asm
-
-$(BUILD_DIR)/kin-reva.gbc: $(BUILD_DIR)/kin-reva.o
-	$(RGBLINK) -o $@ $<
-
-rev0: $(BUILD_DIR)/kin-rev0.gbc verify-rev0
-reva: $(BUILD_DIR)/kin-reva.gbc verify-reva
-
-verify-rev0: $(BUILD_DIR)/kin-rev0.gbc
-	$(PYTHON) tools/verify_match.py $(ROM_REV0) $<
-
-verify-reva: $(BUILD_DIR)/kin-reva.gbc
-	$(PYTHON) tools/verify_match.py $(ROM_REVA) $<
+verify: $(OUTPUT)
+	$(PYTHON) tools/verify_match.py $(ROM) $(OUTPUT)
 
 clean:
-	rm -rf $(BUILD_DIR) out
+	rm -rf $(BUILD_DIR) out $(BANKS_ASM)

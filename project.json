@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SakuraiTsubaki/Disassembly/main/schemas/project.schema.json",
+  "schema_version": 1,
+  "id": "kin",
+  "repository": "SakuraiTsubaki/PocketMonsters-Kin-Disassembly",
+  "title": "Pocket Monsters Kin / Pokémon Gold",
+  "platform": "Game Boy / Game Boy Color compatible",
+  "cpu": "Sharp SM83",
+  "architecture": "gb-sm83",
+  "family": "generation-ii",
+  "status": "foundation",
+  "releases": []
+}

@@ -1,12 +1,13 @@
 # Research
 
-Research for **Pocket Monsters Kin / Pokémon Gold** belongs here.
+Research here is specific to **Pocket Monsters Kin / Pokémon Gold**. The release matrix starts empty on
+purpose: no hash is accepted without independent verification.
 
-Initial priorities:
+Priorities:
 
-- establish the release and revision hash matrix;
-- map ROM/RAM banking, entry points, and code/data boundaries;
-- document compression, text, graphics, map, script, and audio formats.
+- [ ] verify language and revision baselines
+- [ ] map ROM and RAM banking behavior
+- [ ] classify compression, text, graphics, maps, scripts, and audio
 
-Each note records sources, verified input hashes, procedure, evidence,
-confidence, and unresolved questions. Copyrighted binary inputs stay local.
+Use `templates/note.md` and follow the shared method in
+`SakuraiTsubaki/Disassembly`.

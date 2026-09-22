@@ -1,0 +1,6 @@
+{
+  "$schema":"https://raw.githubusercontent.com/SakuraiTsubaki/Disassembly/main/schemas/analysis-manifest.schema.json","schema_version":1,"id":"kin-release-header-report","targets":["SakuraiTsubaki/PocketMonsters-Kin-Disassembly"],"generator":{"name":"SakuraiTsubaki/Disassembly tools/inspect_gb_rom.py","version":"1.0.1"},"command":"python tools/inspect_gb_rom.py path/to/legally-obtained-input --require-valid","inputs":[
+    {"size":1048576,"sha256":"7cfeceae00737a1f0713c9ab0b3a9e6eb8d05ff6002eb81308072a6f85e385e7"},{"size":1048576,"sha256":"27a07a1d3faf9c6a0b1b60d5e88ee3a4159a751a47b4c46ab09f1202d52bac3e"},{"size":2097152,"sha256":"9c273e86e6120c6a038160ccb0153b8b20425b84fc08a496281c1d1bcac492f6"},{"size":2097152,"sha256":"fb0016d27b1e5374e1ec9fcad60e6628d8646103b5313ca683417f52b97e7e4e"},{"size":2097152,"sha256":"542f275f8632ef5265e5cde80a8ba1f0ec11ce714ef9d773088a92680bd17d73"},{"size":2097152,"sha256":"7b78e33a348a0729e38ee0fd778cf49b3e07c35d2175ebc74d8f9be41f41455b"},{"size":2097152,"sha256":"6103cadf2ae505f4b489a8a414c8db27a2307d797ddf8a3a848659b591dd4023"},{"size":2097152,"sha256":"367e606f82b9e2e16d0cc8011c5ba2df1862da574e57ffd66e786a82af5b6e22"}
+  ],"outputs":[{"path":"analysis/kin-release-header-report.json","sha256":"5baf4db4dfcc55278e911caf5fa695236601184327a4a7b5f0c425e58d4e3c2d"}]
+}
+

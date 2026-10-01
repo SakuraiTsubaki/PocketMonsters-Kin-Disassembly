@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-01",
+  "generator": "SakuraiTsubaki/Disassembly tools/extract_gb_lz_2bpp.py",
+  "origin_reference": "kin-jp-rev0",
+  "language_priority": ["ja", "ko", "en", "de", "fr", "it", "es"],
+  "source_reference": {
+    "repository": "pret/pokegold",
+    "commit": "62388c7204e5d13aa05b4231e220b6760584d1b5",
+    "code": ["engine/movie/title.asm", "gfx/misc.asm"],
+    "english_byte_match": true
+  },
+  "artifacts": [
+    {"release":"kin-jp-rev0","language":"ja","part":"combined","report":"analysis/kin-jp-rev0-title-logo.json","png":"graphics/title/title-logo-jp.png","loader_offset":"0x6469"},
+    {"release":"kin-jp-rev1","language":"ja","part":"combined","report":"analysis/kin-jp-rev1-title-logo.json","png":"graphics/title/title-logo-jp.png","loader_offset":"0x6469"},
+    {"release":"gold-ko-rev0","language":"ko","part":"combined","report":"analysis/kin-ko-title-logo.json","png":"graphics/title/title-logo-ko.png","loader_offset":"0x6355"},
+    {"release":"gold-en-rev0","language":"en","part":"bottom","report":"analysis/kin-en-title-logo-bottom.json","png":"graphics/title/title-logo-bottom-en.png","loader_offset":"0x62c0"},
+    {"release":"gold-en-rev0","language":"en","part":"top","report":"analysis/kin-en-title-logo-top.json","png":"graphics/title/title-logo-top-global.png","loader_offset":"0x62cb"},
+    {"release":"gold-de-rev0","language":"de","part":"bottom","report":"analysis/kin-de-title-logo-bottom.json","png":"graphics/title/title-logo-bottom-de.png","loader_offset":"0x62f7"},
+    {"release":"gold-de-rev0","language":"de","part":"top","report":"analysis/kin-de-title-logo-top.json","png":"graphics/title/title-logo-top-global.png","loader_offset":"0x6302"},
+    {"release":"gold-fr-rev0","language":"fr","part":"bottom","report":"analysis/kin-fr-title-logo-bottom.json","png":"graphics/title/title-logo-bottom-fr.png","loader_offset":"0x62f5"},
+    {"release":"gold-fr-rev0","language":"fr","part":"top","report":"analysis/kin-fr-title-logo-top.json","png":"graphics/title/title-logo-top-global.png","loader_offset":"0x6300"},
+    {"release":"gold-it-rev0","language":"it","part":"bottom","report":"analysis/kin-it-title-logo-bottom.json","png":"graphics/title/title-logo-bottom-it.png","loader_offset":"0x62f2"},
+    {"release":"gold-it-rev0","language":"it","part":"top","report":"analysis/kin-it-title-logo-top.json","png":"graphics/title/title-logo-top-global.png","loader_offset":"0x62fd"},
+    {"release":"gold-es-rev0","language":"es","part":"bottom","report":"analysis/kin-es-title-logo-bottom.json","png":"graphics/title/title-logo-bottom-es.png","loader_offset":"0x6308"},
+    {"release":"gold-es-rev0","language":"es","part":"top","report":"analysis/kin-es-title-logo-top.json","png":"graphics/title/title-logo-top-global.png","loader_offset":"0x6313"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "rom_size": 2097152,
+  "rom_sha256": "9c273e86e6120c6a038160ccb0153b8b20425b84fc08a496281c1d1bcac492f6",
+  "source_offset": 1970176,
+  "source_length": 4096,
+  "source_sha256": "5c085e935a65a782f7df17a7f2f43cbab5e770fb401dac1b7976547ae6074869",
+  "format": "game-boy-1bpp-8x8-tiles",
+  "tile_count": 512,
+  "tiles_per_row": 16,
+  "logical_width": 128,
+  "logical_height": 256,
+  "png_sha256": "1bf5d7772b3ea93d7ffd39b450a762a394a9ea09a5229601f140751ab9d7523d"
+}

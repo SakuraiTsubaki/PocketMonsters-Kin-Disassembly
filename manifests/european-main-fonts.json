@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-13",
+  "asset": "european-main-fonts",
+  "source_offset": 1016562,
+  "source_length": 1024,
+  "reference": {"repository": "pret/pokegold", "source_commit": "ef0201d8daf47e8b3ea1518eacf890f37d4cd5e8", "symbols_commit": "5bb78aa382e2b1b9eff48a0d7eb8c09a4fe81ddc", "paths": ["engine/gfx/load_font.asm", "gfx/font.asm", "gfx/font/font.png", "pokegold.sym"], "font_symbol": "3e:42f2"},
+  "generator": {"repository": "SakuraiTsubaki/Disassembly", "commit": "1f9c7696f5071a5c546085afe50e1a23f49f645e", "tool": "tools/extract_gb_1bpp.py"},
+  "releases": {
+    "de": {"id": "gold-de-rev0", "sha1": "9254195d461ea942eaaa08cc4b83de3cf82aea0d", "sha256": "542f275f8632ef5265e5cde80a8ba1f0ec11ce714ef9d773088a92680bd17d73", "range_sha256": "90aeb16144678c87d77cc5cfdda8feb2336501d1f241232c44ae75f15c3eee37"},
+    "fr": {"id": "gold-fr-rev0", "sha1": "c147c0d8c2b71b7628a7233436f5c052b5b17081", "sha256": "6103cadf2ae505f4b489a8a414c8db27a2307d797ddf8a3a848659b591dd4023", "range_sha256": "90aeb16144678c87d77cc5cfdda8feb2336501d1f241232c44ae75f15c3eee37"},
+    "es": {"id": "gold-es-rev0", "sha1": "162ea54c6a3cff374642e6dd842f9bffac847e7b", "sha256": "7b78e33a348a0729e38ee0fd778cf49b3e07c35d2175ebc74d8f9be41f41455b", "range_sha256": "34dd768b3736dadb0fb79c035849a32cdf193fb4ecd24b7cdd58df002ffc9980"},
+    "it": {"id": "gold-it-rev0", "sha1": "032608fe8947b627584a4a0eccc7bf9ad3588426", "sha256": "367e606f82b9e2e16d0cc8011c5ba2df1862da574e57ffd66e786a82af5b6e22", "range_sha256": "34dd768b3736dadb0fb79c035849a32cdf193fb4ecd24b7cdd58df002ffc9980"}
+  },
+  "outputs": [
+    {"path": "analysis/kin-de-main-font.json", "sha256": "e9297d9f87da4b5fbae14689d3e8a63e0325723920a2482af17d43bf7af1160e"},
+    {"path": "analysis/kin-fr-main-font.json", "sha256": "c6de2d6f26404f2fc83970a1bfdd9066fbf146afdbb4ec884e2704ba891b3e2a"},
+    {"path": "analysis/kin-es-main-font.json", "sha256": "091902de84d764112df3c36e561621addc929058184ab696366f011ecf4a24d1"},
+    {"path": "analysis/kin-it-main-font.json", "sha256": "7bae1674708f811b303fd6ed1bb6b2bcc7936de4b6318d09338dcc7c88bab1bf"},
+    {"path": "graphics/font/main-font-de.png", "sha256": "9d2ddb8b661d41b70ec42ccb495ec1858ecd7a7cdf12039c5c9abe764fdb097f"},
+    {"path": "graphics/font/main-font-fr.png", "sha256": "9d2ddb8b661d41b70ec42ccb495ec1858ecd7a7cdf12039c5c9abe764fdb097f"},
+    {"path": "graphics/font/main-font-es.png", "sha256": "7edc3aa24a0685985677a26e04349d293bf9c8587e1d3a098005a9ef01e08d77"},
+    {"path": "graphics/font/main-font-it.png", "sha256": "7edc3aa24a0685985677a26e04349d293bf9c8587e1d3a098005a9ef01e08d77"},
+    {"path": "research/european-main-fonts.md", "sha256": "1450b0724a1d698bcb9e4923236127b58af96735b7d97678585c8b401c33c405"}
+  ],
+  "raw_rom_bytes_included": false
+}

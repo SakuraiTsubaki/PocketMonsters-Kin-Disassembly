@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-08",
+  "asset": "english-main-font",
+  "source_offset": 1016562,
+  "source_length": 1024,
+  "reference": {"repository": "pret/pokegold", "source_commit": "ef0201d8daf47e8b3ea1518eacf890f37d4cd5e8", "symbols_commit": "5bb78aa382e2b1b9eff48a0d7eb8c09a4fe81ddc", "paths": ["engine/gfx/load_font.asm", "gfx/font.asm", "gfx/font/font.png", "pokegold.sym"], "font_symbol": "3e:42f2"},
+  "generator": {"repository": "SakuraiTsubaki/Disassembly", "commit": "1f9c7696f5071a5c546085afe50e1a23f49f645e", "tool": "tools/extract_gb_1bpp.py"},
+  "releases": [{"id": "gold-en-rev0", "sha1": "d8b8a3600a465308c9953dfa04f0081c05bdcb94", "sha256": "fb0016d27b1e5374e1ec9fcad60e6628d8646103b5313ca683417f52b97e7e4e", "range_sha256": "6e2437dd65c8f64b0a97c982ff1f8315a60d43cf88be0ca9cee81508692172d7"}],
+  "outputs": [
+    {"path": "analysis/kin-en-main-font.json", "sha256": "db4ee691a09b373b75526b23524c3bdb2d702f89650a32556bc93b44c86ef7f8"},
+    {"path": "graphics/font/main-font-en.png", "sha256": "f62d30328111d9c0bbb273bf917df27b019bd9d6b9f85c3b496b6a1fa7fcceac"},
+    {"path": "research/english-main-font.md", "sha256": "d3db49ef3728042129fb4790d1491ac80047c65d117c6e8a6ee575cfb53cf93c"}
+  ],
+  "raw_rom_bytes_included": false
+}

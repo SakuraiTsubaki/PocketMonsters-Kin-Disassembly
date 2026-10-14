@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "release_ids": [
+    "kin-jp-rev0",
+    "kin-jp-rev1",
+    "gold-ko-rev0",
+    "gold-en-rev0",
+    "gold-de-rev0",
+    "gold-es-rev0",
+    "gold-fr-rev0",
+    "gold-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/locate_gen2_standard_font_loader.py",
+    "tool_sha256": "12b490588916e04d512041c64cc1100b9469ef77235d9fd37619d2d89bd1db77"
+  },
+  "outputs": [
+    {
+      "path": "src/load_standard_font.asm",
+      "sha256": "82585705aa0ef7da728059ddab662ede8a69ab41cdad1c24fe21a2ef78a22dd7"
+    },
+    {
+      "path": "research/standard-font-loader.md",
+      "sha256": "ababf136e5594c20fcb26d181ffd93cd4da355421ccef78106bdff9dfc861d8c"
+    },
+    {
+      "path": "tests/test_standard_font_loader.py",
+      "sha256": "3ca189d94b746764ac06825b12c034a0cadeb8a2156a6b20786e9fbe96a64d1e"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-standard-font-loader.json",
+      "sha256": "78468197f1dacb1aa015035e69a1a2b8f7fc931250323e1964debd1100455522"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-standard-font-loader.json",
+      "sha256": "b4de3d60386812af235fb7b6365298395b105e97371cd8a43b3054026adcb186"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-standard-font-loader.json",
+      "sha256": "c266a0fb78f47ac70d960a322d7cc89eeb5aac0e21df6c79ec0d0b94b789c33f"
+    },
+    {
+      "path": "analysis/gold-en-rev0-standard-font-loader.json",
+      "sha256": "11c7536e14b2cd6de4277b89d15c08c295e2df0205199454e3bc5a76e2c4f0b2"
+    },
+    {
+      "path": "analysis/gold-de-rev0-standard-font-loader.json",
+      "sha256": "3ef33e4909a25be3b69b22dfaa7d04f25e4b08ab7787ee85d8394e7d802d96d1"
+    },
+    {
+      "path": "analysis/gold-es-rev0-standard-font-loader.json",
+      "sha256": "50eaffe13800c96a7213e3df4faf8f57f7f97a7c37c87ab4e31888d6a5b9c4a4"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-standard-font-loader.json",
+      "sha256": "b0897bac619170543d5fc3318db5972bf5fa3dad7e626ecfa9212b2bf50c96f0"
+    },
+    {
+      "path": "analysis/gold-it-rev0-standard-font-loader.json",
+      "sha256": "dbc2008289a59b6907104540c13e37d2e2f3c783c15eafe67f711f5c101fe2d3"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

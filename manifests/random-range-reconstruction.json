@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "function": "RandomRange",
+  "releases": [
+    "kin-jp-rev0",
+    "kin-jp-rev1",
+    "gold-ko-rev0",
+    "gold-en-rev0",
+    "gold-de-rev0",
+    "gold-es-rev0",
+    "gold-fr-rev0",
+    "gold-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/inspect_gen2_random_range.py",
+    "tool_sha256": "f67b280ecec8cd9f7286918de191b4bf4adda43eced87cf62323f990fcacee0b"
+  },
+  "outputs": [
+    {
+      "path": "src/random_range.asm",
+      "sha256": "4e13a333a5ce6c26566c81f9be878eec8b6c666eb342727ed28cca06a397b82b"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-random-range.json",
+      "sha256": "b7aef519f30fb0a79e51121bf7779801afc4fabfb904dbb4539c350c700d8701"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-random-range.json",
+      "sha256": "2995b5d63e560ba1056e323b8d9119316bf35dcf2b57d755bdb2699f8fc9a7fa"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-random-range.json",
+      "sha256": "c5e97fd11bb00adb0dbc6b75080e6b7bf355d86733c60b739a3b17d547318f17"
+    },
+    {
+      "path": "analysis/gold-en-rev0-random-range.json",
+      "sha256": "352061900b35be80dfd694d725e05e19f3ea526a253d8e7213b4a70f2f017b8f"
+    },
+    {
+      "path": "analysis/gold-de-rev0-random-range.json",
+      "sha256": "b2d327a7cb2f78964629fdbe804555b8c742b75f841b34800d795c6c148cf14b"
+    },
+    {
+      "path": "analysis/gold-es-rev0-random-range.json",
+      "sha256": "0c510e59c001847b48cce73e56f5b2c555756b854824ddf3271b4c53257d2118"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-random-range.json",
+      "sha256": "00c888bae4088a8cc966107da766a0e528198226f4514d7b7def241237d50e5d"
+    },
+    {
+      "path": "analysis/gold-it-rev0-random-range.json",
+      "sha256": "62e1974da315a58436235129c2eea8688f208def6d4108dce193a61b7eb4b77c"
+    },
+    {
+      "path": "research/random-range-reconstruction.md",
+      "sha256": "0d9d6b13e9326cb7919efbeabb98c341b83785eded14d25f1c2aeca80c2af76d"
+    },
+    {
+      "path": "tests/test_random_range_reconstruction.py",
+      "sha256": "3b26ab6376b811c705fe0e2d90ceb34d5ecdeda65477525586df9db7310542f2"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

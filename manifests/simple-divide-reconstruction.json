@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "function": "SimpleDivide",
+  "releases": [
+    "kin-jp-rev0",
+    "kin-jp-rev1",
+    "gold-ko-rev0",
+    "gold-en-rev0",
+    "gold-de-rev0",
+    "gold-es-rev0",
+    "gold-fr-rev0",
+    "gold-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/inspect_gen2_simple_divide.py",
+    "tool_sha256": "d6f444547505cb690cd265fe529ddad1bea82e0f31ea450f921b9ee00317ab16"
+  },
+  "outputs": [
+    {
+      "path": "src/simple_divide.asm",
+      "sha256": "3493d043db1a5bda77be24d84fcdac5efa34238c17503b11e230f8bafa5f09b7"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-simple-divide.json",
+      "sha256": "daad89ed1545ed43c53b9a753a4235836d8e6480546554c6b89408ea17884abc"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-simple-divide.json",
+      "sha256": "1c27cb5d38dd07f415b4197d988745728a5985258a9b6fd3d952246597142952"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-simple-divide.json",
+      "sha256": "911bb9f1e8f832c2405eb35bdbd21c25a36df6b071df41692c8d1e308271d164"
+    },
+    {
+      "path": "analysis/gold-en-rev0-simple-divide.json",
+      "sha256": "0317bc166919185032552f048e035c603164a913e8115178581f45e68eae5919"
+    },
+    {
+      "path": "analysis/gold-de-rev0-simple-divide.json",
+      "sha256": "25017ec2527dccbdc03f91dabc973ed1df095e2d8a251a1bdc41f4306c8631b8"
+    },
+    {
+      "path": "analysis/gold-es-rev0-simple-divide.json",
+      "sha256": "d020a364bca7a90cec254ae0bb693c0b638aee1d1d6290fd22adc23d7a9b7218"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-simple-divide.json",
+      "sha256": "5a271b7c84a92b4ab6573ed550f625e285a6d55332cd0cb5ba5ec6e574e96b3a"
+    },
+    {
+      "path": "analysis/gold-it-rev0-simple-divide.json",
+      "sha256": "1a0cf382cdff66527a8320b812c8557804f6b243570589a4cebca68a124c997e"
+    },
+    {
+      "path": "research/simple-divide-reconstruction.md",
+      "sha256": "76522291ce2047c06aceea8c78823b541e2ef9e828af8a6b22fc264b50671cc5"
+    },
+    {
+      "path": "tests/test_simple_divide_reconstruction.py",
+      "sha256": "bb28562d2a3192ccce58fe11de280794237c69d0b5d047fe814460b2ef1f673c"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

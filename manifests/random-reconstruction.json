@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "function": "Random",
+  "releases": [
+    "kin-jp-rev0",
+    "kin-jp-rev1",
+    "gold-ko-rev0",
+    "gold-en-rev0",
+    "gold-de-rev0",
+    "gold-es-rev0",
+    "gold-fr-rev0",
+    "gold-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/locate_gen2_random.py",
+    "tool_sha256": "47f99416d33b806e74504a8efe4f4818af822693c757dbc09af5a8fc33a49287"
+  },
+  "outputs": [
+    {
+      "path": "src/random.asm",
+      "sha256": "834cc7e94b745817af68a9c33d5fb6ce9c25cf44ab001f01f577e4fe4aa72393"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-random.json",
+      "sha256": "669ea7e67a3b547869a1561fdea1c293946e9c536e1e15faeebda10e8f6c6feb"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-random.json",
+      "sha256": "6b35ffc8ccad153616f6f35f32760ac3c2cd5d46d0eacd70293551945a18c878"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-random.json",
+      "sha256": "3795804cc766eea1b7753855c96d22b78ae8a02285b9adbe0f9d1c9ce40fac7d"
+    },
+    {
+      "path": "analysis/gold-en-rev0-random.json",
+      "sha256": "75ed563e7318e666422717c88daf38153d200d3f628a1b6ddb97675ed10b9441"
+    },
+    {
+      "path": "analysis/gold-de-rev0-random.json",
+      "sha256": "57470b4a5329e60e514cebe23e1403e255fa3b27a8150ead4a195441f658c2f7"
+    },
+    {
+      "path": "analysis/gold-es-rev0-random.json",
+      "sha256": "9e56994a7ab4f157676041af47a99a6d60b389e6136809e130e9adb0f1e40a29"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-random.json",
+      "sha256": "7fc8597f8835f31af44cf1173c380625004845dc34750a6cade51d24ab2a1604"
+    },
+    {
+      "path": "analysis/gold-it-rev0-random.json",
+      "sha256": "4eeb43998dfd1cd0cbeeec4bc21699fcd6c8bfc0d5eb3f1126398c22dc5fd1d2"
+    },
+    {
+      "path": "research/random-reconstruction.md",
+      "sha256": "ba46f8c3735172158cc43e302f14fbb28a114ae15e0069fb4d858fc4f4164e0e"
+    },
+    {
+      "path": "tests/test_random_reconstruction.py",
+      "sha256": "5a91ade07e14fde14850bd59a829014a1a1d8c7ae21c552c5da179dfcf324495"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

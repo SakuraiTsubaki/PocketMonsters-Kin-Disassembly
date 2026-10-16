@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "function": "Divide",
+  "releases": [
+    "kin-jp-rev0",
+    "kin-jp-rev1",
+    "gold-ko-rev0",
+    "gold-en-rev0",
+    "gold-de-rev0",
+    "gold-es-rev0",
+    "gold-fr-rev0",
+    "gold-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/inspect_gen2_divide_wrapper.py",
+    "tool_sha256": "e727d3e7be62c9796a05186b4595d92d0e972fff15519861f6ef2c4c91fb54bd"
+  },
+  "outputs": [
+    {
+      "path": "src/divide_wrapper.asm",
+      "sha256": "6a425979a3740c6f8f0fbc6bd9a06a1947cd4a05ac2f55cd4522d9bafa24ca72"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-divide-wrapper.json",
+      "sha256": "3ec2ddc8b2722720753fd77cfa2212092fd91d01502333604034a69626b512c9"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-divide-wrapper.json",
+      "sha256": "45f253812c56144080f190c13b1345d67b9dfa8e8957dd2abe2136607f8d73c0"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-divide-wrapper.json",
+      "sha256": "bfb027f1066f48e979b2be87fce339b1811ea0425eb3df4d3d79fbf6f60d5483"
+    },
+    {
+      "path": "analysis/gold-en-rev0-divide-wrapper.json",
+      "sha256": "30543b95f2736ee5e48345817bf1ba6e954ffba4f1455697eff6069f6c165ca7"
+    },
+    {
+      "path": "analysis/gold-de-rev0-divide-wrapper.json",
+      "sha256": "fdc13b87f77c679fc24f274a247a1009638d83eaf525bfa75a9d936aab3f1e88"
+    },
+    {
+      "path": "analysis/gold-es-rev0-divide-wrapper.json",
+      "sha256": "c7b167cd4b32658af6c5d884aef7b2ca35da5f5e4365fe6fb63ca14ff129e8d7"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-divide-wrapper.json",
+      "sha256": "6d2f24191610548cdec3ba4fad4adacd364cac7f9237b673faa2ecebdc602ae0"
+    },
+    {
+      "path": "analysis/gold-it-rev0-divide-wrapper.json",
+      "sha256": "d596057d20a4097f591e08a1f247523c31bddcd104204b791a38981ce1c65e3b"
+    },
+    {
+      "path": "research/divide-wrapper-reconstruction.md",
+      "sha256": "f85a0e1bc359fbdb22d71a52dbe2a69289d1842f032f24fde9ee94d9d6077d78"
+    },
+    {
+      "path": "tests/test_divide_wrapper_reconstruction.py",
+      "sha256": "ee87fa50e0af19a8464bb6cfc5f4642219acad9998752242d27877a5a1394b79"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

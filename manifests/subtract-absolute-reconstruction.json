@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "function": "SubtractAbsolute",
+  "releases": [
+    "kin-jp-rev0",
+    "kin-jp-rev1",
+    "gold-ko-rev0",
+    "gold-en-rev0",
+    "gold-de-rev0",
+    "gold-es-rev0",
+    "gold-fr-rev0",
+    "gold-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/inspect_gen2_subtract_absolute.py",
+    "tool_sha256": "582c57ed731edd6b4cf1867e53a666a943f3d9bb8571ce1c500e34766d361dbd"
+  },
+  "outputs": [
+    {
+      "path": "src/subtract_absolute.asm",
+      "sha256": "4e74c365c0dcb917406bee9b85692d083f8fc556717f2ec97d66c0ea974dee63"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-subtract-absolute.json",
+      "sha256": "bd2241883ec03c1130867b8f607ee42c5a7e6be4c1dcd47bb2b6065aebb30970"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-subtract-absolute.json",
+      "sha256": "81917ccf36687fc60f3b13d861f90cd37358dbce0573a85249124d6229b5dda7"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-subtract-absolute.json",
+      "sha256": "fe61018e24699a5e6d90f6d5af4fe2b8558bb07eb19ed62f2ee3693fc7cfd20e"
+    },
+    {
+      "path": "analysis/gold-en-rev0-subtract-absolute.json",
+      "sha256": "51c94e3e375fe34a6899bee704e9a08207528d4c4a97736e784db0b99945340d"
+    },
+    {
+      "path": "analysis/gold-de-rev0-subtract-absolute.json",
+      "sha256": "ec0f84b976056367f4bdaecf48ec047b88f171be8857c1e1b8533ee1384ce5fa"
+    },
+    {
+      "path": "analysis/gold-es-rev0-subtract-absolute.json",
+      "sha256": "2e6e08ce7827662bae886f368854e3dd3e102653ed847ab1659806b8e05dcff8"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-subtract-absolute.json",
+      "sha256": "14476bb614e67d352830b32f01587b14e7c415560724ac9560020b50658993dc"
+    },
+    {
+      "path": "analysis/gold-it-rev0-subtract-absolute.json",
+      "sha256": "c4391f1a59a2f0db511651248b7d0c20b0a06bb8a73e25a246824a730112b6e0"
+    },
+    {
+      "path": "research/subtract-absolute-reconstruction.md",
+      "sha256": "c910d79f01d9aad12e0467438c3d798f5b556e47e3e6b8ca6d55557e8dd76d1b"
+    },
+    {
+      "path": "tests/test_subtract_absolute_reconstruction.py",
+      "sha256": "70cdff9c9ad1b9ffffa1abc2c47530db672c6f3ecd8519cba878482962af8222"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

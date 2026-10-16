@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "function": "_Multiply",
+  "releases": [
+    "kin-jp-rev0",
+    "kin-jp-rev1",
+    "gold-ko-rev0",
+    "gold-en-rev0",
+    "gold-de-rev0",
+    "gold-es-rev0",
+    "gold-fr-rev0",
+    "gold-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/inspect_gen2_multiply_core.py",
+    "tool_sha256": "7651e97306ecbc35017522dee8e7c76ff16502ed490401ce83e7d8d51e64679d"
+  },
+  "outputs": [
+    {
+      "path": "src/multiply_core.asm",
+      "sha256": "2a6fe5b390449c8d275e4f673f789508c02b2a5b07b46b5b547d82a6be895bfb"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-multiply-core.json",
+      "sha256": "84b0b4465ad50abbf2d70a373937d230c4c811b451645818e7cead9d4b844585"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-multiply-core.json",
+      "sha256": "03c24b9458a6a5b737332d8aa831039103d3ab45481e0ede62bc6d2ac5e7160c"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-multiply-core.json",
+      "sha256": "e095a146ee02f89dd823d63d546eb738ab129e326dd357dc0e72414b94ef07c5"
+    },
+    {
+      "path": "analysis/gold-en-rev0-multiply-core.json",
+      "sha256": "c9c32b284921015631e21fc7a354c1a61f51fc325a97635df2bbe3c463584531"
+    },
+    {
+      "path": "analysis/gold-de-rev0-multiply-core.json",
+      "sha256": "c6de9126c5d3a15a7ce4cfd660b42b89a6733ec8ef786350cdbd3647cbbc6fbf"
+    },
+    {
+      "path": "analysis/gold-es-rev0-multiply-core.json",
+      "sha256": "8c572f0040e6ce28bf803fa79fa5a557b64fd6fba5f2a0933bc19f0792f381e3"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-multiply-core.json",
+      "sha256": "8f3beea496e1c27f809a20dcbf2c0d1450e63354365d73185b9a61bc9316cb74"
+    },
+    {
+      "path": "analysis/gold-it-rev0-multiply-core.json",
+      "sha256": "803481f2b114d54b275140eb0988b0c72fec785206fd287d021c18f98d93d245"
+    },
+    {
+      "path": "research/multiply-core-reconstruction.md",
+      "sha256": "ecc0daefa866f78e4f6fa88847f352fc6c17adcb86d911ab33604628188becda"
+    },
+    {
+      "path": "tests/test_multiply_core_reconstruction.py",
+      "sha256": "f22e52e064bed832d0ff388c5242cbe0725c35089b662d44ef0fca59d4d425a3"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

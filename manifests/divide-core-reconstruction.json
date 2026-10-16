@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "function": "_Divide",
+  "releases": [
+    "kin-jp-rev0",
+    "kin-jp-rev1",
+    "gold-ko-rev0",
+    "gold-en-rev0",
+    "gold-de-rev0",
+    "gold-es-rev0",
+    "gold-fr-rev0",
+    "gold-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/inspect_gen2_divide_core.py",
+    "tool_sha256": "ead05614dd8b2c6d610c7d920a9b1f004d39176c396912a7f42e05b54283c1f1"
+  },
+  "outputs": [
+    {
+      "path": "src/divide_core.asm",
+      "sha256": "d46dd84ed2a27830b893eed945b030333a468363a46bb2ee49c36b382c65c333"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-divide-core.json",
+      "sha256": "33fe3511791bfaac862dee2b570d67354eb2efa71897e2f72fc23ad52fcdd78c"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-divide-core.json",
+      "sha256": "808004da3dfba77cef07cd9c1f58e86c65ffedb9a60457be65ec02b12a38c2c4"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-divide-core.json",
+      "sha256": "c30ffa5e8d2a210c720bf5c3a445070460991e614b62f763f1383b1f30818250"
+    },
+    {
+      "path": "analysis/gold-en-rev0-divide-core.json",
+      "sha256": "f00646ee7d45f16651ae98942022f5f0fd340fa1809e1a89ed21b144c3ae3878"
+    },
+    {
+      "path": "analysis/gold-de-rev0-divide-core.json",
+      "sha256": "e2803710b1e0db8194c94d2061264f660c52700aa09b43937f00af3a6e69b835"
+    },
+    {
+      "path": "analysis/gold-es-rev0-divide-core.json",
+      "sha256": "c6123f770049d3836b2bab7d7a9368037515e75035c9934b03aef147f6145270"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-divide-core.json",
+      "sha256": "0bc2fe55e9bde50e23037f4c8a196dd9dbb4fdfda3fb9c0889f79b1edcd9353d"
+    },
+    {
+      "path": "analysis/gold-it-rev0-divide-core.json",
+      "sha256": "9cd9a255b22fd8a43108e89509cfb1a01b0bdca82170c201980eaf56e1a266d7"
+    },
+    {
+      "path": "research/divide-core-reconstruction.md",
+      "sha256": "e6c4734bdd410556d7483f3228f23328fe60e08fa339bdaffa85c916a253f5f4"
+    },
+    {
+      "path": "tests/test_divide_core_reconstruction.py",
+      "sha256": "cfac3739052276650ba79d33713b2114b249129e4927257e51935056a2e330a7"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

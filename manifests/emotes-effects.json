@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "game": "Pokemon Gold",
+  "asset": "OverworldEmotesAndEffects",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/extract_gen2_emotes.py",
+    "tool_sha256": "5a11795486ae274c8f27a3f638b72bd84ca12cf0997cca62e6f852e93e981a4b"
+  },
+  "outputs": [
+    {
+      "path": "graphics/overworld/emotes-atlas.png",
+      "sha256": "1791e3549e249f6d78f14ab5a9985518fc09c1e9e1b8382f2b49942a5afa7b2d"
+    },
+    {
+      "path": "graphics/overworld/effects-atlas.png",
+      "sha256": "8a009e1575e696e7c029cf841ddee3932c08ec3d227b9781bb22d5fe677249b2"
+    },
+    {
+      "path": "graphics/overworld/emotes-effects-atlas.json",
+      "sha256": "da009cdc83cc6ec2ba44235ae4ffe18fa46d43753411e3938dc6a6724a9bbbd7"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-emotes-effects.json",
+      "sha256": "39cad52374e3041ec556e97815a900ab064a2b819964c41929f6139bca7cd5a0"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-emotes-effects.json",
+      "sha256": "6a1790eae5614ecf84e4efec64e9f80df50a101edaa8fe25f8845325a89930c6"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-emotes-effects.json",
+      "sha256": "8545f37744151f37dbbfac840bc9e74fededdde542da7932a7722304e9d98371"
+    },
+    {
+      "path": "analysis/gold-en-rev0-emotes-effects.json",
+      "sha256": "0a5ffddebe58ceee0dfb9ce7e9dae3c3ca11723cb248a92adeea6995ba5f347e"
+    },
+    {
+      "path": "analysis/gold-de-rev0-emotes-effects.json",
+      "sha256": "a64a1ff24458647cc0adf7a21cf372f4ed2b899849d62bcbfab2d28df1aae45f"
+    },
+    {
+      "path": "analysis/gold-es-rev0-emotes-effects.json",
+      "sha256": "3929227a340665010b8ed9bd61f6ef47afa7916b997a59e87a059d50942c63a4"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-emotes-effects.json",
+      "sha256": "87e62f939827f5ec6977b637d2d32f38626a550fc0a6edffaefc8e82379e8160"
+    },
+    {
+      "path": "analysis/gold-it-rev0-emotes-effects.json",
+      "sha256": "a0f9b0a29c0c76410ba7df5428a359c9b5f59a85c4abb1886a609a7dccf5ef94"
+    },
+    {
+      "path": "analysis/emotes-effects-summary.json",
+      "sha256": "8d847e421ae0e44434ad07dab3eef987c258b0cec046faefef7b11c030176103"
+    },
+    {
+      "path": "research/emotes-effects.md",
+      "sha256": "d09575bb446635a0f470be796a11924fc972391a229ab8e48ce759d28c3092cf"
+    },
+    {
+      "path": "tests/test_emotes_effects.py",
+      "sha256": "e0dfed32a079a584f467dbedd8388ca10f741c04e3f1eda181c68656ffa5137b"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

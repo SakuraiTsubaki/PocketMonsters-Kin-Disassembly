@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "game": "Pokemon Gold",
+  "asset": "PartyIcons",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "source_sha256": "c06b31c95d7bd0c80b17ca9d1a7e7d55c1cb0f2f4f0eb302e5c1d7547f755c77",
+  "icon_count": 38,
+  "png": "graphics/pokemon/party-icons-atlas.png",
+  "layout": "graphics/pokemon/party-icons-atlas.json",
+  "releases": [
+    {
+      "id": "kin-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "sha256": "7cfeceae00737a1f0713c9ab0b3a9e6eb8d05ff6002eb81308072a6f85e385e7",
+      "origin_reference": true,
+      "evidence": "analysis/kin-jp-rev0-party-icons.json",
+      "source_offset": 583902
+    },
+    {
+      "id": "kin-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "sha256": "27a07a1d3faf9c6a0b1b60d5e88ee3a4159a751a47b4c46ab09f1202d52bac3e",
+      "origin_reference": false,
+      "evidence": "analysis/kin-jp-rev1-party-icons.json",
+      "source_offset": 583907
+    },
+    {
+      "id": "gold-ko-rev0",
+      "language": "Korean",
+      "revision": 0,
+      "sha256": "9c273e86e6120c6a038160ccb0153b8b20425b84fc08a496281c1d1bcac492f6",
+      "origin_reference": false,
+      "evidence": "analysis/gold-ko-rev0-party-icons.json",
+      "source_offset": 584374
+    },
+    {
+      "id": "gold-en-rev0",
+      "language": "English",
+      "revision": 0,
+      "sha256": "fb0016d27b1e5374e1ec9fcad60e6628d8646103b5313ca683417f52b97e7e4e",
+      "origin_reference": false,
+      "evidence": "analysis/gold-en-rev0-party-icons.json",
+      "source_offset": 584382
+    },
+    {
+      "id": "gold-de-rev0",
+      "language": "German",
+      "revision": 0,
+      "sha256": "542f275f8632ef5265e5cde80a8ba1f0ec11ce714ef9d773088a92680bd17d73",
+      "origin_reference": false,
+      "evidence": "analysis/gold-de-rev0-party-icons.json",
+      "source_offset": 584384
+    },
+    {
+      "id": "gold-es-rev0",
+      "language": "Spanish",
+      "revision": 0,
+      "sha256": "7b78e33a348a0729e38ee0fd778cf49b3e07c35d2175ebc74d8f9be41f41455b",
+      "origin_reference": false,
+      "evidence": "analysis/gold-es-rev0-party-icons.json",
+      "source_offset": 584380
+    },
+    {
+      "id": "gold-fr-rev0",
+      "language": "French",
+      "revision": 0,
+      "sha256": "6103cadf2ae505f4b489a8a414c8db27a2307d797ddf8a3a848659b591dd4023",
+      "origin_reference": false,
+      "evidence": "analysis/gold-fr-rev0-party-icons.json",
+      "source_offset": 584384
+    },
+    {
+      "id": "gold-it-rev0",
+      "language": "Italian",
+      "revision": 0,
+      "sha256": "367e606f82b9e2e16d0cc8011c5ba2df1862da574e57ffd66e786a82af5b6e22",
+      "origin_reference": false,
+      "evidence": "analysis/gold-it-rev0-party-icons.json",
+      "source_offset": 584380
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

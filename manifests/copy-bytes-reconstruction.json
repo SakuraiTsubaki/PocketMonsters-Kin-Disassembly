@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "function": "CopyBytes",
+  "releases": [
+    "kin-jp-rev0",
+    "kin-jp-rev1",
+    "gold-ko-rev0",
+    "gold-en-rev0",
+    "gold-de-rev0",
+    "gold-es-rev0",
+    "gold-fr-rev0",
+    "gold-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/locate_gen2_copy_bytes.py",
+    "tool_sha256": "0284696013f16099ef9e72eeb16424b03d21823584c994db2f8a0fdbcf374d54"
+  },
+  "outputs": [
+    {
+      "path": "src/copy_bytes.asm",
+      "sha256": "c5d164d7c9cd696bf9d0632789b40a38281aad8882a1119fbf597a157879c629"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-copy-bytes.json",
+      "sha256": "d44628f9aa738aec8e5491daf3495b0d01c5c47f188bc98f541fbb30e829810e"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-copy-bytes.json",
+      "sha256": "d6963e789c8bdd225ebff245e51ddc4f84c5b55280dc88bb57302bdfab045944"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-copy-bytes.json",
+      "sha256": "20a99f109021e5aad372ca5c2b61b6bc1080a5f52afbd3ca66d1ba1470b59d1d"
+    },
+    {
+      "path": "analysis/gold-en-rev0-copy-bytes.json",
+      "sha256": "d7a5c9ee3dbbb79ca2d01638e847097dc61abcd6e1adaeebb0c506f946341419"
+    },
+    {
+      "path": "analysis/gold-de-rev0-copy-bytes.json",
+      "sha256": "05595bb01cbb28682115539b592c6adedd2846be28ccffe8c35d58a03a859db3"
+    },
+    {
+      "path": "analysis/gold-es-rev0-copy-bytes.json",
+      "sha256": "0d6b42516618897286e906c1377e159201d6edac9abd2dbadc53a7f17ff0c383"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-copy-bytes.json",
+      "sha256": "cf88f93adb18e5ec8f7850ce04f0fe160e9bf580c46a23aecdb41df7a0c447ab"
+    },
+    {
+      "path": "analysis/gold-it-rev0-copy-bytes.json",
+      "sha256": "cf14017ae611adb19db02d3edba1f1a8c36c5de7dbb7266f67653deb392b16a9"
+    },
+    {
+      "path": "research/copy-bytes-reconstruction.md",
+      "sha256": "192ebc7a2981804a1df95ef6b1fee7a5d32c1949db546f2337edb7e29978a81e"
+    },
+    {
+      "path": "tests/test_copy_bytes_reconstruction.py",
+      "sha256": "b1498b7309c16d9dcb61fc3ff7d958f3eb8c25bd8ea1866679cd755131a7e3c7"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

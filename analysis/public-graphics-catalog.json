@@ -1,0 +1,1167 @@
+{
+  "schema_version": 1,
+  "game": "Pokemon Gold",
+  "root": "graphics",
+  "asset_count": 40,
+  "png_count": 37,
+  "metadata_count": 3,
+  "official_language_priority": [
+    "Japanese",
+    "Korean",
+    "English",
+    "German",
+    "French",
+    "Italian",
+    "Spanish"
+  ],
+  "assets": [
+    {
+      "path": "graphics/font/main-font-jp.png",
+      "sha256": "924a7bb2dd14aab6560d1376e99dae070368dcd7a05375c9c782f2217c86200f",
+      "size": 2225,
+      "format": "PNG",
+      "category": "font",
+      "language": "Japanese",
+      "origin_reference": true,
+      "provenance": [
+        {
+          "path": "manifests/japanese-main-font.json",
+          "sha256": "fef53605672b26c2f4a31b3526ae40ed6ef9e63f0641b3b8bfe0719f5ffd86fb"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/main-font-en.png",
+      "sha256": "f62d30328111d9c0bbb273bf917df27b019bd9d6b9f85c3b496b6a1fa7fcceac",
+      "size": 1774,
+      "format": "PNG",
+      "category": "font",
+      "language": "English",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/english-main-font.json",
+          "sha256": "88ef76d971db02e1dade7ce3dcf7faa7f118f3dfed367029f9f7200b98761404"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/main-font-de.png",
+      "sha256": "9d2ddb8b661d41b70ec42ccb495ec1858ecd7a7cdf12039c5c9abe764fdb097f",
+      "size": 1950,
+      "format": "PNG",
+      "category": "font",
+      "language": "German",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/european-main-fonts.json",
+          "sha256": "95fcbde1828df7b0b6e8555552129b930e87265e9a332d86afbb96867b4dbdd7"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/main-font-fr.png",
+      "sha256": "9d2ddb8b661d41b70ec42ccb495ec1858ecd7a7cdf12039c5c9abe764fdb097f",
+      "size": 1950,
+      "format": "PNG",
+      "category": "font",
+      "language": "French",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/european-main-fonts.json",
+          "sha256": "95fcbde1828df7b0b6e8555552129b930e87265e9a332d86afbb96867b4dbdd7"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/main-font-it.png",
+      "sha256": "7edc3aa24a0685985677a26e04349d293bf9c8587e1d3a098005a9ef01e08d77",
+      "size": 2004,
+      "format": "PNG",
+      "category": "font",
+      "language": "Italian",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/european-main-fonts.json",
+          "sha256": "95fcbde1828df7b0b6e8555552129b930e87265e9a332d86afbb96867b4dbdd7"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/main-font-es.png",
+      "sha256": "7edc3aa24a0685985677a26e04349d293bf9c8587e1d3a098005a9ef01e08d77",
+      "size": 2004,
+      "format": "PNG",
+      "category": "font",
+      "language": "Spanish",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/european-main-fonts.json",
+          "sha256": "95fcbde1828df7b0b6e8555552129b930e87265e9a332d86afbb96867b4dbdd7"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-0.png",
+      "sha256": "016c9e6fee49d6483d78e670a35e75e3e33d451553fad421b39b31f33c52ff52",
+      "size": 2747,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-1.png",
+      "sha256": "1bf5d7772b3ea93d7ffd39b450a762a394a9ea09a5229601f140751ab9d7523d",
+      "size": 6910,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-2.png",
+      "sha256": "941d97811a474fe96993af748f1ca93fd2fd0372d8105c1e50978323b2a67949",
+      "size": 6619,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-3.png",
+      "sha256": "79fa31c822708e3224ac6120a74eaa84cb129b2a3cb63f8afcd2fd07d87e0df2",
+      "size": 6676,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-4.png",
+      "sha256": "9567075b9c36172493fe9897e7a8477f218cb48990c5c759cbaa103a1cd52329",
+      "size": 6814,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-5.png",
+      "sha256": "0290325b2ffb3c1d3da18392925c63e26a6131e57303f90c6b84821e30837f74",
+      "size": 6523,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-6.png",
+      "sha256": "61a84480f4b3219f482deafc308167970d62f7bf177e9a3e53caf672d9ed6950",
+      "size": 6684,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-7.png",
+      "sha256": "74eca84b5fd736d730e0d28384e18b17ee41e99e87fb0950e7f0783db0e17e15",
+      "size": 6729,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-8.png",
+      "sha256": "fe30cb27b1b04dae7785cc8b49a2889e589058de6a9dcd8c47d63afc64ad6e5b",
+      "size": 6971,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-9.png",
+      "sha256": "428441dbe1f7614fdbc24ff46bab140e6357af9bc95197ac0727b8d0cf561f48",
+      "size": 6730,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/hangul/table-a.png",
+      "sha256": "90aaf1ba5d62f278bbbea5e2734a3f3ff0dfab2e0845c0ce19cdce0c22aa36cf",
+      "size": 6786,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-hangul-font.json",
+          "sha256": "0df706348bd73f2ad0bac414b6b349d9ea5b3c72c4a6d29d93a32918f5fd461f"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/unown-font.png",
+      "sha256": "5491e2f08b803a18aa1bc4816e2f94b623a9b6989a4f05165eac6bbc1f8c8b0d",
+      "size": 515,
+      "format": "PNG",
+      "category": "font",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/unown-font.json",
+          "sha256": "2b5138d8f626d1bec09abfe9176b0c1db688c16577a7c7b3b51165cca806d3e5"
+        },
+        {
+          "path": "analysis/gold-de-rev0-unown-font.json",
+          "sha256": "2c63fc8e905b208beeb4d83f82295b481fd5a0aa6361e5f9d0f6ac06936ad6b4"
+        },
+        {
+          "path": "analysis/gold-en-rev0-unown-font.json",
+          "sha256": "36baa187a89aa40ff8403fe840acac56e22895a2cb01bf40d65b687ccd67f09a"
+        },
+        {
+          "path": "analysis/gold-es-rev0-unown-font.json",
+          "sha256": "56aed1882dac5b697970c6697916b782e8a7a127d327d8244e9f2896b4f2987e"
+        },
+        {
+          "path": "analysis/gold-fr-rev0-unown-font.json",
+          "sha256": "8852908eb14da8ee33ee91d339beec7f7c476b06e25e9496305ac78ffe739066"
+        },
+        {
+          "path": "analysis/gold-it-rev0-unown-font.json",
+          "sha256": "6ee184ba77814fd4b1df5bdcff0f0b7ee7ed096f502f8c2abeea771f0d01ce63"
+        },
+        {
+          "path": "analysis/gold-ko-rev0-unown-font.json",
+          "sha256": "128cfed2132bd1c25e22c5c5785da570d33f3bea40d3b6b1c30a47d597350d8d"
+        },
+        {
+          "path": "analysis/kin-jp-rev0-unown-font.json",
+          "sha256": "67d969188ebe61f56a3169ac8f60d29559eafb64e22adc537fd5baa14a20dc4c"
+        },
+        {
+          "path": "analysis/kin-jp-rev1-unown-font.json",
+          "sha256": "26505a8c4fa6d624937b8f7bbf7b010cb2b78ea86f652a19a960b8fcda666872"
+        },
+        {
+          "path": "analysis/unown-font-summary.json",
+          "sha256": "9720ee41a54f125fa61db5c4fa61bfa97c5c529b06a07dab995040d9f03c16b2"
+        }
+      ],
+      "png": {
+        "width": 48,
+        "height": 144,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-ko.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "Korean",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/korean-entry-header.json",
+          "sha256": "e0e6c10ec110d3b023b032aeea4282fdd2d62fe233354b7122a5317cb39784e7"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-en.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "English",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/english-entry-header.json",
+          "sha256": "f41f3cb19a8f532db742a95ff7ffb85f0230a93f7409af0f5ae90b133e7d786a"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-de.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "German",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/global-entry-header.json",
+          "sha256": "efade305c429b9f12080afca80febc62b516ecabed594eabf369242b3cd2ddfb"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-fr.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "French",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/global-entry-header.json",
+          "sha256": "efade305c429b9f12080afca80febc62b516ecabed594eabf369242b3cd2ddfb"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-it.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "Italian",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/global-entry-header.json",
+          "sha256": "efade305c429b9f12080afca80febc62b516ecabed594eabf369242b3cd2ddfb"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-es.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "Spanish",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/global-entry-header.json",
+          "sha256": "efade305c429b9f12080afca80febc62b516ecabed594eabf369242b3cd2ddfb"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/header-logo.json",
+          "sha256": "1500dde6eb9fae2c00c9ddbd60e1b9ffaa7cbfa092e3feb6c77041cbeaff2768"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/overworld/effects-atlas.png",
+      "sha256": "8a009e1575e696e7c029cf841ddee3932c08ec3d227b9781bb22d5fe677249b2",
+      "size": 234,
+      "format": "PNG",
+      "category": "overworld",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/emotes-effects.json",
+          "sha256": "0b358d1cfc2c0486dd66936001bfa097de9b3c2bd5f2ffac9e26bd4f3e8b2240"
+        },
+        {
+          "path": "analysis/emotes-effects-summary.json",
+          "sha256": "8d847e421ae0e44434ad07dab3eef987c258b0cec046faefef7b11c030176103"
+        },
+        {
+          "path": "analysis/gold-de-rev0-emotes-effects.json",
+          "sha256": "a64a1ff24458647cc0adf7a21cf372f4ed2b899849d62bcbfab2d28df1aae45f"
+        },
+        {
+          "path": "analysis/gold-en-rev0-emotes-effects.json",
+          "sha256": "0a5ffddebe58ceee0dfb9ce7e9dae3c3ca11723cb248a92adeea6995ba5f347e"
+        },
+        {
+          "path": "analysis/gold-es-rev0-emotes-effects.json",
+          "sha256": "3929227a340665010b8ed9bd61f6ef47afa7916b997a59e87a059d50942c63a4"
+        },
+        {
+          "path": "analysis/gold-fr-rev0-emotes-effects.json",
+          "sha256": "87e62f939827f5ec6977b637d2d32f38626a550fc0a6edffaefc8e82379e8160"
+        },
+        {
+          "path": "analysis/gold-it-rev0-emotes-effects.json",
+          "sha256": "a0f9b0a29c0c76410ba7df5428a359c9b5f59a85c4abb1886a609a7dccf5ef94"
+        },
+        {
+          "path": "analysis/gold-ko-rev0-emotes-effects.json",
+          "sha256": "8545f37744151f37dbbfac840bc9e74fededdde542da7932a7722304e9d98371"
+        },
+        {
+          "path": "analysis/kin-jp-rev0-emotes-effects.json",
+          "sha256": "39cad52374e3041ec556e97815a900ab064a2b819964c41929f6139bca7cd5a0"
+        },
+        {
+          "path": "analysis/kin-jp-rev1-emotes-effects.json",
+          "sha256": "6a1790eae5614ecf84e4efec64e9f80df50a101edaa8fe25f8845325a89930c6"
+        }
+      ],
+      "png": {
+        "width": 64,
+        "height": 32,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/overworld/emotes-atlas.png",
+      "sha256": "1791e3549e249f6d78f14ab5a9985518fc09c1e9e1b8382f2b49942a5afa7b2d",
+      "size": 356,
+      "format": "PNG",
+      "category": "overworld",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/emotes-effects.json",
+          "sha256": "0b358d1cfc2c0486dd66936001bfa097de9b3c2bd5f2ffac9e26bd4f3e8b2240"
+        },
+        {
+          "path": "analysis/emotes-effects-summary.json",
+          "sha256": "8d847e421ae0e44434ad07dab3eef987c258b0cec046faefef7b11c030176103"
+        },
+        {
+          "path": "analysis/gold-de-rev0-emotes-effects.json",
+          "sha256": "a64a1ff24458647cc0adf7a21cf372f4ed2b899849d62bcbfab2d28df1aae45f"
+        },
+        {
+          "path": "analysis/gold-en-rev0-emotes-effects.json",
+          "sha256": "0a5ffddebe58ceee0dfb9ce7e9dae3c3ca11723cb248a92adeea6995ba5f347e"
+        },
+        {
+          "path": "analysis/gold-es-rev0-emotes-effects.json",
+          "sha256": "3929227a340665010b8ed9bd61f6ef47afa7916b997a59e87a059d50942c63a4"
+        },
+        {
+          "path": "analysis/gold-fr-rev0-emotes-effects.json",
+          "sha256": "87e62f939827f5ec6977b637d2d32f38626a550fc0a6edffaefc8e82379e8160"
+        },
+        {
+          "path": "analysis/gold-it-rev0-emotes-effects.json",
+          "sha256": "a0f9b0a29c0c76410ba7df5428a359c9b5f59a85c4abb1886a609a7dccf5ef94"
+        },
+        {
+          "path": "analysis/gold-ko-rev0-emotes-effects.json",
+          "sha256": "8545f37744151f37dbbfac840bc9e74fededdde542da7932a7722304e9d98371"
+        },
+        {
+          "path": "analysis/kin-jp-rev0-emotes-effects.json",
+          "sha256": "39cad52374e3041ec556e97815a900ab064a2b819964c41929f6139bca7cd5a0"
+        },
+        {
+          "path": "analysis/kin-jp-rev1-emotes-effects.json",
+          "sha256": "6a1790eae5614ecf84e4efec64e9f80df50a101edaa8fe25f8845325a89930c6"
+        }
+      ],
+      "png": {
+        "width": 128,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/overworld/emotes-effects-atlas.json",
+      "sha256": "da009cdc83cc6ec2ba44235ae4ffe18fa46d43753411e3938dc6a6724a9bbbd7",
+      "size": 4376,
+      "format": "JSON",
+      "category": "overworld",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/emotes-effects.json",
+          "sha256": "0b358d1cfc2c0486dd66936001bfa097de9b3c2bd5f2ffac9e26bd4f3e8b2240"
+        },
+        {
+          "path": "analysis/emotes-effects-summary.json",
+          "sha256": "8d847e421ae0e44434ad07dab3eef987c258b0cec046faefef7b11c030176103"
+        },
+        {
+          "path": "analysis/gold-de-rev0-emotes-effects.json",
+          "sha256": "a64a1ff24458647cc0adf7a21cf372f4ed2b899849d62bcbfab2d28df1aae45f"
+        },
+        {
+          "path": "analysis/gold-en-rev0-emotes-effects.json",
+          "sha256": "0a5ffddebe58ceee0dfb9ce7e9dae3c3ca11723cb248a92adeea6995ba5f347e"
+        },
+        {
+          "path": "analysis/gold-es-rev0-emotes-effects.json",
+          "sha256": "3929227a340665010b8ed9bd61f6ef47afa7916b997a59e87a059d50942c63a4"
+        },
+        {
+          "path": "analysis/gold-fr-rev0-emotes-effects.json",
+          "sha256": "87e62f939827f5ec6977b637d2d32f38626a550fc0a6edffaefc8e82379e8160"
+        },
+        {
+          "path": "analysis/gold-it-rev0-emotes-effects.json",
+          "sha256": "a0f9b0a29c0c76410ba7df5428a359c9b5f59a85c4abb1886a609a7dccf5ef94"
+        },
+        {
+          "path": "analysis/gold-ko-rev0-emotes-effects.json",
+          "sha256": "8545f37744151f37dbbfac840bc9e74fededdde542da7932a7722304e9d98371"
+        },
+        {
+          "path": "analysis/kin-jp-rev0-emotes-effects.json",
+          "sha256": "39cad52374e3041ec556e97815a900ab064a2b819964c41929f6139bca7cd5a0"
+        },
+        {
+          "path": "analysis/kin-jp-rev1-emotes-effects.json",
+          "sha256": "6a1790eae5614ecf84e4efec64e9f80df50a101edaa8fe25f8845325a89930c6"
+        }
+      ]
+    },
+    {
+      "path": "graphics/pokemon/footprints-atlas.json",
+      "sha256": "a5a5d8304af975dadb52bedb3535783d7a1a7cc66c706c5c380ed6e93aafae9b",
+      "size": 69774,
+      "format": "JSON",
+      "category": "pokemon",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/footprints.json",
+          "sha256": "d7a17793c61c7b46384af88d1de94e36f4e913d4887c48f0a8b92551f807fe4a"
+        },
+        {
+          "path": "analysis/footprints-summary.json",
+          "sha256": "57ae4c33ea144121ae43aad6e1c4f144eb232f65ab3f969a7684cb29d816df87"
+        },
+        {
+          "path": "analysis/gold-de-rev0-footprints.json",
+          "sha256": "cc6deadb1d36ad5288d1d0ac2d126a8adb99d4200b5480b2180adf869cd3a97e"
+        },
+        {
+          "path": "analysis/gold-en-rev0-footprints.json",
+          "sha256": "17088a6f0e0b11503ba0e15c07f02f4042878a864f963d8219b337fc695b78f3"
+        },
+        {
+          "path": "analysis/gold-es-rev0-footprints.json",
+          "sha256": "75c341e3cc98ada63193fcf6d353d0932c1c6034d88c99de5b160a78b3ae6511"
+        },
+        {
+          "path": "analysis/gold-fr-rev0-footprints.json",
+          "sha256": "1948a38b74d123337b07fbbdacbab3b23f095553bac8ce2dc1bb3652bfabbdfc"
+        },
+        {
+          "path": "analysis/gold-it-rev0-footprints.json",
+          "sha256": "755e14bae14c55e83ef597caec186a5ce3fe48c29c98fe1191546fa2899c56ec"
+        },
+        {
+          "path": "analysis/gold-ko-rev0-footprints.json",
+          "sha256": "7b1975786cfb5afa1e530880bdb677422cf80a47a9b59a94ba40977e70b21f8f"
+        },
+        {
+          "path": "analysis/kin-jp-rev0-footprints.json",
+          "sha256": "a3f6b9efaebd25ed1cea55d567e0fb1f613315b720a27f89fe47324afff48a89"
+        },
+        {
+          "path": "analysis/kin-jp-rev1-footprints.json",
+          "sha256": "30375a6dae99c8e8f7f40d9c20122e65b2a966064969e6a21f3b13b62cc9fd16"
+        }
+      ]
+    },
+    {
+      "path": "graphics/pokemon/footprints-atlas.png",
+      "sha256": "137ad03c5f4befa6ed97e100dd095823d5e0d85892f1397f7dd48752b4492cfc",
+      "size": 5167,
+      "format": "PNG",
+      "category": "pokemon",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/footprints.json",
+          "sha256": "d7a17793c61c7b46384af88d1de94e36f4e913d4887c48f0a8b92551f807fe4a"
+        },
+        {
+          "path": "analysis/footprints-summary.json",
+          "sha256": "57ae4c33ea144121ae43aad6e1c4f144eb232f65ab3f969a7684cb29d816df87"
+        },
+        {
+          "path": "analysis/gold-de-rev0-footprints.json",
+          "sha256": "cc6deadb1d36ad5288d1d0ac2d126a8adb99d4200b5480b2180adf869cd3a97e"
+        },
+        {
+          "path": "analysis/gold-en-rev0-footprints.json",
+          "sha256": "17088a6f0e0b11503ba0e15c07f02f4042878a864f963d8219b337fc695b78f3"
+        },
+        {
+          "path": "analysis/gold-es-rev0-footprints.json",
+          "sha256": "75c341e3cc98ada63193fcf6d353d0932c1c6034d88c99de5b160a78b3ae6511"
+        },
+        {
+          "path": "analysis/gold-fr-rev0-footprints.json",
+          "sha256": "1948a38b74d123337b07fbbdacbab3b23f095553bac8ce2dc1bb3652bfabbdfc"
+        },
+        {
+          "path": "analysis/gold-it-rev0-footprints.json",
+          "sha256": "755e14bae14c55e83ef597caec186a5ce3fe48c29c98fe1191546fa2899c56ec"
+        },
+        {
+          "path": "analysis/gold-ko-rev0-footprints.json",
+          "sha256": "7b1975786cfb5afa1e530880bdb677422cf80a47a9b59a94ba40977e70b21f8f"
+        },
+        {
+          "path": "analysis/kin-jp-rev0-footprints.json",
+          "sha256": "a3f6b9efaebd25ed1cea55d567e0fb1f613315b720a27f89fe47324afff48a89"
+        },
+        {
+          "path": "analysis/kin-jp-rev1-footprints.json",
+          "sha256": "30375a6dae99c8e8f7f40d9c20122e65b2a966064969e6a21f3b13b62cc9fd16"
+        }
+      ],
+      "png": {
+        "width": 256,
+        "height": 1024,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/pokemon/party-icons-atlas.json",
+      "sha256": "255575a4ed718d4b31f21fcbd7f1d1f31fa7350bc0a775784bb45b1e8686a597",
+      "size": 10477,
+      "format": "JSON",
+      "category": "pokemon",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/party-icons.json",
+          "sha256": "8db0fbc924a63db1013a19e3bc8b6f92c02d26e7162b4131f645fa8142f8cff8"
+        },
+        {
+          "path": "analysis/gold-de-rev0-party-icons.json",
+          "sha256": "9cd6a4036bc73696206dcb11e2fc0c766ddd91f0c1665ed60346b2de9ca67b7e"
+        },
+        {
+          "path": "analysis/gold-en-rev0-party-icons.json",
+          "sha256": "61a99b7377b99ce894cee316279657a463479a762d7b2ff71dbcbd8ffde13a0a"
+        },
+        {
+          "path": "analysis/gold-es-rev0-party-icons.json",
+          "sha256": "f691619b079aabc8ffc8ebd7af4f9892f64b82f71a2667ada75e876ccedfae92"
+        },
+        {
+          "path": "analysis/gold-fr-rev0-party-icons.json",
+          "sha256": "c8217f23d89e0591538ef4fceae72c5c763aaacde2c906ab3595315d3b93433c"
+        },
+        {
+          "path": "analysis/gold-it-rev0-party-icons.json",
+          "sha256": "8238c4843de9ec4042e08dea4776592532cc54a730f11304f330ec6886cdf761"
+        },
+        {
+          "path": "analysis/gold-ko-rev0-party-icons.json",
+          "sha256": "34cdd10091e05cc0911f14cc10c255d6166c60922af38ce0980b0ed908215e79"
+        },
+        {
+          "path": "analysis/kin-jp-rev0-party-icons.json",
+          "sha256": "2cd2e4aca19b09d76d5ee1d273e1343d8a8a8a7144d0a039b81e15759f1d2a39"
+        },
+        {
+          "path": "analysis/kin-jp-rev1-party-icons.json",
+          "sha256": "61a3761ba6969d7264ccb59b903889cc143a24afa4b37629b0e0cd28bde58c66"
+        },
+        {
+          "path": "analysis/party-icons-summary.json",
+          "sha256": "35b6181d89f5fcdc5fa866fee37b16e9f66fc84bf22a2a9f59184367cce9a5b5"
+        }
+      ]
+    },
+    {
+      "path": "graphics/pokemon/party-icons-atlas.png",
+      "sha256": "74ada4f53da9ecc3fc328285840e8f3262d7a60033b973cc8e2213fa72ca8819",
+      "size": 4359,
+      "format": "PNG",
+      "category": "pokemon",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/party-icons.json",
+          "sha256": "8db0fbc924a63db1013a19e3bc8b6f92c02d26e7162b4131f645fa8142f8cff8"
+        },
+        {
+          "path": "analysis/gold-de-rev0-party-icons.json",
+          "sha256": "9cd6a4036bc73696206dcb11e2fc0c766ddd91f0c1665ed60346b2de9ca67b7e"
+        },
+        {
+          "path": "analysis/gold-en-rev0-party-icons.json",
+          "sha256": "61a99b7377b99ce894cee316279657a463479a762d7b2ff71dbcbd8ffde13a0a"
+        },
+        {
+          "path": "analysis/gold-es-rev0-party-icons.json",
+          "sha256": "f691619b079aabc8ffc8ebd7af4f9892f64b82f71a2667ada75e876ccedfae92"
+        },
+        {
+          "path": "analysis/gold-fr-rev0-party-icons.json",
+          "sha256": "c8217f23d89e0591538ef4fceae72c5c763aaacde2c906ab3595315d3b93433c"
+        },
+        {
+          "path": "analysis/gold-it-rev0-party-icons.json",
+          "sha256": "8238c4843de9ec4042e08dea4776592532cc54a730f11304f330ec6886cdf761"
+        },
+        {
+          "path": "analysis/gold-ko-rev0-party-icons.json",
+          "sha256": "34cdd10091e05cc0911f14cc10c255d6166c60922af38ce0980b0ed908215e79"
+        },
+        {
+          "path": "analysis/kin-jp-rev0-party-icons.json",
+          "sha256": "2cd2e4aca19b09d76d5ee1d273e1343d8a8a8a7144d0a039b81e15759f1d2a39"
+        },
+        {
+          "path": "analysis/kin-jp-rev1-party-icons.json",
+          "sha256": "61a3761ba6969d7264ccb59b903889cc143a24afa4b37629b0e0cd28bde58c66"
+        },
+        {
+          "path": "analysis/party-icons-summary.json",
+          "sha256": "35b6181d89f5fcdc5fa866fee37b16e9f66fc84bf22a2a9f59184367cce9a5b5"
+        }
+      ],
+      "png": {
+        "width": 256,
+        "height": 320,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/title-logo-jp.png",
+      "sha256": "4c83fd532cc84b7a61bd7e73259f2e8ef0bd3a894f0e21dd061421412d585502",
+      "size": 1593,
+      "format": "PNG",
+      "category": "title",
+      "language": "Japanese",
+      "origin_reference": true,
+      "provenance": [
+        {
+          "path": "manifests/title-logos.json",
+          "sha256": "16b4977a5591f49a49613ef2456951158929544f06ec714166df59393dbc5a8b"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 96,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/title-logo-ko.png",
+      "sha256": "f17734a0d4603aaffadc2edda18a507df27de8c2e1dee6bfc18aee24658fb1ff",
+      "size": 1594,
+      "format": "PNG",
+      "category": "title",
+      "language": "Korean",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-logos.json",
+          "sha256": "16b4977a5591f49a49613ef2456951158929544f06ec714166df59393dbc5a8b"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 112,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/title-logo-bottom-en.png",
+      "sha256": "798c71069a96c85d974d475b6d3ccf678913a4d9e60c44ac6cea8d0f99b799dd",
+      "size": 1265,
+      "format": "PNG",
+      "category": "title",
+      "language": "English",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-logos.json",
+          "sha256": "16b4977a5591f49a49613ef2456951158929544f06ec714166df59393dbc5a8b"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 96,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/title-logo-top-global.png",
+      "sha256": "246fc0b8d5d6c1079ba9eb416071c99a62826ec0816ceb91f47b77cdba2f0a64",
+      "size": 548,
+      "format": "PNG",
+      "category": "title",
+      "language": "Global",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-logos.json",
+          "sha256": "16b4977a5591f49a49613ef2456951158929544f06ec714166df59393dbc5a8b"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 48,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/title-logo-bottom-de.png",
+      "sha256": "e43654401e08c910cc59a1f4f30cb225994972dd4207d502c2908b5da74190e2",
+      "size": 1288,
+      "format": "PNG",
+      "category": "title",
+      "language": "German",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-logos.json",
+          "sha256": "16b4977a5591f49a49613ef2456951158929544f06ec714166df59393dbc5a8b"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 96,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/title-logo-bottom-fr.png",
+      "sha256": "61ce04d897e329e46ea6ba7e8bf641002dcf7762b9f0725cddd365bf6236dfa7",
+      "size": 1258,
+      "format": "PNG",
+      "category": "title",
+      "language": "French",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-logos.json",
+          "sha256": "16b4977a5591f49a49613ef2456951158929544f06ec714166df59393dbc5a8b"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 96,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/title-logo-bottom-it.png",
+      "sha256": "f1d986022c7f17d38a0746e7e7ad232f945a7c112337310611c0286037b31940",
+      "size": 1259,
+      "format": "PNG",
+      "category": "title",
+      "language": "Italian",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-logos.json",
+          "sha256": "16b4977a5591f49a49613ef2456951158929544f06ec714166df59393dbc5a8b"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 96,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/title-logo-bottom-es.png",
+      "sha256": "adc493fa77c61e8136bf8df5b8da5f143a8bd75e0038ebc8756fa369b86e3667",
+      "size": 1273,
+      "format": "PNG",
+      "category": "title",
+      "language": "Spanish",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-logos.json",
+          "sha256": "16b4977a5591f49a49613ef2456951158929544f06ec714166df59393dbc5a8b"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 96,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

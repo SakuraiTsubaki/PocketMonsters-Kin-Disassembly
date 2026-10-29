@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Pocket Monsters Kin",
+  "function": "SpeechTextbox",
+  "profile": "gold-silver",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen2_speech_textbox.py",
+    "tool_sha256": "a3c325bc9305c273aaec96463cb1487f1a27459c2129a8b7f354e44b30391085"
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "a74bf4576a5ca50e4a6f321529033aba18bab06f12933ade5e66c90d5de305f3"
+    },
+    {
+      "path": "src/speech_textbox.asm",
+      "sha256": "e6cf188bd52c2c31ae72603320f0a28a726cced32285148a930cb56f6d130633"
+    },
+    {
+      "path": "analysis/speech-textbox-summary.json",
+      "sha256": "23b10a93ae801b9d4c5a2e9a530b4239662e20480cdb233b3a212fe2b6461d43"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-speech-textbox.json",
+      "sha256": "7086ce22147f4fd409e4d8f9e0f794f0a3846ee28df1b8b9cbb6e87083f4c0ad"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-speech-textbox.json",
+      "sha256": "c34da5b5c703fcb3838b6f9fcdbd45e73b1c57aed09a8cb62fba23d1db0c7f5c"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-speech-textbox.json",
+      "sha256": "8b1d6d9683ddc2410910ba95a9b1d328e32f3d4bd332c1398f2194eaf15c1cab"
+    },
+    {
+      "path": "analysis/gold-en-rev0-speech-textbox.json",
+      "sha256": "d8db2e4dba5b548bd47894fa6f990df94bf0eea8d313c583cdc9e5f90cca8609"
+    },
+    {
+      "path": "analysis/gold-de-rev0-speech-textbox.json",
+      "sha256": "bc8e8c63a0300f72eee2c7abc31a479e84d83e3c511b3f2efbbd16d708254477"
+    },
+    {
+      "path": "analysis/gold-es-rev0-speech-textbox.json",
+      "sha256": "a919a56177aeb7fefadcb8572cf4aef809adcee4206fe8e1b7cabacd0aebc30b"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-speech-textbox.json",
+      "sha256": "69f96162765754ff5cd02663217d6f1ee6061830b92fc3d187a4c043a5080d33"
+    },
+    {
+      "path": "analysis/gold-it-rev0-speech-textbox.json",
+      "sha256": "7d50c887462a951906f17ba65a51ac17a97a2fc30ac2af721e85e65c26cca7f4"
+    },
+    {
+      "path": "research/speech-textbox-reconstruction.md",
+      "sha256": "d3e611c96786b143e11fa39db7de8de3913550a2ae9c6559b2d0c35dbd1e9806"
+    },
+    {
+      "path": "tests/test_speech_textbox_reconstruction.py",
+      "sha256": "9084df9588a7b1c67e233b1f1db6f43b06cdcbbf0e2569878b84f13162e21c19"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

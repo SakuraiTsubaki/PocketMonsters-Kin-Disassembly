@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Pocket Monsters Kin",
+  "functions": [
+    "Textbox",
+    "TextboxBorder",
+    "PlaceChars",
+    "TextboxPalette"
+  ],
+  "profile": "gold-silver",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "source": "src/textbox.asm",
+  "releases": [
+    {
+      "id": "kin-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "7cfeceae00737a1f0713c9ab0b3a9e6eb8d05ff6002eb81308072a6f85e385e7",
+      "origin_reference": true,
+      "variant": "inline-border-and-palette",
+      "address": "0x0EC1",
+      "attribute_plane_delta": "0x092D",
+      "evidence": "analysis/kin-jp-rev0-textbox.json"
+    },
+    {
+      "id": "kin-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "27a07a1d3faf9c6a0b1b60d5e88ee3a4159a751a47b4c46ab09f1202d52bac3e",
+      "origin_reference": false,
+      "variant": "inline-border-and-palette",
+      "address": "0x0EC1",
+      "attribute_plane_delta": "0x092D",
+      "evidence": "analysis/kin-jp-rev1-textbox.json"
+    },
+    {
+      "id": "gold-ko-rev0",
+      "language": "Korean",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "9c273e86e6120c6a038160ccb0153b8b20425b84fc08a496281c1d1bcac492f6",
+      "origin_reference": false,
+      "variant": "korean-farcall-suite",
+      "address": "0x0F12",
+      "attribute_plane_delta": "0x0940",
+      "evidence": "analysis/gold-ko-rev0-textbox.json"
+    },
+    {
+      "id": "gold-en-rev0",
+      "language": "English",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "fb0016d27b1e5374e1ec9fcad60e6628d8646103b5313ca683417f52b97e7e4e",
+      "origin_reference": false,
+      "variant": "inline-border-and-palette",
+      "address": "0x0EEF",
+      "attribute_plane_delta": "0x0939",
+      "evidence": "analysis/gold-en-rev0-textbox.json"
+    },
+    {
+      "id": "gold-de-rev0",
+      "language": "German",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "542f275f8632ef5265e5cde80a8ba1f0ec11ce714ef9d773088a92680bd17d73",
+      "origin_reference": false,
+      "variant": "inline-border-and-palette",
+      "address": "0x0EEF",
+      "attribute_plane_delta": "0x0939",
+      "evidence": "analysis/gold-de-rev0-textbox.json"
+    },
+    {
+      "id": "gold-es-rev0",
+      "language": "Spanish",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "7b78e33a348a0729e38ee0fd778cf49b3e07c35d2175ebc74d8f9be41f41455b",
+      "origin_reference": false,
+      "variant": "inline-border-and-palette",
+      "address": "0x0EEF",
+      "attribute_plane_delta": "0x0939",
+      "evidence": "analysis/gold-es-rev0-textbox.json"
+    },
+    {
+      "id": "gold-fr-rev0",
+      "language": "French",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "6103cadf2ae505f4b489a8a414c8db27a2307d797ddf8a3a848659b591dd4023",
+      "origin_reference": false,
+      "variant": "inline-border-and-palette",
+      "address": "0x0EEF",
+      "attribute_plane_delta": "0x0939",
+      "evidence": "analysis/gold-fr-rev0-textbox.json"
+    },
+    {
+      "id": "gold-it-rev0",
+      "language": "Italian",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "367e606f82b9e2e16d0cc8011c5ba2df1862da574e57ffd66e786a82af5b6e22",
+      "origin_reference": false,
+      "variant": "inline-border-and-palette",
+      "address": "0x0EEF",
+      "attribute_plane_delta": "0x0939",
+      "evidence": "analysis/gold-it-rev0-textbox.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Pocket Monsters Kin",
+  "functions": [
+    "Textbox",
+    "TextboxBorder",
+    "PlaceChars",
+    "TextboxPalette"
+  ],
+  "profile": "gold-silver",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen2_textbox.py",
+    "tool_sha256": "81e264c6941e7c483676ba7c0f3539c43ab34821245dc05a2c8059b3e8d16ec7"
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "a74bf4576a5ca50e4a6f321529033aba18bab06f12933ade5e66c90d5de305f3"
+    },
+    {
+      "path": "src/textbox.asm",
+      "sha256": "0c8b93cb5d29d8e5d031df647dd111ead7c0e2d7f92e5b5209cff439666bfed4"
+    },
+    {
+      "path": "analysis/textbox-summary.json",
+      "sha256": "8efafda33fcfee31313322b3a51c21a59e1d49baa96251e062d780487854bcf7"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-textbox.json",
+      "sha256": "0c2becdfa6deee91370d4a39838dbf22c99832e62fb27c05b106bd5b3e61385b"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-textbox.json",
+      "sha256": "00ae9ae431f1fd0004e0a9e33cdf6a9df73ce306a9bd0328c3441807f7d95932"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-textbox.json",
+      "sha256": "2db4d10bee30db7ecb43b81d60ed2cb294678e5e0f8a90dcb9fbc71cf2acb639"
+    },
+    {
+      "path": "analysis/gold-en-rev0-textbox.json",
+      "sha256": "007e71fc5cb3b3063354d1b850326d07c390bc3700ba1fb399fc0f70b239d647"
+    },
+    {
+      "path": "analysis/gold-de-rev0-textbox.json",
+      "sha256": "30d437655417ed8e3a063c0fc5d9defed1d1686eef67cc6470c6855852befdf5"
+    },
+    {
+      "path": "analysis/gold-es-rev0-textbox.json",
+      "sha256": "142c47507030aa06b47407c1647ede7a57e3d3a1e567234cf60c5661085eb95d"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-textbox.json",
+      "sha256": "b5f11c1bf96501de72a96aaefea006804477245e813853dd55316e2f9b573fa0"
+    },
+    {
+      "path": "analysis/gold-it-rev0-textbox.json",
+      "sha256": "0e2a499a8460a172dbfc8f918e1fecb263e2102b2e608d3974b2ef512d99ccf5"
+    },
+    {
+      "path": "research/textbox-reconstruction.md",
+      "sha256": "708e023652b8fb8779737a648e05123b329dd2ae9183845edac3482ebd666c04"
+    },
+    {
+      "path": "tests/test_textbox_reconstruction.py",
+      "sha256": "bba48eb60885a26d954d5bd9a944a54360fa5966aa9d464095fcd039bd6caeed"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

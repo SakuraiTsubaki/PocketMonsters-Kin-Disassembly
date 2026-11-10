@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Kin",
+  "function": "IsInArray",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen2_is_in_array.py",
+    "tool_sha256": "a7c74675beaf71941d0f2b62f4e2488dc8513ee599a618672993398260212f68",
+    "dependency": {
+      "tool": "tools/catalog_gen2_compare_bytes.py",
+      "sha256": "dd5a689c9e8d708e0f6242ab95e4666eba7f51a7097ee52c54ac7c7898e8af62"
+    }
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "a74bf4576a5ca50e4a6f321529033aba18bab06f12933ade5e66c90d5de305f3"
+    },
+    {
+      "path": "src/is_in_array.asm",
+      "sha256": "d5e0473db63912a58eb041e3768903be24be0569a20f5f2fcad6c785f1ec3573"
+    },
+    {
+      "path": "analysis/is-in-array-summary.json",
+      "sha256": "61f8764bca4e22a20efabb4193a23c626d1c98290446694ccd36e956efdcc880"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-is-in-array.json",
+      "sha256": "47700d409757c8c809941f8e71f37311ec923b8719dcbf7310a0c8219b90b458"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-is-in-array.json",
+      "sha256": "a43ea73c007f580c2bf4620d30bbe58c6d61147bf7823caa3de88a96c670abef"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-is-in-array.json",
+      "sha256": "24034f8040214517288c0201abab31cb8d810527af382b5a0237e4ef02d30358"
+    },
+    {
+      "path": "analysis/gold-en-rev0-is-in-array.json",
+      "sha256": "fad92a6b053aa23a0b8ecbd05463e9a9e8aaa1ccc0820f6471576cfdc5bd8aa8"
+    },
+    {
+      "path": "analysis/gold-de-rev0-is-in-array.json",
+      "sha256": "38e9f1c730624e7000cd51239782b65b014318aa010cd69f442d9ad4eb6f70c3"
+    },
+    {
+      "path": "analysis/gold-es-rev0-is-in-array.json",
+      "sha256": "ed417b60ae5deaf4f8aa58d59b9d916b220b556961f57c57206142a80b85fbcf"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-is-in-array.json",
+      "sha256": "3157dc4295b39bc3e80d8ac3313d55d555b780398d269ec9057c2527f9cdd246"
+    },
+    {
+      "path": "analysis/gold-it-rev0-is-in-array.json",
+      "sha256": "8b0e687b07c71a8f270b48136a965b12ef885c0f53bb5162c776c5553056987d"
+    },
+    {
+      "path": "research/is-in-array-reconstruction.md",
+      "sha256": "3a6ce0b75d6e7d6354896eec73e5720c2b6a1566633be7321a303e1bc06e4f2b"
+    },
+    {
+      "path": "tests/test_is_in_array_reconstruction.py",
+      "sha256": "bc8604a2c9aa7a558ed8f77ccf12b1015d90f4a7022792a3012ea05a3237232d"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

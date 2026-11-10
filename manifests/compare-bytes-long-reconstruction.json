@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Kin",
+  "function": "CompareBytesLong",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen2_compare_bytes_long.py",
+    "tool_sha256": "b7f8aba916b62e6cb0bdb53df84955d9ae1eb7916eb51cced9176eb194a22569",
+    "dependency": {
+      "tool": "tools/catalog_gen2_compare_bytes.py",
+      "sha256": "dd5a689c9e8d708e0f6242ab95e4666eba7f51a7097ee52c54ac7c7898e8af62"
+    }
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "a74bf4576a5ca50e4a6f321529033aba18bab06f12933ade5e66c90d5de305f3"
+    },
+    {
+      "path": "src/compare_bytes_long.asm",
+      "sha256": "62482f66769c764179292b35a1e93b655287c20e847dceb2f75fea2bb0bf120a"
+    },
+    {
+      "path": "analysis/compare-bytes-long-summary.json",
+      "sha256": "511277c84fe7ee4034102a769ff1aa0836e4c879588d7240fedb090c72580950"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-compare-bytes-long.json",
+      "sha256": "f153a8ed779d65526faf3a3f26c692b7ab8ff9cdf8c3bffa2446a89fa616bb34"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-compare-bytes-long.json",
+      "sha256": "05a472b2d1d987eab3fb848974a970fa2ee6bbc32d6c17359bc56b9866c5b858"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-compare-bytes-long.json",
+      "sha256": "aa4a9c88c22a844db4030a2a3af0f957a1bffaf185da22e73296acbf660bfc8d"
+    },
+    {
+      "path": "analysis/gold-en-rev0-compare-bytes-long.json",
+      "sha256": "a997c65e6fb246ec60fa29c8df4458a939ccc4dea8e5d0e1a998f495ef2aa07f"
+    },
+    {
+      "path": "analysis/gold-de-rev0-compare-bytes-long.json",
+      "sha256": "06a6f6392f1ba3af04ba718ba7a30101c9b17d58381e42c372dd22e61324c88d"
+    },
+    {
+      "path": "analysis/gold-es-rev0-compare-bytes-long.json",
+      "sha256": "24355c99bf5d0e867aba2d71b5496d7fc7a8f2bf454a5a0b63b11ec857de7622"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-compare-bytes-long.json",
+      "sha256": "afe2bc23f5df141f78fa55e9177b4af9b6b0e46e974f97d552d3286fc43175d1"
+    },
+    {
+      "path": "analysis/gold-it-rev0-compare-bytes-long.json",
+      "sha256": "98f7f735ed3a4bfa1ee5ac4e93c31c7a4b722bd92b8488dc33c05d75900e607b"
+    },
+    {
+      "path": "research/compare-bytes-long-reconstruction.md",
+      "sha256": "24d2859df59e7fda2ea5ffbd26860cfe175f6c262b6ba97e3f958f83c95be8e9"
+    },
+    {
+      "path": "tests/test_compare_bytes_long_reconstruction.py",
+      "sha256": "530818cda24b675b72f9d1310e0a5d45334ddbdba3583aedc78920fc4e8103e1"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

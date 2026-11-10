@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Kin",
+  "function": "CountSetBits",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen2_count_set_bits.py",
+    "tool_sha256": "8262add786bfbb9465f0f390a4372c1e4f6a1a65a5a9dd78ca44d041e2bb8d87"
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "a74bf4576a5ca50e4a6f321529033aba18bab06f12933ade5e66c90d5de305f3"
+    },
+    {
+      "path": "src/count_set_bits.asm",
+      "sha256": "d4018d504045314d9bcd47aa1b3f3440f034d70d2f0b129dc6b13a88a73d5a61"
+    },
+    {
+      "path": "analysis/count-set-bits-summary.json",
+      "sha256": "637e61cd846c84c56d970ab6455610e1b97ee616f31f6e22f9e90be8fd164f73"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-count-set-bits.json",
+      "sha256": "39f4ed7aaf32ed46bbec2e76d178b438531c303684402a0c4bc0317d937c595d"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-count-set-bits.json",
+      "sha256": "d12edc8495b4689eaeed2db6c3f0464b5ccfda7d374a5f76acf0b81f317d6e65"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-count-set-bits.json",
+      "sha256": "eccb6fe708d274faccd4be6561003c8e311cf5aded9e49b44e16546ea7f596bb"
+    },
+    {
+      "path": "analysis/gold-en-rev0-count-set-bits.json",
+      "sha256": "887f780abbc8e376ad819ebcee05c02776555e5abb361b4f8f7be04de7463ade"
+    },
+    {
+      "path": "analysis/gold-de-rev0-count-set-bits.json",
+      "sha256": "bda6dc0d8ba411f58b5581c3760a72f469a94f4a1f7c4a0ecbed9386c0d0ded3"
+    },
+    {
+      "path": "analysis/gold-es-rev0-count-set-bits.json",
+      "sha256": "77117e9ca356fb4ae05a03e78492f263dc85c95ffcf9bc612de787d29323a4d5"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-count-set-bits.json",
+      "sha256": "11234e4f055759e62fb111ea75ba0dd2745832c6b3d6285520b67a43682fc410"
+    },
+    {
+      "path": "analysis/gold-it-rev0-count-set-bits.json",
+      "sha256": "c1d38545374dac5f610114a64266cf4cffd061397502e1caa2e544008f28067e"
+    },
+    {
+      "path": "research/count-set-bits-reconstruction.md",
+      "sha256": "c295671958f765ed3cb2ed9f2ebde85d061e1db4e89e30bf6a3db01ea98ceacd"
+    },
+    {
+      "path": "tests/test_count_set_bits_reconstruction.py",
+      "sha256": "065b7ff7b379918edb6a87cf207186e2ed87c281f6d69bf47d78162a8f26eb1c"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

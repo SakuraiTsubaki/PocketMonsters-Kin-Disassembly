@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "game": "Kin",
+  "functions": [
+    "ClearSprites",
+    "HideSprites"
+  ],
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen2_clear_hide_sprites.py",
+    "tool_sha256": "379c13f6af29401d21a32696c2dc680c87fe6040760689c92e002838314e4472"
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "a74bf4576a5ca50e4a6f321529033aba18bab06f12933ade5e66c90d5de305f3"
+    },
+    {
+      "path": "src/clear_hide_sprites.asm",
+      "sha256": "ff56a3eb65da9ce6a098ca5f6c97bdfc24b2b929da8e8bd24366900bda2aabc2"
+    },
+    {
+      "path": "analysis/clear-hide-sprites-summary.json",
+      "sha256": "c82767ab3710bc4a570355a1c48177c80e66d0e7c629142dcc329487c7249553"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-clear-hide-sprites.json",
+      "sha256": "ef6878e31fc865540ffc2fdbe455ed49b26953461ba9a80b47c8c3c0c56ff2fc"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-clear-hide-sprites.json",
+      "sha256": "804646db05cc936d9a4705d45161988963c469b04484c09bea21f126a18405f9"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-clear-hide-sprites.json",
+      "sha256": "c3ac7be4516f6c351b79bf508ca6e4450e817995c323a2459fceab38500353fb"
+    },
+    {
+      "path": "analysis/gold-en-rev0-clear-hide-sprites.json",
+      "sha256": "9d5de07109ae39da823a57090dbe00e1e036ee312cf02f50a578e0860b11f3c6"
+    },
+    {
+      "path": "analysis/gold-de-rev0-clear-hide-sprites.json",
+      "sha256": "979e2453cf8cb56873fa7127ed11515cfb1f3cde92158f7c0e55c1c954c43a45"
+    },
+    {
+      "path": "analysis/gold-es-rev0-clear-hide-sprites.json",
+      "sha256": "8c151b4c615f9fe095a5363d47b99ab38f44a53f68e58a8cd9802c108ca43825"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-clear-hide-sprites.json",
+      "sha256": "5e34958c946c9d8dd185bcceb85ba64b6ab06a79235d41a680cdc5d304724038"
+    },
+    {
+      "path": "analysis/gold-it-rev0-clear-hide-sprites.json",
+      "sha256": "c3bfefd90407622d44be4064d1e26b9731ca8edd176afa5da927344ef94d945a"
+    },
+    {
+      "path": "research/clear-hide-sprites-reconstruction.md",
+      "sha256": "ad4e7587e18a781adfa26c6fa21331beaa219b6ba302155ee26e5ac3ade1ecc1"
+    },
+    {
+      "path": "tests/test_clear_hide_sprites_reconstruction.py",
+      "sha256": "044a9a11ade2bdacb25128d669f76eb706a0c3e74496470afdb41c820a4a996d"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

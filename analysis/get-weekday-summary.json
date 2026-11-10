@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Kin",
+  "function": "GetWeekday",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "source": "src/get_weekday.asm",
+  "releases": [
+    {
+      "id": "kin-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "7cfeceae00737a1f0713c9ab0b3a9e6eb8d05ff6002eb81308072a6f85e385e7",
+      "origin_reference": true,
+      "address": "0x351B",
+      "cur_day_address": "0xD1E5",
+      "code_sha256": "292485ab0de9d7873fa4833e1904253a3c8667ad2d45b472d10d4a354f08f8e3",
+      "evidence": "analysis/kin-jp-rev0-get-weekday.json"
+    },
+    {
+      "id": "kin-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "27a07a1d3faf9c6a0b1b60d5e88ee3a4159a751a47b4c46ab09f1202d52bac3e",
+      "origin_reference": false,
+      "address": "0x351B",
+      "cur_day_address": "0xD1E5",
+      "code_sha256": "292485ab0de9d7873fa4833e1904253a3c8667ad2d45b472d10d4a354f08f8e3",
+      "evidence": "analysis/kin-jp-rev1-get-weekday.json"
+    },
+    {
+      "id": "gold-ko-rev0",
+      "language": "Korean",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "9c273e86e6120c6a038160ccb0153b8b20425b84fc08a496281c1d1bcac492f6",
+      "origin_reference": false,
+      "address": "0x358E",
+      "cur_day_address": "0xD2A7",
+      "code_sha256": "f004eb8679372d7bf760e97b1241f484405bff816e25fc01dda021e636a3733c",
+      "evidence": "analysis/gold-ko-rev0-get-weekday.json"
+    },
+    {
+      "id": "gold-en-rev0",
+      "language": "English",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "fb0016d27b1e5374e1ec9fcad60e6628d8646103b5313ca683417f52b97e7e4e",
+      "origin_reference": false,
+      "address": "0x35B9",
+      "cur_day_address": "0xD1F2",
+      "code_sha256": "10a8e9cb15c75ac77ec2791354d22aa34e35efb4fb526d9cb49e9080bda0f22d",
+      "evidence": "analysis/gold-en-rev0-get-weekday.json"
+    },
+    {
+      "id": "gold-de-rev0",
+      "language": "German",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "542f275f8632ef5265e5cde80a8ba1f0ec11ce714ef9d773088a92680bd17d73",
+      "origin_reference": false,
+      "address": "0x35B0",
+      "cur_day_address": "0xD1F2",
+      "code_sha256": "10a8e9cb15c75ac77ec2791354d22aa34e35efb4fb526d9cb49e9080bda0f22d",
+      "evidence": "analysis/gold-de-rev0-get-weekday.json"
+    },
+    {
+      "id": "gold-es-rev0",
+      "language": "Spanish",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "7b78e33a348a0729e38ee0fd778cf49b3e07c35d2175ebc74d8f9be41f41455b",
+      "origin_reference": false,
+      "address": "0x3576",
+      "cur_day_address": "0xD1F2",
+      "code_sha256": "10a8e9cb15c75ac77ec2791354d22aa34e35efb4fb526d9cb49e9080bda0f22d",
+      "evidence": "analysis/gold-es-rev0-get-weekday.json"
+    },
+    {
+      "id": "gold-fr-rev0",
+      "language": "French",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "6103cadf2ae505f4b489a8a414c8db27a2307d797ddf8a3a848659b591dd4023",
+      "origin_reference": false,
+      "address": "0x3564",
+      "cur_day_address": "0xD1F2",
+      "code_sha256": "10a8e9cb15c75ac77ec2791354d22aa34e35efb4fb526d9cb49e9080bda0f22d",
+      "evidence": "analysis/gold-fr-rev0-get-weekday.json"
+    },
+    {
+      "id": "gold-it-rev0",
+      "language": "Italian",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "367e606f82b9e2e16d0cc8011c5ba2df1862da574e57ffd66e786a82af5b6e22",
+      "origin_reference": false,
+      "address": "0x35A8",
+      "cur_day_address": "0xD1F2",
+      "code_sha256": "10a8e9cb15c75ac77ec2791354d22aa34e35efb4fb526d9cb49e9080bda0f22d",
+      "evidence": "analysis/gold-it-rev0-get-weekday.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

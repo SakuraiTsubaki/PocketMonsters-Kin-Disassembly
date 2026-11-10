@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Kin",
+  "function": "GetWeekday",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen2_get_weekday.py",
+    "tool_sha256": "e81dde32ec14be015cd76f7d74b8b34379c174b75b180f06a0353dba0ebd022e"
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "a74bf4576a5ca50e4a6f321529033aba18bab06f12933ade5e66c90d5de305f3"
+    },
+    {
+      "path": "src/get_weekday.asm",
+      "sha256": "9bf4403860ba70f8d1e5deb956bdc5d926e4e35be754b58512ac7a69bebe1e13"
+    },
+    {
+      "path": "analysis/get-weekday-summary.json",
+      "sha256": "887e766c2132d26ec0896d515c333cd6e637e89c31fbe52c116a5ba55a2062e8"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-get-weekday.json",
+      "sha256": "77adc689a1cd6aba774fa470f20bf429501850a92926754b60521df5e175e6f5"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-get-weekday.json",
+      "sha256": "01b3f26135e336040c4f3fb34200e50ae9276c86d6a73b03f9f5bcd9270de040"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-get-weekday.json",
+      "sha256": "96a838a1acf3c73798eb5f4f688477517971df33e6d6978acbdc724075bcd868"
+    },
+    {
+      "path": "analysis/gold-en-rev0-get-weekday.json",
+      "sha256": "d904e98e7349d0a9b543d7e71a79cf1ab4f05062c25a9cf60f4e464d2936e8c4"
+    },
+    {
+      "path": "analysis/gold-de-rev0-get-weekday.json",
+      "sha256": "0c2f3577e0472b63ac9da75e5c8027f72b35692a951c904fdf112ad9f51fc081"
+    },
+    {
+      "path": "analysis/gold-es-rev0-get-weekday.json",
+      "sha256": "5f373ac6929a1734fec8874447f637749061f587bb3bddb07923c36d904c40e9"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-get-weekday.json",
+      "sha256": "4da65b636cbda0e3f045ec920c0b24e457cf07a32eb4a8ba087cf0a49140547a"
+    },
+    {
+      "path": "analysis/gold-it-rev0-get-weekday.json",
+      "sha256": "7a369e3254e531dbfbda44b544014e7b7ed117a6c0ccb6bf08637cf731b47d15"
+    },
+    {
+      "path": "research/get-weekday-reconstruction.md",
+      "sha256": "c58fbde48f0b61098d14f16ce272d4db29dfced2a8a169ce4b31b9739b5ef2f3"
+    },
+    {
+      "path": "tests/test_get_weekday_reconstruction.py",
+      "sha256": "4d21448c3e4515c17a46167e61e99b7d679c7938cfb95f500dd7dc9ded37bb8d"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

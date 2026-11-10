@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Kin",
+  "functions": [
+    "SkipNames",
+    "AddNTimes"
+  ],
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen2_skip_names_add_n_times.py",
+    "tool_sha256": "a56e49cd5052593c57c9529d4d307f783148c77322d52078ffece61276839af2",
+    "dependency": {
+      "tool": "tools/catalog_gen2_compare_bytes.py",
+      "sha256": "dd5a689c9e8d708e0f6242ab95e4666eba7f51a7097ee52c54ac7c7898e8af62"
+    }
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "a74bf4576a5ca50e4a6f321529033aba18bab06f12933ade5e66c90d5de305f3"
+    },
+    {
+      "path": "src/skip_names_add_n_times.asm",
+      "sha256": "4e14c97121a470f02debd8717f7cf7ae0074cc8880d3dee65f501a8771d519b0"
+    },
+    {
+      "path": "analysis/skip-names-add-n-times-summary.json",
+      "sha256": "4e51966ca351d9e7dc68cf23f603aefec4df65e73e2b908821ffc4a9283f7333"
+    },
+    {
+      "path": "analysis/kin-jp-rev0-skip-names-add-n-times.json",
+      "sha256": "8b0f634cd32be60ce9d315021531bd9ccd02bf4c33e15367aa319c71e2abcd5a"
+    },
+    {
+      "path": "analysis/kin-jp-rev1-skip-names-add-n-times.json",
+      "sha256": "b56acabc562e6f4293bc6cf9f287bb4247e84d827a0afe50ae3271dbdbd59d1e"
+    },
+    {
+      "path": "analysis/gold-ko-rev0-skip-names-add-n-times.json",
+      "sha256": "dcc049590cd47747ccb925cfe8ac1ae64200691a970d30b93c77ebd4e7b6e498"
+    },
+    {
+      "path": "analysis/gold-en-rev0-skip-names-add-n-times.json",
+      "sha256": "fb39420e1fb6083e2f763a9288f4759f199b452a05c52f2f457191414d4bac03"
+    },
+    {
+      "path": "analysis/gold-de-rev0-skip-names-add-n-times.json",
+      "sha256": "242a46a4962eb77c42164491fc66ee2b744b16ae082f08733fdf22dc72140a16"
+    },
+    {
+      "path": "analysis/gold-es-rev0-skip-names-add-n-times.json",
+      "sha256": "b8ab76847409d80126f9f84840b7a9b98a69da079e592a77ccce129ce3e2e697"
+    },
+    {
+      "path": "analysis/gold-fr-rev0-skip-names-add-n-times.json",
+      "sha256": "18e22891efc432fe3ff7bafa41b960519164f467c6b5406f4c2678604d716390"
+    },
+    {
+      "path": "analysis/gold-it-rev0-skip-names-add-n-times.json",
+      "sha256": "9fccd501d81042c7ec4ff2d289de2c5e3504c8fe23a01bbc065d5edb5dae647b"
+    },
+    {
+      "path": "research/skip-names-add-n-times-reconstruction.md",
+      "sha256": "27d72a26dc9763c65b427e2fd5b8508ff5badd1096de4382e7181c826341b8bb"
+    },
+    {
+      "path": "tests/test_skip_names_add_n_times_reconstruction.py",
+      "sha256": "eae640e9f9571c085b0bbf84860cbb126e9ce3dba8b85b1ff73b1ce4bfca27d7"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

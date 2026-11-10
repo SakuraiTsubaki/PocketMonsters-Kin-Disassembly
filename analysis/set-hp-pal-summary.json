@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "game": "Kin",
+  "function": "SetHPPal",
+  "origin_reference": "kin-jp-rev0",
+  "release_count": 8,
+  "source": "src/set_hp_pal.asm",
+  "releases": [
+    {
+      "id": "kin-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "7cfeceae00737a1f0713c9ab0b3a9e6eb8d05ff6002eb81308072a6f85e385e7",
+      "origin_reference": true,
+      "address": "0x34F3",
+      "get_hp_pal_target": "0x34F8",
+      "code_sha256": "5201a9d0151ecc1151d34b753a338ba7f5965a4b5e3aec9dfada6b3501ec4ed7",
+      "evidence": "analysis/kin-jp-rev0-set-hp-pal.json"
+    },
+    {
+      "id": "kin-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "27a07a1d3faf9c6a0b1b60d5e88ee3a4159a751a47b4c46ab09f1202d52bac3e",
+      "origin_reference": false,
+      "address": "0x34F3",
+      "get_hp_pal_target": "0x34F8",
+      "code_sha256": "5201a9d0151ecc1151d34b753a338ba7f5965a4b5e3aec9dfada6b3501ec4ed7",
+      "evidence": "analysis/kin-jp-rev1-set-hp-pal.json"
+    },
+    {
+      "id": "gold-ko-rev0",
+      "language": "Korean",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "9c273e86e6120c6a038160ccb0153b8b20425b84fc08a496281c1d1bcac492f6",
+      "origin_reference": false,
+      "address": "0x3566",
+      "get_hp_pal_target": "0x356B",
+      "code_sha256": "41ebed26a13688199e2bf8350581793d95418305ba5a65e9356a8f2bd6af7294",
+      "evidence": "analysis/gold-ko-rev0-set-hp-pal.json"
+    },
+    {
+      "id": "gold-en-rev0",
+      "language": "English",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "fb0016d27b1e5374e1ec9fcad60e6628d8646103b5313ca683417f52b97e7e4e",
+      "origin_reference": false,
+      "address": "0x3591",
+      "get_hp_pal_target": "0x3596",
+      "code_sha256": "ec2867287ea147ba89e43d788b9d1a804bfa9dc821de100a495e06efae65c5a4",
+      "evidence": "analysis/gold-en-rev0-set-hp-pal.json"
+    },
+    {
+      "id": "gold-de-rev0",
+      "language": "German",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "542f275f8632ef5265e5cde80a8ba1f0ec11ce714ef9d773088a92680bd17d73",
+      "origin_reference": false,
+      "address": "0x3588",
+      "get_hp_pal_target": "0x358D",
+      "code_sha256": "d842eb0612d922ab3cb43385a71c428aca0fab15efc3b4a0034ac72d97057f7b",
+      "evidence": "analysis/gold-de-rev0-set-hp-pal.json"
+    },
+    {
+      "id": "gold-es-rev0",
+      "language": "Spanish",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "7b78e33a348a0729e38ee0fd778cf49b3e07c35d2175ebc74d8f9be41f41455b",
+      "origin_reference": false,
+      "address": "0x354E",
+      "get_hp_pal_target": "0x3553",
+      "code_sha256": "7f8e1dbb75696e6191b6d921c47b3e0b009e04948b2551e11a5e25c34a66467f",
+      "evidence": "analysis/gold-es-rev0-set-hp-pal.json"
+    },
+    {
+      "id": "gold-fr-rev0",
+      "language": "French",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "6103cadf2ae505f4b489a8a414c8db27a2307d797ddf8a3a848659b591dd4023",
+      "origin_reference": false,
+      "address": "0x353C",
+      "get_hp_pal_target": "0x3541",
+      "code_sha256": "a713b01121718ec71c4d7e48add092205510a29699d27464c25088bd32b422e7",
+      "evidence": "analysis/gold-fr-rev0-set-hp-pal.json"
+    },
+    {
+      "id": "gold-it-rev0",
+      "language": "Italian",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "367e606f82b9e2e16d0cc8011c5ba2df1862da574e57ffd66e786a82af5b6e22",
+      "origin_reference": false,
+      "address": "0x3580",
+      "get_hp_pal_target": "0x3585",
+      "code_sha256": "2b7bf7b246c47897146bbdf39c84cfa63fc2baef5682fccc43deb4f0d3ec33e0",
+      "evidence": "analysis/gold-it-rev0-set-hp-pal.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
